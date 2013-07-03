@@ -1,0 +1,6 @@
+Stage Prompt
+============
+
+Stage Prompt can be found on Github_
+
+.. _Github: https://github.com/alphagov/stageprompt

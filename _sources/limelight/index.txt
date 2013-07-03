@@ -1,0 +1,6 @@
+Limelight
+=========
+
+Limelight can be found on Github_
+
+.. _Github: https://github.com/alphagov/limelight
