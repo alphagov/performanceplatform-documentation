@@ -5,7 +5,7 @@ To build it locally make sure you have Sphinx_ installed. You can install it wit
 
   pip install sphinx
 
-Once Sphinx is installed the documentation can be built and served with make.
+Once Sphinx is installed the documentation can be built and served with make::
 
   make html serve
 
