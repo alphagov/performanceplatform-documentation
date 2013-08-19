@@ -37,29 +37,3 @@ Assuming you have the project checked out and all tests passing...
 
 5. You can browse the site by running ``./serve.sh`` this will start a stub http server
    which will serve the pages without the .html postfix from http://localhost:8080/
-
-Deployment
-~~~~~~~~~~
-
-Like any good GDS app, Transactions Explorer is deployed using Jenkins.
-
-Building the tarball
---------------------
-
-On ``deploy.preview.performance``, run the job ``transactions-explorer-build``.
-This will build a preview and production tarball, and trigger a
-downstream job to update preview using ``deploy.preview``.
-
-This build job is also triggered by a successful Travis build (which results
-in an updated git release tag). Preview is therefore kept up to date by
-successful builds from master.
-
-Note: the Transactions Explorer build requires a version of Python which is
-unavailable on GOV.UK CI infrastructure.
-
-Deploying to staging and production
------------------------------------
-
-Build the tarball that you want to want to deploy using the above job. Use
-GOV.UK's ``deploy.staging`` and ``deploy.production`` and run the deploy jobs
-for Transactions Explorer with the artefact ID you just built as a parameter.
