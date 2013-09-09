@@ -24,7 +24,7 @@ Often you'll need to send multiple records to backdrop at once. You can do this 
 By uploading a file
 -------------------
 
-Backdrop also accepts file uploads through it's admin interface. Log on with your signon account and you will be presented with a list of buckets you can upload to. Upload files should be in CSV or Excel (depending what has been configured for your bucket). The first row must contain the field names and each subsequent line is values for a single record. The same rules around field names and special fields apply as for the JSON API (see below).
+Backdrop also accepts file uploads through its admin interface. Log on with your signon account and you will be presented with a list of buckets you can upload to. Upload files should be in CSV or Excel (depending what has been configured for your bucket). The first row must contain the field names and each subsequent line is values for a single record. The same rules around field names and special fields apply as for the JSON API (see below).
 
 What is a record?
 -----------------
