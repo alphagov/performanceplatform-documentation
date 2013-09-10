@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+
+    <title>Sending data to backdrop &mdash; Performance Platform Manual</title>
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+
+    
+    <link rel="stylesheet" href="_static/rtd.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/searchtools.js"></script>
+    <link rel="top" title="Performance Platform Manual" href="index.html" />
+    <link rel="prev" title="Instrumenting your site" href="instrumenting-your-site.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="instrumenting-your-site.html" title="Instrumenting your site"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Performance Platform Manual</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="sending-data-to-backdrop">
+<h1>Sending data to backdrop<a class="headerlink" href="#sending-data-to-backdrop" title="Permalink to this headline">¶</a></h1>
+<p>So you have a bucket and an access token, how do you actually get your data into backdrop?</p>
+<div class="section" id="by-http-api">
+<h2>By HTTP API<a class="headerlink" href="#by-http-api" title="Permalink to this headline">¶</a></h2>
+<p>Backdrop exposes a very small HTTP API for pushing data in. There is one endpoint per bucket that can accept one or more JSON records being sent to it vi a POST. You authorize each request by adding a an Authorization header with the secret access token you should have been provided for each bucket.</p>
+<p>In summary:</p>
+<ul class="simple">
+<li>The URL should be <cite>http://&lt;backdrop-write-host&gt;/&lt;bucket-name&gt;</cite></li>
+<li>The content and content type must be JSON.</li>
+<li>There must be a valid Authorization header.</li>
+</ul>
+<p>See the example below using curl (all examples using curl 7.24):</p>
+<div class="highlight-python"><pre>curl -X POST -d '{"name":"Jane"}' -H 'Authorization: Bearer &lt;your-token&gt;' -H 'Content-type: application/json' 'http://&lt;backdrop-write-host&gt;/&lt;bucket-name&gt;'</pre>
+</div>
+<p>Often you&#8217;ll need to send multiple records to backdrop at once. You can do this by sending an array of records:</p>
+<div class="highlight-python"><pre>curl -X POST -d '[{"name":"Jane"},{"name":"John"}]' -H 'Authorization: Bearer &lt;your-token&gt;' -H 'Content-type: application/json' 'http://&lt;backdrop-write-host&gt;/&lt;bucket-name&gt;'</pre>
+</div>
+</div>
+<div class="section" id="by-uploading-a-file">
+<h2>By uploading a file<a class="headerlink" href="#by-uploading-a-file" title="Permalink to this headline">¶</a></h2>
+<p>Backdrop also accepts file uploads through its admin interface. Log on with your signon account and you will be presented with a list of buckets you can upload to. Upload files should be in CSV or Excel (depending what has been configured for your bucket). The first row must contain the field names and each subsequent line is values for a single record. The same rules around field names and special fields apply as for the JSON API (see below).</p>
+</div>
+<div class="section" id="what-is-a-record">
+<h2>What is a record?<a class="headerlink" href="#what-is-a-record" title="Permalink to this headline">¶</a></h2>
+<p>A record is a flat (not nested) JSON object with zero or more attributes that can be saved into backdrop and aggregated on at a later stage. In order to be a valid record it must comply to some rules.</p>
+<div class="section" id="valid-field-names">
+<h3>Valid field names<a class="headerlink" href="#valid-field-names" title="Permalink to this headline">¶</a></h3>
+<p>All record field names:</p>
+<ul class="simple">
+<li>must be alphanumeric</li>
+<li>must start with a letter</li>
+<li>may contain underscores</li>
+<li>some special field names start with an underscore</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">{&#8220;name&#8221;: &#8220;Jane&#8221;, &#8220;home_town&#8221;: &#8220;Godalming&#8221;}</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>{&#8220;name&#8221;: &#8220;Jane&#8221;, &#8220;home town&#8221;: &#8220;Godalming&#8221;} # Spaces are not allowed</p>
+<p>{&#8220;_name&#8221;: &#8220;Jane&#8221;, &#8220;home_town&#8221;: &#8220;Godalming&#8221;} # Underscore prefix is reserved</p>
+<p class="last">{&#8220;1_name&#8221;: &#8220;Jane&#8221;, &#8220;2_home_town&#8221;: &#8220;Godalming&#8221;} # Non-alphanumeric prefix is not allowed</p>
+</div>
+</div>
+<div class="section" id="special-fields">
+<h3>Special fields<a class="headerlink" href="#special-fields" title="Permalink to this headline">¶</a></h3>
+<p>Backdrop understands some special field names that it will treat in specific ways.</p>
+<div class="section" id="the-id-field">
+<h4>The <cite>_id</cite> field<a class="headerlink" href="#the-id-field" title="Permalink to this headline">¶</a></h4>
+<p>The <cite>_id</cite> field is a unique identifier (or primary key) for the record. You can use this if you are going to want to update records or prevent defaults. When sending a record to backdrop if a record with the provided <cite>_id</cite> already exists in the bucket it will be overwriten.</p>
+<p>The <cite>_id</cite> field:</p>
+<ul class="simple">
+<li>must be a string</li>
+<li>must not contain spaces</li>
+<li>must not be empty</li>
+</ul>
+</div>
+<div class="section" id="the-timestamp-field">
+<h4>The <cite>_timestamp</cite> field<a class="headerlink" href="#the-timestamp-field" title="Permalink to this headline">¶</a></h4>
+<p>The <cite>_timestamp</cite> field is the central field when working with time series data. It represents the time stamp of a record. It allows you to query by time ranges and aggregate by predefined time periods (ie. week, month).</p>
+<p>The <cite>_timestamp</cite> field:</p>
+<ul class="simple">
+<li>must be a string</li>
+<li>must be of the form (<cite>2013-12-31T00:00:00+00:00</cite>)</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Sending data to backdrop</a><ul>
+<li><a class="reference internal" href="#by-http-api">By HTTP API</a></li>
+<li><a class="reference internal" href="#by-uploading-a-file">By uploading a file</a></li>
+<li><a class="reference internal" href="#what-is-a-record">What is a record?</a><ul>
+<li><a class="reference internal" href="#valid-field-names">Valid field names</a></li>
+<li><a class="reference internal" href="#special-fields">Special fields</a><ul>
+<li><a class="reference internal" href="#the-id-field">The <cite>_id</cite> field</a></li>
+<li><a class="reference internal" href="#the-timestamp-field">The <cite>_timestamp</cite> field</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="instrumenting-your-site.html"
+                        title="previous chapter">Instrumenting your site</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/sending-data-to-backdrop.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="instrumenting-your-site.html" title="Instrumenting your site"
+             >previous</a> |</li>
+        <li><a href="index.html">Performance Platform Manual</a> &raquo;</li> 
+      </ul>
+    </div>
+<div class="footer">
+    &copy; Copyright 2013, Performance Platform.
+  Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2b1.
+  <br />Theme based on <a href="http://readthedocs.org/">Read The Docs</a>
+
+</div>
+
+
+
+
+
+  </body>
+</html>

@@ -15,7 +15,8 @@ The Performance Platform is a set of tools that, together, allow you to monitor 
 .. toctree::
   :maxdepth: 2
 
-  putting-data-in
+  instrumenting-your-site
+  sending-data-to-backdrop
 
 
 Indices and tables
