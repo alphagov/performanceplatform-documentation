@@ -3,6 +3,8 @@ The Performance Platform Manual
 
 Welcome to the Performance Platform manual. This is where you can learn about using and integrating with the Performance Platform.
 
+A high-level presentation explaining what the Performance Platform is and a diagram of its architecture is at https://docs.google.com/file/d/0BzHtp-TVex92WXg5ZFN2WWE0NmM/edit?usp=sharing
+
 .. warning::
   This documentation is not ready for consumption
 
