@@ -18,7 +18,8 @@ when integrating with Google Analytics events are sent using Google's event trac
 https://developers.google.com/analytics/devguides/collections/gajs/eventTrackerGuide.
 
 For code and instructions on how to use StagePrompt see the Github repo and readme: https://github.com/alphagov/backdrop-send.
-When the use StagePrompt
+
+When to use StagePrompt
 ========================
 
 Dependencies:
