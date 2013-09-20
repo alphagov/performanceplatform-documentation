@@ -1,7 +1,7 @@
-Stageprompt
+StagePrompt
 ===========
 
-**Stageprompt** is a small javascript library which helps instrument
+**StagePrompt** is a small javascript library which helps instrument
 a user journey. It does not provide the analytics - you will need an
 analytics provider such as Google Analytics or Piwik - but:
 
@@ -29,7 +29,7 @@ Dependencies:
 
 Considerations:
 
-Stageprompt is designed to provide a basic level of user journey tracking and to record 
+StagePrompt is designed to provide a basic level of user journey tracking and to record 
 this data in a way consistent with other government transactions. It integrates well with 
 the Performance Platform.
 
@@ -38,4 +38,4 @@ is already set up. A javascript file must be included on each page where it is u
 the html of the user journey will need to be tagged.
 
 If a user journey has already been instrumented then StagePrompt may not be required; however,
-if the journey has not yet been instrumented then Stageprompt is a good choice.
+if the journey has not yet been instrumented then StagePrompt is a good choice.
