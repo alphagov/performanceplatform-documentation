@@ -11,3 +11,7 @@ Once Sphinx is installed the documentation can be built and served with make::
 
 
 .. _Sphinx: http://sphinx-doc.org/
+
+## Temporary list of topics:
+  - Stageprompt https://github.com/alphagov/libretto/blob/master/stageprompt.rst
+  - Sending data to backdrop https://github.com/alphagov/libretto/blob/master/sending-data-to-backdrop.rst
