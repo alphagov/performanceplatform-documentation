@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+
+    <title>The Transactions Explorer &mdash; Performance Platform Manual</title>
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+
+
+    
+    <link rel="stylesheet" href="../_static/rtd.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../_static/searchtools.js"></script>
+    <link rel="top" title="Performance Platform Manual" href="../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../index.html">Performance Platform Manual</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="the-transactions-explorer">
+<h1>The Transactions Explorer<a class="headerlink" href="#the-transactions-explorer" title="Permalink to this headline">¶</a></h1>
+<p>The Transactions Explorer is a statically generated website in HTML
+and javascript. The site is generated from a csv file which is
+downloaded using the Google drive api.</p>
+<div class="section" id="building-the-site">
+<h2>Building the Site<a class="headerlink" href="#building-the-site" title="Permalink to this headline">¶</a></h2>
+<p>Assuming you have the project checked out and all tests passing...</p>
+<p>1. Ensure you have access to the &#8220;Transactions Explorer [feed]&#8221; Google doc.
+(at the time of writing the url is
+<a class="reference external" href="https://docs.google.com/a/digital.cabinet-office.gov.uk/spreadsheet/ccc?key=0AiLXeWvTKFmBdFpxdEdHUWJCYnVMS0lnUHJDelFVc0E#gid=44">https://docs.google.com/a/digital.cabinet-office.gov.uk/spreadsheet/ccc?key=0AiLXeWvTKFmBdFpxdEdHUWJCYnVMS0lnUHJDelFVc0E#gid=44</a>)</p>
+<ol class="arabic" start="2">
+<li><p class="first">Enable the Google Drive API on the Google API console: <a class="reference external" href="https://code.google.com/apis/console">https://code.google.com/apis/console</a></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>If you aren&#8217;t already using the API console click on &#8216;create new project&#8217; when prompted</li>
+<li>Change the status of Drive API to on in the services tab</li>
+<li>On the API access tab click on &#8216;Create an OAuth 2.0 client ID...&#8217; or &#8216;Create another client ID...&#8217;</li>
+<li>Choose installed application</li>
+<li>Download the JSON file to the data directory</li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+<p>3. Run <tt class="docutils literal"><span class="pre">python</span> <span class="pre">fetch-csv.py</span></tt> this will download the google doc as a csv into the data folder.
+(To get a newer version of the csv run this command again).</p>
+<p>4. Run <tt class="docutils literal"><span class="pre">python</span> <span class="pre">create_pages.py</span></tt> this will create a directory called output and render
+the transactions explorer pages, the public consumable csv and a the search.json file
+into that folder. It will also copy across all of the javascript needed for the search
+and treemap features.</p>
+<p>5. You can browse the site by running <tt class="docutils literal"><span class="pre">./serve.sh</span></tt> this will start a stub http server
+which will serve the pages without the .html postfix from <a class="reference external" href="http://localhost:8080/">http://localhost:8080/</a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">The Transactions Explorer</a><ul>
+<li><a class="reference internal" href="#building-the-site">Building the Site</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/transactions-explorer/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../index.html">Performance Platform Manual</a> &raquo;</li> 
+      </ul>
+    </div>
+<div class="footer">
+    &copy; Copyright 2013, Performance Platform.
+  Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2b1.
+  <br />Theme based on <a href="http://readthedocs.org/">Read The Docs</a>
+
+</div>
+
+
+
+
+
+  </body>
+</html>
