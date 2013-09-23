@@ -12,7 +12,7 @@ git rev-parse --verify HEAD >/dev/null || exit 1
 set -e
 
 # Make sure we have the gh-pages branch locally
-if [ ! $(git branch -l | grep gh-pages) ]; then
+if [ ! $(git branch -l | grep ' gh-pages$') ]; then
   git fetch origin
   git checkout -b $BRANCH origin/$BRANCH
   git checkout master
