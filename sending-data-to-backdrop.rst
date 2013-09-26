@@ -79,3 +79,7 @@ The `_timestamp` field:
 
 - must be a string
 - must be of the form (`2013-12-31T00:00:00+00:00`)
+
+.. note::
+
+  Atom says some nice stuff about date formats - we should take a look at that.
