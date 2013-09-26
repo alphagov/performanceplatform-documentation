@@ -31,7 +31,6 @@
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/searchtools.js"></script>
     <link rel="top" title="Performance Platform Manual" href="index.html" />
-    <link rel="next" title="StagePrompt" href="StagePrompt.html" />
     <link rel="prev" title="Instrumenting your site" href="instrumenting-your-site.html" /> 
   </head>
   <body>
@@ -41,9 +40,6 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="StagePrompt.html" title="StagePrompt"
-             accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="instrumenting-your-site.html" title="Instrumenting your site"
              accesskey="P">previous</a> |</li>
@@ -61,7 +57,7 @@
 <p>So you have a bucket and an access token, how do you actually get your data into backdrop?</p>
 <div class="section" id="by-http-api">
 <h2>By HTTP API<a class="headerlink" href="#by-http-api" title="Permalink to this headline">¶</a></h2>
-<p>Backdrop exposes a very small HTTP API for pushing data in. There is one endpoint per bucket that can accept one or more JSON records being sent to it vi a POST. You authorize each request by adding a an Authorization header with the secret access token you should have been provided for each bucket.</p>
+<p>Backdrop exposes a very small HTTP API for pushing data in. There is one endpoint per bucket that can accept one or more JSON records being sent to it vi a POST. You authorize each request by adding an Authorization header with the secret access token you should have been provided for each bucket.</p>
 <p>In summary:</p>
 <ul class="simple">
 <li>The URL should be <cite>http://&lt;backdrop-write-host&gt;/&lt;bucket-name&gt;</cite></li>
@@ -123,6 +119,10 @@
 <li>must be a string</li>
 <li>must be of the form (<cite>2013-12-31T00:00:00+00:00</cite>)</li>
 </ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Atom says some nice stuff about date formats - we should take a look at that.</p>
+</div>
 </div>
 </div>
 </div>
@@ -155,9 +155,6 @@
   <h4>Previous topic</h4>
   <p class="topless"><a href="instrumenting-your-site.html"
                         title="previous chapter">Instrumenting your site</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="StagePrompt.html"
-                        title="next chapter">StagePrompt</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/sending-data-to-backdrop.txt"
@@ -186,9 +183,6 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
-        <li class="right" >
-          <a href="StagePrompt.html" title="StagePrompt"
-             >next</a> |</li>
         <li class="right" >
           <a href="instrumenting-your-site.html" title="Instrumenting your site"
              >previous</a> |</li>
