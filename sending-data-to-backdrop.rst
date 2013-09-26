@@ -5,7 +5,7 @@ So you have a bucket and an access token, how do you actually get your data into
 
 By HTTP API
 -----------
-Backdrop exposes a very small HTTP API for pushing data in. There is one endpoint per bucket that can accept one or more JSON records being sent to it vi a POST. You authorize each request by adding a an Authorization header with the secret access token you should have been provided for each bucket.
+Backdrop exposes a very small HTTP API for pushing data in. There is one endpoint per bucket that can accept one or more JSON records being sent to it vi a POST. You authorize each request by adding an Authorization header with the secret access token you should have been provided for each bucket.
 
 In summary:
 
