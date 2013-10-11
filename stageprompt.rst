@@ -11,7 +11,7 @@ analytics provider such as Google Analytics or Piwik - but:
 - It gives you an abstraction layer in case you change analytics providers in future
 - It provides a controlled vocabulary which allows you to compare your user journey with others more easily
 
-Strageprompt is the 'glue code' for integrating the page with the analytics provider
+StagePrompt is the 'glue code' for integrating the page with the analytics provider
 allowing you to easily record events such as *user loads page x* or *user opens inline
 help module y*
 
