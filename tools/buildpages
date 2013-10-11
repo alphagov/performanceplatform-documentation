@@ -36,3 +36,6 @@ git branch -f "$BRANCH" "$COMMIT"
 
 # Remove staged changes from index
 git reset -q -- "$BUILDDIR"
+
+# Push gh-pages branch to remote
+git push origin gh-pages
