@@ -1,3 +1,5 @@
+.. _stageprompt:
+
 StagePrompt
 ===========
 
@@ -14,13 +16,16 @@ allowing you to easily record events such as *user loads page x* or *user opens 
 help module y*
 
 The events which StagePrompt captures are stored by the analytics provider. For example
-when integrating with Google Analytics events are sent using Google's event tracking API:
-https://developers.google.com/analytics/devguides/collections/gajs/eventTrackerGuide.
+when integrating with Google Analytics events are sent using `Google's event tracking API`_.
 
-For code and instructions on how to use StagePrompt see the Github repo and readme: https://github.com/alphagov/backdrop-send.
+For code and instructions on how to use StagePrompt see the `Github repo and readme`_.
+
+.. _Google's event tracking API: https://developers.google.com/analytics/devguides/collection/gajs/eventTrackerGuide
+.. _Github repo and readme: https://github.com/alphagov/stageprompt
+
 
 When to use StagePrompt
-========================
+-----------------------
 
 Dependencies:
 
