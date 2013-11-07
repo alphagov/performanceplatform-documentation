@@ -19,7 +19,7 @@ The Performance Platform is a set of tools that, together, allow you to monitor 
 
   instrumenting-your-site
   sending-data-to-backdrop
-  StagePrompt
+  stageprompt
 
 
 Indices and tables
