@@ -9,7 +9,7 @@ Backdrop exposes a very small HTTP API for pushing data in. There is one endpoin
 
 In summary:
 
-- The URL should be `http://<backdrop-write-host>/<bucket-name>`
+- The URL should be `https://<backdrop-write-host>/<bucket-name>`, where `backdrop-write-host` is eg `www.preview.performance.service.gov.uk`
 - The content and content type must be JSON.
 - There must be a valid Authorization header.
 
