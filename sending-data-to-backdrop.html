@@ -64,7 +64,7 @@
 <p>Backdrop exposes a very small HTTP API for pushing data in. There is one endpoint per bucket that can accept one or more JSON records being sent to it vi a POST. You authorize each request by adding an Authorization header with the secret access token you should have been provided for each bucket.</p>
 <p>In summary:</p>
 <ul class="simple">
-<li>The URL should be <cite>http://&lt;backdrop-write-host&gt;/&lt;bucket-name&gt;</cite></li>
+<li>The URL should be <cite>https://&lt;backdrop-write-host&gt;/&lt;bucket-name&gt;</cite>, where <cite>backdrop-write-host</cite> is eg <cite>www.preview.performance.service.gov.uk</cite></li>
 <li>The content and content type must be JSON.</li>
 <li>There must be a valid Authorization header.</li>
 </ul>
