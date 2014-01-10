@@ -23,6 +23,8 @@ Often you'll need to send multiple records to backdrop at once. You can do this 
 
   curl -X POST -d '[{"name":"Jane"},{"name":"John"}]' -H 'Authorization: Bearer <your-token>' -H 'Content-type: application/json' 'http://<backdrop-write-host>/<bucket-name>'
 
+.. warning:: When reading back data you've pushed to the platform, beware of server-side caching. It's advisable to develop against a local instance of the platform with no caching to ensure the data you're seeing is up-to-date.
+
 By uploading a file
 -------------------
 
