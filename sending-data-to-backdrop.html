@@ -75,6 +75,10 @@
 <p>Often you&#8217;ll need to send multiple records to backdrop at once. You can do this by sending an array of records:</p>
 <div class="highlight-python"><pre>curl -X POST -d '[{"name":"Jane"},{"name":"John"}]' -H 'Authorization: Bearer &lt;your-token&gt;' -H 'Content-type: application/json' 'http://&lt;backdrop-write-host&gt;/&lt;bucket-name&gt;'</pre>
 </div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">When reading back data you&#8217;ve pushed to the platform, beware of server-side caching. It&#8217;s advisable to develop against a local instance of the platform with no caching to ensure the data you&#8217;re seeing is up-to-date.</p>
+</div>
 </div>
 <div class="section" id="by-uploading-a-file">
 <h2>By uploading a file<a class="headerlink" href="#by-uploading-a-file" title="Permalink to this headline">¶</a></h2>
