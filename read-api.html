@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
 
-    <title>Libretto - The Performance Platform Manual &mdash; Performance Platform Manual</title>
+    <title>Read API &mdash; Performance Platform Manual</title>
 
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
 
@@ -30,7 +30,8 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/searchtools.js"></script>
-    <link rel="top" title="Performance Platform Manual" href="index.html" /> 
+    <link rel="top" title="Performance Platform Manual" href="index.html" />
+    <link rel="prev" title="Stageprompt" href="stageprompt.html" /> 
   </head>
   <body>
     <div class="related">
@@ -39,6 +40,9 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="stageprompt.html" title="Stageprompt"
+             accesskey="P">previous</a> |</li>
         <li><a href="index.html">Performance Platform Manual</a> &raquo;</li> 
       </ul>
     </div>  
@@ -48,23 +52,30 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="libretto-the-performance-platform-manual">
-<h1>Libretto - The Performance Platform Manual<a class="headerlink" href="#libretto-the-performance-platform-manual" title="Permalink to this headline">¶</a></h1>
-<p>To build it locally make sure you have <a class="reference external" href="http://sphinx-doc.org/">Sphinx</a> installed. You can install it with pip:</p>
-<div class="highlight-python"><pre>pip install -r requirements.txt</pre>
-</div>
-<p>Once Sphinx is installed the documentation can be built and served with make:</p>
-<div class="highlight-python"><pre>make html serve</pre>
-</div>
+  <div class="section" id="read-api">
+<span id="id1"></span><h1>Read API<a class="headerlink" href="#read-api" title="Permalink to this headline">¶</a></h1>
+<p>The following parameters can be specified when using the Read API:</p>
 <dl class="docutils">
-<dt>Temporary list of topics:</dt>
-<dd><ul class="first last simple">
-<li>Instrumenting your site <a class="reference external" href="https://github.com/alphagov/libretto/blob/master/instrumenting-your-site.rst">https://github.com/alphagov/libretto/blob/master/instrumenting-your-site.rst</a></li>
-<li>Sending data to backdrop <a class="reference external" href="https://github.com/alphagov/libretto/blob/master/sending-data-to-backdrop.rst">https://github.com/alphagov/libretto/blob/master/sending-data-to-backdrop.rst</a></li>
-<li>Stageprompt <a class="reference external" href="https://github.com/alphagov/libretto/blob/master/stageprompt.rst">https://github.com/alphagov/libretto/blob/master/stageprompt.rst</a></li>
-<li>Read API <a class="reference external" href="https://github.com/alphagov/libretto/blob/master/read-api.rst">https://github.com/alphagov/libretto/blob/master/read-api.rst</a></li>
-</ul>
-</dd>
+<dt>&#8216;start_at&#8217;</dt>
+<dd>The date from which a date range starts. Used in conjunction with &#8216;end_at&#8217;.</dd>
+<dt>&#8216;end_at&#8217;</dt>
+<dd>The date from which a date range ends. Used in conjunction with &#8216;start_at&#8217;.</dd>
+<dt>&#8216;filter_by&#8217;</dt>
+<dd>A field to filter by. Must be a field name and value separated by a colon (:) eg. &#8216;authority:Westminster&#8217;.</dd>
+<dt>&#8216;period&#8217;</dt>
+<dd>The unit we want the results to be in. Must be one of &#8216;hour&#8217;, &#8216;day&#8217;, &#8216;week&#8217;, &#8216;month&#8217; or &#8216;quarter&#8217;.</dd>
+<dt>&#8216;group_by&#8217;</dt>
+<dd>A field to group by. Must be an existing field name.</dd>
+<dt>&#8216;sort_by&#8217;</dt>
+<dd>A field to sort by. Must be a field name and sort direction (&#8216;ascending&#8217; or &#8216;descending&#8217;) separated by a colon (:) eg. &#8216;authority:ascending&#8217;.</dd>
+<dt>&#8216;limit&#8217;</dt>
+<dd>A maximum amount of values to return. Must be a positive integer.</dd>
+<dt>&#8216;collect&#8217;</dt>
+<dd>A field to perform an agregation operation on. Must be a field name and sort direction (&#8216;sum&#8217;, &#8216;count&#8217;, &#8216;set&#8217; or &#8216;mean&#8217;) separated by a colon (:) eg. &#8216;size:mean&#8217;.</dd>
+<dt>&#8216;date&#8217;</dt>
+<dd>When specified with &#8216;delta&#8217; (and instead of &#8216;start_at&#8217; and &#8216;end_at&#8217;) determines one end of a relative date range. If only &#8216;delta&#8217; is specified the current datetime will be used.</dd>
+<dt>&#8216;delta&#8217;</dt>
+<dd>When specified instead of &#8216;start_at&#8217; and &#8216;end_at&#8217;, is added to &#8216;date&#8217; (which will be now if unspecified) to determine the other end of a relative date range. This is measured in units of &#8216;period&#8217; and may be negative.</dd>
 </dl>
 </div>
 
@@ -74,9 +85,12 @@
       </div>
       <div class="sphinxsidebar">
         <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="stageprompt.html"
+                        title="previous chapter">Stageprompt</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
-    <li><a href="_sources/README.txt"
+    <li><a href="_sources/read-api.txt"
            rel="nofollow">Show Source</a></li>
   </ul>
 <div id="searchbox" style="display: none">
@@ -102,6 +116,9 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="stageprompt.html" title="Stageprompt"
+             >previous</a> |</li>
         <li><a href="index.html">Performance Platform Manual</a> &raquo;</li> 
       </ul>
     </div>
