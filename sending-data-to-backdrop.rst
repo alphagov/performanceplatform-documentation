@@ -55,7 +55,7 @@ All record field names:
 
   {"_name": "Jane", "home_town": "Godalming"} # Underscore prefix is reserved
 
-  {"1_name": "Jane", "2_home_town": "Godalming"} # Non-alphanumeric prefix is not allowed
+  {"1_name": "Jane", "2_home_town": "Godalming"} # Numeric prefixes are not allowed
 
 
 Special fields
