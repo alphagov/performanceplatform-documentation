@@ -91,8 +91,8 @@
 <h3>Valid field names<a class="headerlink" href="#valid-field-names" title="Permalink to this headline">¶</a></h3>
 <p>All record field names:</p>
 <ul class="simple">
-<li>must be alphanumeric</li>
 <li>must start with a letter</li>
+<li>must be alphanumeric</li>
 <li>may contain underscores</li>
 <li>some special field names start with an underscore</li>
 </ul>
@@ -104,7 +104,7 @@
 <p class="first admonition-title">Warning</p>
 <p>{&#8220;name&#8221;: &#8220;Jane&#8221;, &#8220;home town&#8221;: &#8220;Godalming&#8221;} # Spaces are not allowed</p>
 <p>{&#8220;_name&#8221;: &#8220;Jane&#8221;, &#8220;home_town&#8221;: &#8220;Godalming&#8221;} # Underscore prefix is reserved</p>
-<p class="last">{&#8220;1_name&#8221;: &#8220;Jane&#8221;, &#8220;2_home_town&#8221;: &#8220;Godalming&#8221;} # Non-alphanumeric prefix is not allowed</p>
+<p class="last">{&#8220;1_name&#8221;: &#8220;Jane&#8221;, &#8220;2_home_town&#8221;: &#8220;Godalming&#8221;} # First character must be a letter</p>
 </div>
 </div>
 <div class="section" id="special-fields">

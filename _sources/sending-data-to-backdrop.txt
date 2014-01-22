@@ -40,8 +40,8 @@ Valid field names
 
 All record field names:
 
-- must be alphanumeric
 - must start with a letter
+- must be alphanumeric
 - may contain underscores
 - some special field names start with an underscore
 
@@ -55,7 +55,7 @@ All record field names:
 
   {"_name": "Jane", "home_town": "Godalming"} # Underscore prefix is reserved
 
-  {"1_name": "Jane", "2_home_town": "Godalming"} # Non-alphanumeric prefix is not allowed
+  {"1_name": "Jane", "2_home_town": "Godalming"} # First character must be a letter
 
 
 Special fields
