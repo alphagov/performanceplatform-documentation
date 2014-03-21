@@ -31,7 +31,7 @@
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="_static/searchtools.js"></script>
     <link rel="top" title="Performance Platform Manual" href="index.html" />
-    <link rel="next" title="Stageprompt" href="stageprompt.html" />
+    <link rel="next" title="Send to Backdrop" href="send-to-backdrop/index.html" />
     <link rel="prev" title="Instrumenting your site" href="instrumenting-your-site.html" /> 
   </head>
   <body>
@@ -42,7 +42,7 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="stageprompt.html" title="Stageprompt"
+          <a href="send-to-backdrop/index.html" title="Send to Backdrop"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="instrumenting-your-site.html" title="Instrumenting your site"
@@ -58,6 +58,11 @@
             
   <div class="section" id="sending-data-to-backdrop">
 <h1>Sending data to backdrop<a class="headerlink" href="#sending-data-to-backdrop" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="send-to-backdrop/index.html">Send to Backdrop</a></li>
+</ul>
+</div>
 <p>So you have a bucket and an access token, how do you actually get your data into backdrop?</p>
 <div class="section" id="by-http-api">
 <h2>By HTTP API<a class="headerlink" href="#by-http-api" title="Permalink to this headline">¶</a></h2>
@@ -68,7 +73,7 @@
 <li>The content and content type must be JSON.</li>
 <li>There must be a valid Authorization header.</li>
 </ul>
-<p>The .. _backdropsend: <a class="reference external" href="https://github.com/alphagov/backdropsend">https://github.com/alphagov/backdropsend</a> tool provides a command line interface to the API.</p>
+<p>The <a class="reference internal" href="send-to-backdrop/index.html"><em>Send to Backdrop</em></a> tool provides a command line interface to the API.</p>
 <p>See the example below using curl (all examples using curl 7.24):</p>
 <div class="highlight-python"><pre>curl -X POST -d '{"name":"Jane"}' -H 'Authorization: Bearer &lt;your-token&gt;' -H 'Content-type: application/json' 'http://&lt;backdrop-write-host&gt;/&lt;bucket-name&gt;'</pre>
 </div>
@@ -165,8 +170,8 @@
   <p class="topless"><a href="instrumenting-your-site.html"
                         title="previous chapter">Instrumenting your site</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="stageprompt.html"
-                        title="next chapter">Stageprompt</a></p>
+  <p class="topless"><a href="send-to-backdrop/index.html"
+                        title="next chapter">Send to Backdrop</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="_sources/sending-data-to-backdrop.txt"
@@ -196,7 +201,7 @@
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="stageprompt.html" title="Stageprompt"
+          <a href="send-to-backdrop/index.html" title="Send to Backdrop"
              >next</a> |</li>
         <li class="right" >
           <a href="instrumenting-your-site.html" title="Instrumenting your site"
