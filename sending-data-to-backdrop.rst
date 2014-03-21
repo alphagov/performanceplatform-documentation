@@ -13,7 +13,7 @@ In summary:
 - The content and content type must be JSON.
 - There must be a valid Authorization header.
 
-The .. _backdropsend: https://github.com/alphagov/backdropsend tool provides a command line interface to the API.
+The `backdropsend <https://github.com/alphagov/backdropsend>`_ tool provides a command line interface to the API.
 
 See the example below using curl (all examples using curl 7.24)::
 
