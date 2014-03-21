@@ -1,6 +1,11 @@
 Sending data to backdrop
 ========================
 
+.. toctree::
+  :maxdepth: 2
+
+  send-to-backdrop/index
+
 So you have a bucket and an access token, how do you actually get your data into backdrop?
 
 By HTTP API
@@ -13,7 +18,7 @@ In summary:
 - The content and content type must be JSON.
 - There must be a valid Authorization header.
 
-The `backdropsend <https://github.com/alphagov/backdropsend>`_ tool provides a command line interface to the API.
+The :doc:`send-to-backdrop/index` tool provides a command line interface to the API.
 
 See the example below using curl (all examples using curl 7.24)::
 
