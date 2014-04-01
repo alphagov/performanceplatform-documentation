@@ -6,7 +6,7 @@ get your data into the Performance Platform.
 
 https://github.com/alphagov/backdrop-send
 
-Things it will hopefully do include:
+Features it provides include:
 
-* Provide a simple way to consume your JSON and upload it
-* Retrying sending the data if Backdrop returns an error
+* a simple way to consume your JSON and upload it
+* retrying sending the data if Backdrop returns an error
