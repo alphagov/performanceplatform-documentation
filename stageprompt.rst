@@ -4,12 +4,12 @@ Stageprompt
 ===========
 
 **Stageprompt** is a small javascript library which helps instrument
-a user journey. It does not provide the analytics - you will need an
-analytics provider such as Google Analytics or Piwik - but:
+a user journey. It does not provide the analytics -- you will need an
+analytics provider such as Google Analytics or Piwik -- but it:
 
-- It is easier to install on events than native Google Analytics
-- It gives you an abstraction layer in case you change analytics providers in future
-- It provides a controlled vocabulary which allows you to compare your user journey with others more easily
+- is easier to install on events than native Google Analytics
+- gives you an abstraction layer in case you change analytics providers in future
+- provides a controlled vocabulary which allows you to compare your user journey with others more easily
 
 Stageprompt is the 'glue code' for integrating the page with the analytics provider
 allowing you to easily record events such as *user loads page x* or *user opens inline

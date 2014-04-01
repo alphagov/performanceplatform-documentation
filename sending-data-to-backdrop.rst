@@ -12,11 +12,11 @@ By HTTP API
 -----------
 Backdrop exposes a very small HTTP API for pushing data in. There is one endpoint per bucket that can accept one or more JSON records being sent to it vi a POST. You authorize each request by adding an Authorization header with the secret access token you should have been provided for each bucket.
 
-In summary:
+The client request:
 
-- The URL should be `https://<backdrop-write-host>/<bucket-name>`, where `backdrop-write-host` is eg `www.preview.performance.service.gov.uk`
-- The content and content type must be JSON.
-- There must be a valid Authorization header.
+- should use a URL like `https://<backdrop-write-host>/<bucket-name>`, where `backdrop-write-host` is eg `www.preview.performance.service.gov.uk`
+- must have a content type of application/json
+- must have a valid Authorization header
 
 The :doc:`send-to-backdrop/index` tool provides a command line interface to the API.
 
@@ -91,4 +91,4 @@ The `_timestamp` field:
 
 .. note::
 
-  Atom says some nice stuff about date formats - we should take a look at that.
+  Atom says some nice stuff about date formats -- we should take a look at that.
