@@ -1,5 +1,5 @@
-The Performance Platform Manual
-===============================
+Performance Platform Documentation
+==================================
 
 Central government in the UK handles over 1½ billion transactions per year. We're using data to help improve them.
 

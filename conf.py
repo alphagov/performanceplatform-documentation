@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Libretto documentation build configuration file, created by
+# Performance Platform documentation build configuration file, created by
 # sphinx-quickstart on Wed Jul  3 10:40:23 2013.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -12,6 +12,7 @@
 # serve to show the default.
 
 import sys, os
+import sphinx_rtd_theme
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -40,7 +41,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Libretto'
+project = u'Performance Platform Documentation'
 copyright = u'2013, Performance Platform'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -64,7 +65,7 @@ release = '1.0'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['_build', '_themes']
+exclude_patterns = ['_build']
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
@@ -94,7 +95,7 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'libretto'
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -102,7 +103,7 @@ html_theme = 'libretto'
 #html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = ['_themes']
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -167,7 +168,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Librettodoc'
+htmlhelp_basename = 'performanceplatform-documentationdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -186,7 +187,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'Libretto.tex', u'Libretto Documentation',
+  ('index', 'performanceplatform-documentation.tex', u'Performance Platform Documentation',
    u'Performance Platform', 'manual'),
 ]
 
@@ -216,7 +217,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'libretto', u'Libretto Documentation',
+    ('index', 'performanceplatform-documentation', u'Performance Platform Documentation',
      [u'Performance Platform'], 1)
 ]
 
@@ -230,8 +231,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'Libretto', u'Libretto Documentation',
-   u'Performance Platform', 'Libretto', 'One line description of project.',
+  ('index', 'performanceplatform-documentation', u'Performance Platform Documentation',
+   u'Performance Platform', 'Performance Platform Documentation', 'One line description of project.',
    'Miscellaneous'),
 ]
 
