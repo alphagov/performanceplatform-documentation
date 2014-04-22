@@ -14,16 +14,19 @@ Service Group
   e.g. Carer's Allowance service group includes applications, existing claims, appeals etc
 
 Metric
-  Completion rate, user satisfaction, page load time, uptime etc
+  A specific data series.
+  e.g. completion rate, user satisfaction, page load time, uptime etc
 
 Visualisation
-  Something
+  A way of displaying a data set.
+  e.g. line chart, bar chart, single stat etc
 
 Module
-  Something
+  A module is a metric and a visualisation together.
+  e.g. digital take-up shown as a line chart
 
 Dashboard
-  Something
+  A page showing multiple metrics, typically for a single service.
 
 Data set
   Something
