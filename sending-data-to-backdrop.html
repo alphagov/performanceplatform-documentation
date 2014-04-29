@@ -112,22 +112,22 @@
 <li class="toctree-l1"><a class="reference internal" href="send-to-backdrop/index.html">Send to Backdrop</a></li>
 </ul>
 </div>
-<p>So you have a bucket and an access token, how do you actually get your data into backdrop?</p>
+<p>So you have a data-set and an access token, how do you actually get your data into backdrop?</p>
 <div class="section" id="by-http-api">
 <h2>By HTTP API<a class="headerlink" href="#by-http-api" title="Permalink to this headline">¶</a></h2>
-<p>Backdrop exposes a very small HTTP API for pushing data in. There is one endpoint per bucket that can accept one or more JSON records being sent to it vi a POST. You authorize each request by adding an Authorization header with the secret access token you should have been provided for each bucket.</p>
+<p>Backdrop exposes a very small HTTP API for pushing data in. There is one endpoint per data-set that can accept one or more JSON records being sent to it vi a POST. You authorize each request by adding an Authorization header with the secret access token you should have been provided for each data-set.</p>
 <p>The client request:</p>
 <ul class="simple">
-<li>should use a URL like <cite>https://&lt;backdrop-write-host&gt;/&lt;bucket-name&gt;</cite>, where <cite>backdrop-write-host</cite> is eg <cite>www.preview.performance.service.gov.uk</cite></li>
+<li>should use a URL like <cite>https://&lt;backdrop-write-host&gt;/&lt;data-set-name&gt;</cite>, where <cite>backdrop-write-host</cite> is eg <cite>www.preview.performance.service.gov.uk</cite></li>
 <li>must have a content type of application/json</li>
 <li>must have a valid Authorization header</li>
 </ul>
 <p>The <a class="reference internal" href="send-to-backdrop/index.html"><em>Send to Backdrop</em></a> tool provides a command line interface to the API.</p>
 <p>See the example below using curl (all examples using curl 7.24):</p>
-<div class="highlight-python"><pre>curl -X POST -d '{"name":"Jane"}' -H 'Authorization: Bearer &lt;your-token&gt;' -H 'Content-type: application/json' 'http://&lt;backdrop-write-host&gt;/&lt;bucket-name&gt;'</pre>
+<div class="highlight-python"><pre>curl -X POST -d '{"name":"Jane"}' -H 'Authorization: Bearer &lt;your-token&gt;' -H 'Content-type: application/json' 'http://&lt;backdrop-write-host&gt;/&lt;data-set-name&gt;'</pre>
 </div>
 <p>Often you&#8217;ll need to send multiple records to backdrop at once. You can do this by sending an array of records:</p>
-<div class="highlight-python"><pre>curl -X POST -d '[{"name":"Jane"},{"name":"John"}]' -H 'Authorization: Bearer &lt;your-token&gt;' -H 'Content-type: application/json' 'http://&lt;backdrop-write-host&gt;/&lt;bucket-name&gt;'</pre>
+<div class="highlight-python"><pre>curl -X POST -d '[{"name":"Jane"},{"name":"John"}]' -H 'Authorization: Bearer &lt;your-token&gt;' -H 'Content-type: application/json' 'http://&lt;backdrop-write-host&gt;/&lt;data-set-name&gt;'</pre>
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
@@ -136,7 +136,7 @@
 </div>
 <div class="section" id="by-uploading-a-file">
 <h2>By uploading a file<a class="headerlink" href="#by-uploading-a-file" title="Permalink to this headline">¶</a></h2>
-<p>Backdrop also accepts file uploads through its admin interface. Log on with your signon account and you will be presented with a list of buckets you can upload to. Upload files should be in CSV or Excel (depending what has been configured for your bucket). The first row must contain the field names and each subsequent line is values for a single record. The same rules around field names and special fields apply as for the JSON API (see below).</p>
+<p>Backdrop also accepts file uploads through its admin interface. Log on with your signon account and you will be presented with a list of data-sets you can upload to. Upload files should be in CSV or Excel (depending what has been configured for your data-set). The first row must contain the field names and each subsequent line is values for a single record. The same rules around field names and special fields apply as for the JSON API (see below).</p>
 </div>
 <div class="section" id="what-is-a-record">
 <h2>What is a record?<a class="headerlink" href="#what-is-a-record" title="Permalink to this headline">¶</a></h2>
@@ -166,7 +166,7 @@
 <p>Backdrop understands some special field names that it will treat in specific ways.</p>
 <div class="section" id="the-id-field">
 <h4>The <cite>_id</cite> field<a class="headerlink" href="#the-id-field" title="Permalink to this headline">¶</a></h4>
-<p>The <cite>_id</cite> field is a unique identifier (or primary key) for the record. You can use this if you are going to want to update records or prevent defaults. When sending a record to backdrop if a record with the provided <cite>_id</cite> already exists in the bucket it will be overwriten.</p>
+<p>The <cite>_id</cite> field is a unique identifier (or primary key) for the record. You can use this if you are going to want to update records or prevent defaults. When sending a record to backdrop if a record with the provided <cite>_id</cite> already exists in the data-set it will be overwriten.</p>
 <p>The <cite>_id</cite> field:</p>
 <ul class="simple">
 <li>must be a string</li>
