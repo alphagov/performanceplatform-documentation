@@ -6,15 +6,15 @@ Sending data to backdrop
 
   send-to-backdrop/index
 
-So you have a bucket and an access token, how do you actually get your data into backdrop?
+So you have a data-set and an access token, how do you actually get your data into backdrop?
 
 By HTTP API
 -----------
-Backdrop exposes a very small HTTP API for pushing data in. There is one endpoint per bucket that can accept one or more JSON records being sent to it vi a POST. You authorize each request by adding an Authorization header with the secret access token you should have been provided for each bucket.
+Backdrop exposes a very small HTTP API for pushing data in. There is one endpoint per data-set that can accept one or more JSON records being sent to it vi a POST. You authorize each request by adding an Authorization header with the secret access token you should have been provided for each data-set.
 
 The client request:
 
-- should use a URL like `https://<backdrop-write-host>/<bucket-name>`, where `backdrop-write-host` is eg `www.preview.performance.service.gov.uk`
+- should use a URL like `https://<backdrop-write-host>/<data-set-name>`, where `backdrop-write-host` is eg `www.preview.performance.service.gov.uk`
 - must have a content type of application/json
 - must have a valid Authorization header
 
@@ -22,18 +22,18 @@ The :doc:`send-to-backdrop/index` tool provides a command line interface to the 
 
 See the example below using curl (all examples using curl 7.24)::
 
-  curl -X POST -d '{"name":"Jane"}' -H 'Authorization: Bearer <your-token>' -H 'Content-type: application/json' 'http://<backdrop-write-host>/<bucket-name>'
+  curl -X POST -d '{"name":"Jane"}' -H 'Authorization: Bearer <your-token>' -H 'Content-type: application/json' 'http://<backdrop-write-host>/<data-set-name>'
 
 Often you'll need to send multiple records to backdrop at once. You can do this by sending an array of records::
 
-  curl -X POST -d '[{"name":"Jane"},{"name":"John"}]' -H 'Authorization: Bearer <your-token>' -H 'Content-type: application/json' 'http://<backdrop-write-host>/<bucket-name>'
+  curl -X POST -d '[{"name":"Jane"},{"name":"John"}]' -H 'Authorization: Bearer <your-token>' -H 'Content-type: application/json' 'http://<backdrop-write-host>/<data-set-name>'
 
 .. warning:: When reading back data you've pushed to the platform, beware of server-side caching. It's advisable to develop against a local instance of the platform with no caching to ensure the data you're seeing is up-to-date.
 
 By uploading a file
 -------------------
 
-Backdrop also accepts file uploads through its admin interface. Log on with your signon account and you will be presented with a list of buckets you can upload to. Upload files should be in CSV or Excel (depending what has been configured for your bucket). The first row must contain the field names and each subsequent line is values for a single record. The same rules around field names and special fields apply as for the JSON API (see below).
+Backdrop also accepts file uploads through its admin interface. Log on with your signon account and you will be presented with a list of data-sets you can upload to. Upload files should be in CSV or Excel (depending what has been configured for your data-set). The first row must contain the field names and each subsequent line is values for a single record. The same rules around field names and special fields apply as for the JSON API (see below).
 
 What is a record?
 -----------------
@@ -71,7 +71,7 @@ Backdrop understands some special field names that it will treat in specific way
 The `_id` field
 +++++++++++++++
 
-The `_id` field is a unique identifier (or primary key) for the record. You can use this if you are going to want to update records or prevent defaults. When sending a record to backdrop if a record with the provided `_id` already exists in the bucket it will be overwriten.
+The `_id` field is a unique identifier (or primary key) for the record. You can use this if you are going to want to update records or prevent defaults. When sending a record to backdrop if a record with the provided `_id` already exists in the data-set it will be overwriten.
 
 The `_id` field:
 
