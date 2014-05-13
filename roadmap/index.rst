@@ -5,7 +5,7 @@ This will sketch out how the platform is intended to evolve and what our immedia
 
 It is an attempt to predict the future, so will be wrong.
 
-It is also public, which I find interesting on another level. When solving problems, it's always fun to record:
+It is also public, which is interesting on another level. When solving problems, it's always fun to record:
 
 * what your assumptions are
 * what your objectives are
@@ -18,12 +18,15 @@ Hopefully the lessons learned from doing this experiment (it doesn't have to be 
 Predictions
 -----------
 
-Current
-^^^^^^^
-
-Most recent
+:ref:`Current <an_2014_05_13>`
 
 Historical
 ^^^^^^^^^^
 
-2014-05-13
+:ref:`an_2014_05_13`
+
+.. toctree::
+  :hidden:
+  :glob:
+
+  201*
