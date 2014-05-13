@@ -1,7 +1,7 @@
 .. _spotlight:
 
-Spotlight
-#########
+Spotlight -- rendering layer
+############################
 
 https://github.com/alphagov/spotlight
 

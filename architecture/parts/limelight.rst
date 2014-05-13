@@ -1,7 +1,7 @@
 .. _limelight:
 
-Limelight
-#########
+Limelight -- legacy rendering
+#############################
 
 https://github.com/alphagov/limelight
 

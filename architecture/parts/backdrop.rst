@@ -1,7 +1,7 @@
 .. _backdrop:
 
-Backdrop
-########
+Backdrop -- HTTP API for persistence and querying
+#################################################
 
 https://github.com/alphagov/backdrop
 

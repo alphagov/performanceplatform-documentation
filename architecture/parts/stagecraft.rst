@@ -1,7 +1,7 @@
 .. _stagecraft:
 
-Stagecraft
-##########
+Stagecraft -- configuration API
+###############################
 
 https://github.com/alphagov/stagecraft
 
