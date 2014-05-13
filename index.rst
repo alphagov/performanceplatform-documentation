@@ -23,10 +23,3 @@ Indices and tables
 ==================
 
 * :ref:`search`
-
-
-.. toctree::
-  :hidden:
-
-  read-api
-  stories
