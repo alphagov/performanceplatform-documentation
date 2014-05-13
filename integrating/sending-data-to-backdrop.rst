@@ -4,7 +4,7 @@ Sending data to backdrop
 .. toctree::
   :maxdepth: 2
 
-  send-to-backdrop/index
+  /send-to-backdrop/index
 
 So you have a data-set and an access token, how do you actually get your data into backdrop?
 
@@ -18,7 +18,7 @@ The client request:
 - must have a content type of application/json
 - must have a valid Authorization header
 
-The :doc:`send-to-backdrop/index` tool provides a command line interface to the API.
+The :doc:`/send-to-backdrop/index` tool provides a command line interface to the API.
 
 See the example below using curl (all examples using curl 7.24)::
 
