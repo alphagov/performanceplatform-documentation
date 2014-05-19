@@ -23,7 +23,7 @@ Predictions
 Historical
 ^^^^^^^^^^
 
-:ref:`an_2014_05_13`
+* :ref:`an_2014_05_13`
 
 .. toctree::
   :hidden:
