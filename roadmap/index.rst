@@ -10,6 +10,7 @@ It is also public, which is interesting on another level. When solving problems,
 * what your assumptions are
 * what your objectives are
 * how that changes as:
+
     * you learn more about the problem you're trying to solve
     * the problem itself changes
 
