@@ -1,7 +1,7 @@
 .. _stageprompt:
 
-Stageprompt
-===========
+Stageprompt -- Analytics adapter
+################################
 
 **Stageprompt** is a small javascript library which helps instrument
 a user journey. It does not provide the analytics -- you will need an

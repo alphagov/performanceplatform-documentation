@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Stageprompt &mdash; Performance Platform Manual</title>
+  <title>Stageprompt – Analytics adapter &mdash; Performance Platform Manual</title>
   
 
   
@@ -24,13 +24,16 @@
 
   
   
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   
 
   
-    <link rel="top" title="Performance Platform Manual" href="index.html"/>
-        <link rel="next" title="Read API" href="read-api.html"/>
-        <link rel="prev" title="Send to Backdrop" href="send-to-backdrop/index.html"/> 
+        <link rel="author" title="About these documents"
+              href="../../about.html"/>
+    <link rel="top" title="Performance Platform Manual" href="../../index.html"/>
+        <link rel="up" title="&lt;no title&gt;" href="index.html"/>
+        <link rel="next" title="Spotlight – rendering layer" href="spotlight.html"/>
+        <link rel="prev" title="Stagecraft – configuration API" href="stagecraft.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -44,9 +47,9 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-nav-search">
-        <a href="index.html" class="fa fa-home"> Performance Platform Documentation</a>
+        <a href="../../index.html" class="fa fa-home"> Performance Platform Documentation</a>
         <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="search.html" method="get">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -58,19 +61,30 @@
         
         
             <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="instrumenting-your-site.html">Instrumenting your site</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sending-data-to-backdrop.html">Sending data to backdrop</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="send-to-backdrop/index.html">Send to Backdrop</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sending-data-to-backdrop.html#by-http-api">By HTTP API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sending-data-to-backdrop.html#by-uploading-a-file">By uploading a file</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sending-data-to-backdrop.html#what-is-a-record">What is a record?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrating/index.html">Integrating</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../integrating/instrumenting-your-site.html">Instrumenting your site</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../integrating/sending-data-to-backdrop.html">Sending data to backdrop</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Stageprompt</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#when-to-use-stageprompt">When to use Stageprompt</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Architecture</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../data-flows.html">Data Flows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="backdrop.html">Backdrop &#8211; HTTP API for persistence and querying</a></li>
+<li class="toctree-l2"><a class="reference internal" href="limelight.html">Limelight &#8211; legacy rendering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stagecraft.html">Stagecraft &#8211; configuration API</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Stageprompt &#8211; Analytics adapter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spotlight.html">Spotlight &#8211; rendering layer</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="read-api.html">Read API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../roadmap/index.html">Roadmap</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../roadmap/index.html#predictions">Predictions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">About</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../about.html#detailed-data">Detailed data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../about.html#all-in-one-place">All in one place</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../about.html#the-bigger-picture">The bigger picture</a></li>
+</ul>
+</li>
 </ul>
 
         
@@ -83,7 +97,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">Performance Platform Documentation</a>
+        <a href="../../index.html">Performance Platform Documentation</a>
       </nav>
 
 
@@ -92,12 +106,16 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
+    <li><a href="../../index.html">Docs</a> &raquo;</li>
       
-    <li>Stageprompt</li>
+          <li><a href="../index.html">Architecture</a> &raquo;</li>
+      
+          <li><a href="index.html">&lt;no title&gt;</a> &raquo;</li>
+      
+    <li>Stageprompt &#8211; Analytics adapter</li>
       <li class="wy-breadcrumbs-aside">
         
-          <a href="_sources/stageprompt.txt" rel="nofollow"> View page source</a>
+          <a href="../../_sources/architecture/parts/stageprompt.txt" rel="nofollow"> View page source</a>
         
       </li>
   </ul>
@@ -105,8 +123,8 @@
 </div>
           <div role="main">
             
-  <div class="section" id="stageprompt">
-<span id="id1"></span><h1>Stageprompt<a class="headerlink" href="#stageprompt" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="stageprompt-analytics-adapter">
+<span id="stageprompt"></span><h1>Stageprompt &#8211; Analytics adapter<a class="headerlink" href="#stageprompt-analytics-adapter" title="Permalink to this headline">¶</a></h1>
 <p><strong>Stageprompt</strong> is a small javascript library which helps instrument
 a user journey. It does not provide the analytics &#8211; you will need an
 analytics provider such as Google Analytics or Piwik &#8211; but it:</p>
@@ -146,10 +164,10 @@ if the journey has not yet been instrumented then Stageprompt is a good choice.<
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="read-api.html" class="btn btn-neutral float-right" title="Read API"/>Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="spotlight.html" class="btn btn-neutral float-right" title="Spotlight – rendering layer"/>Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="send-to-backdrop/index.html" class="btn btn-neutral" title="Send to Backdrop"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="stagecraft.html" class="btn btn-neutral" title="Stagecraft – configuration API"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -177,23 +195,23 @@ if the journey has not yet been instrumented then Stageprompt is a good choice.<
 
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
+            URL_ROOT:'../../',
             VERSION:'1.0',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
         };
     </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
       <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
   
   
-    <script type="text/javascript" src="_static/js/theme.js"></script>
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
   
 
   
