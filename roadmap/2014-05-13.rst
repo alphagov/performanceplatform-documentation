@@ -1,0 +1,66 @@
+.. _an_2014_05_13:
+
+2014-05-13
+##########
+
+The overall theme is that we have gone from treating all the questions about the data as being unanticipated, to being anticipated. We would like to engineer the system to reflect that new knowledge.
+
+.. contents::
+
+
+Backdrop
+========
+
+Backdrop needs to change to more tightly expose different representations. We knew that we didn't know what questions it should be able to answer, so we built a generic query mechanism. This let downstream consumers (read :ref:`spotlight`) get out the data that they want. Now we know more, we'd like to generate responses to the anticipated questions, and bake that knowledge into our domain API.
+
+The read API should look a lot like tabular data. Currently, we're not quite there in some instances. I'd also like to see a move away from allowing generic queries (which are a potential attack vector) and to more static, cachable resources and representations.
+
+Actions
+-------
+* Enumerate data in and data out, in the form of schemas
+* Fix inconsistencies, ideally consolidate to as few schemas as possible
+* Create domain model and accompanying RESTful API to expose those schemas
+
+Limelight
+=========
+
+We would like to kill off :ref:`limelight`. We aren't actively developing this any more, and would hope that spotlight can do everything that limelight did and more. We should try to frame that question on an economic basis and see whether now is the right time to kill it.
+
+Actions
+-------
+* Visit the economic question
+
+Spotlight
+=========
+
+Spotlight currently is working reasonably well. IMHO, too much work has gone into generating stubs for stagecraft, rather than:
+
+* verifying that stagecraft is the right thing
+* implementing that right thing
+
+I would like to see that moved out of spotlight, and a greater separation between generic downstream consumer of backdrop / stagecraft and spotlight-specific configuration.
+
+Actions
+-------
+* Cleanly demarcate spotlight-specific configuration from stagecraft and backdrop. There is a dependency on stable APIs from backdrop and stagecraft for this
+
+Stagecraft
+==========
+
+This was proposed (at the end of last year) and we started work at the end of January. I think a tighter vision of this is required, so that people are clearer on the problems it is intended to solve. We can also validate that those are still problems worth solving and that this is the correct way for now.
+
+Actions
+-------
+* Describe the problems being solved by this component (is it worth the overhead)
+* describe how data is migrated between environments
+* define the security model for users and machines
+
+Stageprompt
+===========
+
+Add Piwik support and others as clients ask for it.
+
+Actions
+-------
+
+N/a

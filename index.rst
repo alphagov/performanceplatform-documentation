@@ -11,22 +11,13 @@ Take a look at a few examples to get an idea of what we do:
 - `Lasting Power of Attorney registrations <https://www.gov.uk/performance/lasting-power-of-attorney>`_
 - `Tax disc renewals <https://www.gov.uk/performance/tax-disc>`_
 
-Several different apps make up the performance platform.
-
-- **Collectors** take your data and feed it into the performance platform
-- **Backdrop** stores data and lets you retrieve it using standardised commands
-- **Spotlight** displays your data in a dashboard, using a range of module designs
-
-
-.. image:: https://docs.google.com/drawings/d/1Kmz0PIsozcMSef-CoBRkx7jexoqEHbSHbdHO-H07WTM/pub?w=960&amp;h=720
-
 .. toctree::
-  :maxdepth: 2
+   :maxdepth: 2
 
-  instrumenting-your-site
-  sending-data-to-backdrop
-  stageprompt
-  read-api
+   integrating/index
+   architecture/index
+   roadmap/index
+   About <about>
 
 
 Indices and tables

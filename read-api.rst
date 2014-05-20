@@ -1,5 +1,7 @@
 .. _read-api:
 
+:orphan:
+
 Read API
 ========
 
