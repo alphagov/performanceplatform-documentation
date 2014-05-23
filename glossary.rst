@@ -4,7 +4,7 @@ Glossary
 .. glossary::
 
   Backdrop
-    An application that is part of the performance platform. It provides the read and write API for data.
+    An application that is part of the performance platform. It provides the :doc:`read and write API</architecture/parts/backdrop>` for data.
 
   Dashboard
     A page showing multiple metrics, typically for a single :term:`service`
@@ -31,7 +31,7 @@ Glossary
     A group of closely related services eg Carer's Allowance service group includes applications, existing claims, appeals etc
 
   Spotlight
-    An application that is part of the performance platform. It is responsible for rendering data from the :term:`Backdrop` API to display visualisations of service performance
+    An application that is part of the performance platform. It is responsible for :doc:`rendering data</architecture/parts/spotlight>` from the :term:`Backdrop` API to display visualisations of service performance
 
   Transaction
     Central govenment in the UK handle 1.5 billion transactions a year eg applications, renewals, bookings, existing claims etc
