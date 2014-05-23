@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>User Stories for documentation &mdash; Performance Platform Manual</title>
+  <title>Glossary &mdash; Performance Platform Manual</title>
   
 
   
@@ -30,7 +30,8 @@
   
         <link rel="author" title="About these documents"
               href="about.html"/>
-    <link rel="top" title="Performance Platform Manual" href="index.html"/> 
+    <link rel="top" title="Performance Platform Manual" href="index.html"/>
+        <link rel="prev" title="Government Performance" href="about.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -57,7 +58,7 @@
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
         
         
-            <ul>
+            <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="integrating/index.html">Integrating</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="integrating/instrumenting-your-site.html">Instrumenting your site</a></li>
 <li class="toctree-l2"><a class="reference internal" href="integrating/sending-data-to-backdrop.html">Sending data to backdrop</a></li>
@@ -82,7 +83,7 @@
 <li class="toctree-l2"><a class="reference internal" href="about.html#the-bigger-picture">The bigger picture</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Glossary</a></li>
 </ul>
 
         
@@ -106,10 +107,10 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>User Stories for documentation</li>
+    <li>Glossary</li>
       <li class="wy-breadcrumbs-aside">
         
-          <a href="_sources/stories.txt" rel="nofollow"> View page source</a>
+          <a href="_sources/glossary.txt" rel="nofollow"> View page source</a>
         
       </li>
   </ul>
@@ -117,88 +118,48 @@
 </div>
           <div role="main">
             
-  <div class="section" id="user-stories-for-documentation">
-<h1>User Stories for documentation<a class="headerlink" href="#user-stories-for-documentation" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="personas">
-<h2>Personas<a class="headerlink" href="#personas" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="glossary">
+<h1>Glossary<a class="headerlink" href="#glossary" title="Permalink to this headline">¶</a></h1>
 <dl class="docutils">
-<dt>Service Manager</dt>
-<dd>person who is responsible for the performance of a service</dd>
-<dt>External Developer</dt>
-<dd>person who is responsible for integrating with the Performance Platform.
-This could be someone both inside and outside of government</dd>
-<dt>Tecnical Architect</dt>
-<dd>person responsible for the coherent development of a product which meets the user needs</dd>
+<dt>Transaction</dt>
+<dd>Central govenment in the UK handle 1.5 billion transactions a year.
+e.g. applications, renewals, bookings, existing claims etc</dd>
+<dt>Service</dt>
+<dd>Central govenment in the UK operates 766 services.
+e.g. Renew you car tax, Apply for Carer&#8217;s Allowance, Book a practical driving test etc</dd>
+<dt>Service Group</dt>
+<dd>A group of closely related services.
+e.g. Carer&#8217;s Allowance service group includes applications, existing claims, appeals etc</dd>
+<dt>Metric</dt>
+<dd>A specific data series.
+e.g. completion rate, user satisfaction, page load time, uptime etc</dd>
+<dt>Visualisation</dt>
+<dd>A way of displaying a data set.
+e.g. line chart, bar chart, single stat etc</dd>
+<dt>Module</dt>
+<dd>A module is a metric and a visualisation together.
+e.g. digital take-up shown as a line chart</dd>
+<dt>Dashboard</dt>
+<dd>A page showing multiple metrics, typically for a single service.</dd>
+<dt>Data set</dt>
+<dd>Something</dd>
+<dt>Data group</dt>
+<dd>Something</dd>
+<dt>Data type</dt>
+<dd>Something</dd>
 </dl>
-</div>
-<div class="section" id="stories">
-<h2>Stories<a class="headerlink" href="#stories" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="why">
-<h3>Why<a class="headerlink" href="#why" title="Permalink to this headline">¶</a></h3>
-<div class="line-block">
-<div class="line">As a Service Manager</div>
-<div class="line">I would like to know what the Performance Platform is</div>
-<div class="line">So that I understand the benefits of integrating with the product</div>
-</div>
-</div>
-<div class="section" id="how">
-<h3>How<a class="headerlink" href="#how" title="Permalink to this headline">¶</a></h3>
-<div class="line-block">
-<div class="line">As a Service Manager</div>
-<div class="line">I would like to know how I can get a dashboard</div>
-<div class="line">So that I can start benefiting from the product</div>
-</div>
-</div>
-<div class="section" id="data-structures">
-<h3>Data structures<a class="headerlink" href="#data-structures" title="Permalink to this headline">¶</a></h3>
-<div class="line-block">
-<div class="line">As an External Developer</div>
-<div class="line">I would like to know what data types I can put into the product</div>
-<div class="line">So that I know what is relevant to my service</div>
-</div>
-</div>
-<div class="section" id="write-api">
-<h3>Write API<a class="headerlink" href="#write-api" title="Permalink to this headline">¶</a></h3>
-<div class="line-block">
-<div class="line">As an External Developer</div>
-<div class="line">I would like to know how to put data into the product</div>
-<div class="line">So that I can write suitable stories in my backlog</div>
-<div class="line-block">
-<div class="line">and have a conversation with my delivery manager / product manager / service manager</div>
-<div class="line">about scheduling work</div>
-</div>
-</div>
-</div>
-<div class="section" id="changes-required-to-my-service">
-<h3>Changes required to my service<a class="headerlink" href="#changes-required-to-my-service" title="Permalink to this headline">¶</a></h3>
-<div class="line-block">
-<div class="line">As an External Developer</div>
-<div class="line">I would like to know how to instrument my digital service</div>
-<div class="line">So that I am confident I am capturing the relevant data</div>
-</div>
-</div>
-<div class="section" id="read-api">
-<h3>Read API<a class="headerlink" href="#read-api" title="Permalink to this headline">¶</a></h3>
-<div class="line-block">
-<div class="line">As an External Developer</div>
-<div class="line">I would like to know how to pull data out of the product</div>
-<div class="line">So that I can create custom visualisations</div>
-</div>
-</div>
-<div class="section" id="rendering-api">
-<h3>Rendering API<a class="headerlink" href="#rendering-api" title="Permalink to this headline">¶</a></h3>
-<div class="line-block">
-<div class="line">As an External Developer</div>
-<div class="line">I would like to know what visualisations are available</div>
-<div class="line">So that I can work out what is relevant to me</div>
-</div>
-</div>
-</div>
 </div>
 
 
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="about.html" class="btn btn-neutral" title="Government Performance"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

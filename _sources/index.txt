@@ -18,6 +18,7 @@ Take a look at a few examples to get an idea of what we do:
    architecture/index
    roadmap/index
    About <about>
+   glossary
 
 
 Indices and tables
