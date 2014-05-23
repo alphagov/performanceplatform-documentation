@@ -10,7 +10,7 @@ Illustration: volume last week for the 3 services mentioned
 Detailed data
 =============
 
-We're giving each service a dashboard, so you can see how many people use each service and where they get stuck, all reported in real time.
+We're giving each :term:`service` a :term:`dashboard`, so you can see how many people use each service and where they get stuck, all reported in real time.
 
 Illustration: 15,782 users on GOV.UK right now
 
@@ -33,4 +33,4 @@ The bigger picture
 ===============
 Get a dashboard
 ===============
-If you work on a government service, we can help you create a dashboard. Find out how your service is performing and how it can be improved.
+If you work on a government service, we can help you create a :term:`dashboard`. Find out how your service is performing and how it can be improved.
