@@ -1,7 +1,7 @@
-:orphan:
+.. _stories:
 
-User Stories for documentation
-##############################
+User Stories
+############
 
 
 Personas
@@ -11,56 +11,52 @@ Service Manager
   person who is responsible for the performance of a service
 External Developer
   person who is responsible for integrating with the Performance Platform.
-  This could be someone both inside and outside of government
-Tecnical Architect
-  person responsible for the coherent development of a product which meets the user needs
+  This could be someone both inside and outside of government. The important
+  aspect is that they are not a part of the Performance Platform development
+  team
 
 Stories
 =======
 
-Why
----
-| As a Service Manager
-| I would like to know what the Performance Platform is
-| So that I understand the benefits of integrating with the product
-
-
-How
----
-| As a Service Manager
-| I would like to know how I can get a dashboard
-| So that I can start benefiting from the product
-
-
-Data structures
---------------- 
-| As an External Developer
-| I would like to know what data types I can put into the product
-| So that I know what is relevant to my service
-
-Write API
----------
-| As an External Developer
-| I would like to know how to put data into the product
-| So that I can write suitable stories in my backlog
-|   and have a conversation with my delivery manager / product manager / service manager
-|   about scheduling work
-
-Changes required to my service
-------------------------------
-| As an External Developer
-| I would like to know how to instrument my digital service
-| So that I am confident I am capturing the relevant data
-
-
-Read API
---------
-| As an External Developer
-| I would like to know how to pull data out of the product
-| So that I can create custom visualisations
-
-Rendering API
--------------
-| As an External Developer
-| I would like to know what visualisations are available
-| So that I can work out what is relevant to me
++-----------------+-------------------------------+------------------------------+
+| As a...         |     I want to...              |  So that...                  |
++=================+===============================+==============================+
+| Service Manager | what the Performance Platform | I understand the benefits of |
+|                 | is and why it's important     | integrating with the product |
++-----------------+-------------------------------+------------------------------+
+| Service Manager | know how much work is         | I can schedule any work      |
+|                 | involved in working with      | needed                       |
+|                 | the Performance Platform      |                              |
++-----------------+-------------------------------+------------------------------+
+|Service Manager  |know what help the Performance | I understand the benefits of |
+|                 |Platform can offer my          | integrating with the product |
+|                 |non-transactional service      |                              |
++-----------------+-------------------------------+------------------------------+
+| Service Manager | know the roadmap of features  | I can know when to wait and  |
+|                 | for the Performance Platform  | when to roll my own          |
++-----------------+-------------------------------+------------------------------+
+| Service Manager | know how I can make updates   | I have confidence that       |
+|                 | to data when incorrect data   | accurate figures are         |
+|                 | is published                  | reported                     |
++-----------------+-------------------------------+------------------------------+
+| Service Manager | know how I can get a          | I can start benefiting from  |
+|                 | dashboard                     | the product                  |
++-----------------+-------------------------------+------------------------------+
+| Service Manager | know what capabilities I need | I can know what I'm looking  |
+|                 | to do the integration work    | for when I need to procure   |
+|                 |                               | external expertise           |
++-----------------+-------------------------------+------------------------------+
+| Developer       | know what data types I can    | I know what is relevant to   |
+|                 | put into the product          | my service                   |
++-----------------+-------------------------------+------------------------------+
+| Developer       | know how to put data into the | I can write suitable stories |
+|                 | product                       | in my backlog and have       |
+|                 |                               | sensible points for planning |
++-----------------+-------------------------------+------------------------------+
+| Developer       | know how to instrument my     | I am confident I am          |
+|                 | digital service               | capturing the relevant data  |
++-----------------+-------------------------------+------------------------------+
+| Developer       | know how to pull data out of  | I can create custom          |
+|                 | the product                   | visualisations or new        |
+|                 |                               | insights                     |
++-----------------+-------------------------------+------------------------------+

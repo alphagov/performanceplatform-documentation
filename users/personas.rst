@@ -11,9 +11,11 @@ Objectives
 ==========
 - Access to performance data
 - Improve performance of service:
-- best user experience
-- save money
-- shift channels
+
+  - best user experience
+  - save money
+  - shift channels
+
 - Look good compared to other services
 - Help with managing upwards
 
@@ -28,7 +30,7 @@ Objectives
 ==========
 - Comply with the Digital by Default standard and get the GDS busybodies off my back
 - Get any extra value which the GDS can deliver to me -- happy to be told independently that my service is indeed the best
--- Spend the minimum amount of time and effort integrating with the GDS systems
+- Spend the minimum amount of time and effort integrating with the GDS systems
 
 Mario, Developer
 ################

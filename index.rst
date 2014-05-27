@@ -14,6 +14,7 @@ Take a look at a few examples to get an idea of what we do:
 .. toctree::
    :maxdepth: 2
 
+   users/index
    integrating/index
    architecture/index
    roadmap/index
