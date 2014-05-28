@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Integrating &mdash; Performance Platform Manual</title>
+  <title>User Stories &mdash; Performance Platform Manual</title>
   
 
   
@@ -31,8 +31,9 @@
         <link rel="author" title="About these documents"
               href="../about.html"/>
     <link rel="top" title="Performance Platform Manual" href="../index.html"/>
-        <link rel="next" title="Instrumenting your site" href="instrumenting-your-site.html"/>
-        <link rel="prev" title="User Stories" href="../users/stories.html"/> 
+        <link rel="up" title="User needs" href="index.html"/>
+        <link rel="next" title="Integrating" href="../integrating/index.html"/>
+        <link rel="prev" title="Jane, Service Manager" href="personas.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -60,16 +61,16 @@
         
         
             <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../users/index.html">User needs</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../users/personas.html">Jane, Service Manager</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../users/personas.html#robin-service-manager">Robin, Service Manager</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../users/personas.html#mario-developer">Mario, Developer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../users/stories.html">User Stories</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">User needs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="personas.html">Jane, Service Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="personas.html#robin-service-manager">Robin, Service Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="personas.html#mario-developer">Mario, Developer</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">User Stories</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Integrating</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="instrumenting-your-site.html">Instrumenting your site</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sending-data-to-backdrop.html">Sending data to backdrop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../integrating/index.html">Integrating</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../integrating/instrumenting-your-site.html">Instrumenting your site</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrating/sending-data-to-backdrop.html">Sending data to backdrop</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">Architecture</a><ul>
@@ -115,10 +116,12 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
       
-    <li>Integrating</li>
+          <li><a href="index.html">User needs</a> &raquo;</li>
+      
+    <li>User Stories</li>
       <li class="wy-breadcrumbs-aside">
         
-          <a href="../_sources/integrating/index.txt" rel="nofollow"> View page source</a>
+          <a href="../_sources/users/stories.txt" rel="nofollow"> View page source</a>
         
       </li>
   </ul>
@@ -126,19 +129,110 @@
 </div>
           <div role="main">
             
-  <div class="section" id="integrating">
-<h1>Integrating<a class="headerlink" href="#integrating" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="instrumenting-your-site.html">Instrumenting your site</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sending-data-to-backdrop.html">Sending data to backdrop</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../send-to-backdrop/index.html">Send to Backdrop</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sending-data-to-backdrop.html#by-http-api">By HTTP API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sending-data-to-backdrop.html#by-uploading-a-file">By uploading a file</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sending-data-to-backdrop.html#what-is-a-record">What is a record?</a></li>
-</ul>
-</li>
-</ul>
+  <div class="section" id="user-stories">
+<span id="stories"></span><h1>User Stories<a class="headerlink" href="#user-stories" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="personas">
+<h2>Personas<a class="headerlink" href="#personas" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Service Manager</dt>
+<dd>person who is responsible for the performance of a service</dd>
+<dt>External Developer</dt>
+<dd>person who is responsible for integrating with the Performance Platform.
+This could be someone both inside and outside of government. The important
+aspect is that they are not a part of the Performance Platform development
+team</dd>
+</dl>
+</div>
+<div class="section" id="id1">
+<h2>Stories<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="22%" />
+<col width="40%" />
+<col width="38%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">As a...</th>
+<th class="head">I want to...</th>
+<th class="head">So that...</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Service Manager</td>
+<td>what the Performance Platform
+is and why it&#8217;s important</td>
+<td>I understand the benefits of
+integrating with the product</td>
+</tr>
+<tr class="row-odd"><td>Service Manager</td>
+<td>know how much work is
+involved in working with
+the Performance Platform</td>
+<td>I can schedule any work
+needed</td>
+</tr>
+<tr class="row-even"><td>Service Manager</td>
+<td>know what help the Performance
+Platform can offer my
+non-transactional service</td>
+<td>I understand the benefits of
+integrating with the product</td>
+</tr>
+<tr class="row-odd"><td>Service Manager</td>
+<td>know the roadmap of features
+for the Performance Platform</td>
+<td>I can know when to wait and
+when to roll my own</td>
+</tr>
+<tr class="row-even"><td>Service Manager</td>
+<td>know how I can make updates
+to data when incorrect data
+is published</td>
+<td>I have confidence that
+accurate figures are
+reported</td>
+</tr>
+<tr class="row-odd"><td>Service Manager</td>
+<td>know how I can get a
+dashboard</td>
+<td>I can start benefiting from
+the product</td>
+</tr>
+<tr class="row-even"><td>Service Manager</td>
+<td>know what capabilities I need
+to do the integration work</td>
+<td>I can know what I&#8217;m looking
+for when I need to procure
+external expertise</td>
+</tr>
+<tr class="row-odd"><td>Developer</td>
+<td>know what data types I can
+put into the product</td>
+<td>I know what is relevant to
+my service</td>
+</tr>
+<tr class="row-even"><td>Developer</td>
+<td>know how to put data into the
+product</td>
+<td>I can write suitable stories
+in my backlog and have
+sensible points for planning</td>
+</tr>
+<tr class="row-odd"><td>Developer</td>
+<td>know how to instrument my
+digital service</td>
+<td>I am confident I am
+capturing the relevant data</td>
+</tr>
+<tr class="row-even"><td>Developer</td>
+<td>know how to pull data out of
+the product</td>
+<td>I can create custom
+visualisations or new
+insights</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
@@ -148,10 +242,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="instrumenting-your-site.html" class="btn btn-neutral float-right" title="Instrumenting your site"/>Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../integrating/index.html" class="btn btn-neutral float-right" title="Integrating"/>Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../users/stories.html" class="btn btn-neutral" title="User Stories"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="personas.html" class="btn btn-neutral" title="Jane, Service Manager"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
