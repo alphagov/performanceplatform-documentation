@@ -19,7 +19,7 @@ Glossary
     Each :term:`Data set` stores a particular type of data eg current traffic volume
 
   Metric
-    A specific data series eg completion rate, user satisfaction, page load time, uptime etc
+    A :ref:`specific data series <metrics>` eg completion rate, user satisfaction, page load time, uptime etc
 
   Module
     A module is a :term:`metric` and a :term:`visualisation` together eg digital take-up shown as a line chart
