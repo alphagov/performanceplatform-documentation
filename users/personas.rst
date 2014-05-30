@@ -1,5 +1,16 @@
 .. _personas:
 
+Kathy, Senior Civil Service sponsor
+###################################
+
+I have a number of service managers that manage services for me.
+
+Objectives
+==========
+- Report upwards to justify further investment
+- Easily understand what benefits the Performance Platform offers
+- Pass `Digital by Default service assessments <https://www.gov.uk/service-manual/digital-by-default>`_
+
 Robin, Service Manager
 #####################
 
