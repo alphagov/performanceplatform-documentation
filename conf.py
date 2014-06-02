@@ -129,6 +129,7 @@ html_static_path = ['_static']
 # See https://github.com/snide/sphinx_rtd_theme/issues/117
 html_context = {
     'css_files': [
+        '_static/css/theme.css',
         '_static/theme_overrides.css',  # overrides for wide tables in RTD theme
         ],
     }
