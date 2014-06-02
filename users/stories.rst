@@ -21,16 +21,17 @@ Stories
 +-----------------+-------------------------------+------------------------------+
 | As a...         | I want to...                  | So that I...                 |
 +=================+===============================+==============================+
-| Service Manager | what the Performance Platform | understand the benefits of   |
-|                 | is and why it's important     | integrating with the product |
+| Service Manager | know what the Performance     | understand the benefits of   |
+|                 | Platform is and why it's      | integrating with the product |
+|                 | important                     |                              |
 +-----------------+-------------------------------+------------------------------+
 | Service Manager | know how much work is         | can schedule any work        |
 |                 | involved in working with      | needed                       |
 |                 | the Performance Platform      |                              |
 +-----------------+-------------------------------+------------------------------+
-|Service Manager  |know what help the Performance | understand the benefits of   |
-|                 |Platform can offer my          | integrating with the product |
-|                 |non-transactional service      |                              |
+| Service Manager | know what help the Performance| understand the benefits of   |
+|                 | Platform can offer my         | integrating with the product |
+|                 | non-transactional service     |                              |
 +-----------------+-------------------------------+------------------------------+
 | Service Manager | know the roadmap of features  | can know when to wait and    |
 |                 | for the Performance Platform  | when to roll my own          |
