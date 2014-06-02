@@ -1,0 +1,214 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Dataset &mdash; Performance Platform Manual</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../../../_static/theme_overrides.css" type="text/css" />
+  
+        <link rel="author" title="About these documents"
+              href="../../../about.html"/>
+    <link rel="top" title="Performance Platform Manual" href="../../../index.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../../../index.html" class="fa fa-home"> Performance Platform Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../users/index.html">User needs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../users/personas.html">Jane, Service Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../users/personas.html#robin-service-manager">Robin, Service Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../users/personas.html#mario-developer">Mario, Developer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../users/stories.html">User Stories</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../integrating/index.html">Integrating</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../integrating/instrumenting-your-site.html">Instrumenting your site</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../integrating/sending-data-to-backdrop.html">Sending data to backdrop</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../architecture/index.html">Architecture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../architecture/data-flows.html">Data Flows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../architecture/parts/backdrop.html">Backdrop &#8211; HTTP API for persistence and querying</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../architecture/parts/limelight.html">Limelight &#8211; legacy rendering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../architecture/parts/stagecraft.html">Stagecraft &#8211; configuration API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../architecture/parts/stageprompt.html">Stageprompt &#8211; Analytics adapter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../architecture/parts/spotlight.html">Spotlight &#8211; rendering layer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../roadmap/index.html">Roadmap</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../roadmap/index.html#predictions">Predictions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Performance platform user manual</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../platform-overview.html">Platform overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../platform-benefits.html">Platform benefits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../building-a-dashboard/index.html">Building a dashboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../metrics/index.html">Metrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../dashboards/index.html">Dashboards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../users/index.html">Guides for users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../support/index.html">Support for users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../integration/index.html">Integrating with the platform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../modelling-services/index.html">Modelling services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contributing/index.html">How to get involved</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../news.html">User manual changes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../about.html">About</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../about.html#detailed-data">Detailed data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../about.html#all-in-one-place">All in one place</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../about.html#the-bigger-picture">The bigger picture</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../glossary.html">Glossary</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../index.html">Performance Platform Documentation</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../index.html">Docs</a> &raquo;</li>
+      
+    <li>Dataset</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="../../../_sources/user-manual/data-architecture/dataset/index.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            
+  <div class="section" id="dataset">
+<span id="id1"></span><h1>Dataset<a class="headerlink" href="#dataset" title="Permalink to this headline">¶</a></h1>
+<p>Definition:</p>
+<p>How to spot them, what do they look like, what did they have for breakfast today</p>
+<p>Defining/naming/mapping to datagroups/datatypes ...</p>
+<p>Rules for sizing/scoping - about sources and datagroup/datatype constructs</p>
+<p>Issues re. ability only build metrics from single dataset - maximisation rules</p>
+<p>Schema&#8217;s - conforms to the data type</p>
+<p>How this forms basis of validation of input and defining storage constructs</p>
+<p>Examples:</p>
+</div>
+
+
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013, Performance Platform.
+    </p>
+  </div>
+
+  <a href="https://github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

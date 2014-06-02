@@ -18,6 +18,7 @@ Take a look at a few examples to get an idea of what we do:
    integrating/index
    architecture/index
    roadmap/index
+   user-manual/index
    About <about>
    glossary
 
