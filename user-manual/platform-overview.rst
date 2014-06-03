@@ -25,4 +25,4 @@ The platform allows both realtime and non-realtime data to be brought together f
 .. _Transactions Explorer: https://www.gov.uk/performance/transactions-explorer
 .. _Services Dashboard: https://gov.uk/performance/services
 .. _GOV.UK: https://www.gov.uk/
-.. _GOV.UK performance: https://www.gov.uk/performance/dashboard
+.. _GOV.UK performance: https://www.gov.uk/performance/site-activity
