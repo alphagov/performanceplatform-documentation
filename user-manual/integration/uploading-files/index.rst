@@ -11,6 +11,6 @@ What shape should the data be in
 
 scheduling updates
 
-how to acces the platfomr 
+how to acces the platform 
 
 welcome to the admin ui!!!!

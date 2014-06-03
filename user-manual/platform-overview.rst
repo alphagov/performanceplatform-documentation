@@ -11,9 +11,9 @@ Making data available simply and consistently allows users to see how services a
 
 The `Performance Platform`_ is the way Government does this. The platform currently provides three views onto performance data:
 
--  `Transactions Explorer`_ - shows the number of transactions processed each year across government departments, agencies and other public bodies
--  `Services Dashboard`_ - displays detailed performance data on transactional services provided through `GOV.UK`_
--  `GOV.UK performance`_ - presents a dashboard of comparative data for the number of visitors to `GOV.UK`_ and the content they view information
+-  `Transactions Explorer`_ -- shows the number of transactions processed each year across government departments, agencies and other public bodies
+-  `Services Dashboard`_ -- displays detailed performance data on transactional services provided through `GOV.UK`_
+-  `GOV.UK performance`_ -- presents a dashboard of comparative data for the number of visitors to `GOV.UK`_ and the content they view information
 
 There are more than 760 transactional services offered to citizens and organisations across government. At an operational level, management information is collected ‘in-house’ at a department level from many sources and processed across many systems.
 

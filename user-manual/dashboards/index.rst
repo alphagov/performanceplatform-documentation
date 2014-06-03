@@ -11,19 +11,19 @@ measured and the metrics that are regularly prsented for those 'things'
 
 Types of dashboard
 ------------------
-* `Transactional service dashboards`_ - one liner
-* `KPI dashboards`_ - one liner
-* `Aggregate dashboards`_ - one liner
-* `Service overview dashboards`_ - one liner
-* `High volume service dashboards`_ - one liner
-* `Low volume service dashboards`_ - one liner
+* `Transactional service dashboards`_ -- one liner
+* `KPI dashboards`_ -- one liner
+* `Aggregate dashboards`_ -- one liner
+* `Service overview dashboards`_ -- one liner
+* `High volume service dashboards`_ -- one liner
+* `Low volume service dashboards`_ -- one liner
 
-NOTE - Think there should be Service transaction group/Service/Service group dashboards for intermediaries
+NOTE -- Think there should be Service transaction group/Service/Service group dashboards for intermediaries
 
 Choosing the dashboard type
 ---------------------------
 
-The dasshboard types listed above are templates for presenting metrics.  They allow flexible combination of 
+The dashboard types listed above are templates for presenting metrics.  They allow flexible combination of 
 metrics modules to provide the broadest overview of how a service or transactional service are operating and 
 allow users to ......
 
@@ -32,8 +32,8 @@ on what modules of what metrics make sense
 
 Selecting the user view
 -----------------------
-Some blurb re. the focus of the dashboard groupings - transactional services - it is about the user.
-Aggeragtion of dashboard can be both a reflection of the transaction end-user view (IMPORTANT), but also
+Some blurb re. the focus of the dashboard groupings -- transactional services -- it is about the user.
+Aggregation of dashboard can be both a reflection of the transaction end-user view (IMPORTANT), but also
 the view for the service manager operating within an organisation (see hierarchy of service)
 Need to maybe show picture/graph of how the same metrics can be presented in different groupings dependent
 on the primary audiences
@@ -44,7 +44,7 @@ Metrics mapping
 The table below shows (from working with existing service managers) which metrics (and as a consequence modules)
 can/should be present on which type of dashboard
 
-**Metrics - Dashboard Map**
+**Metrics -- Dashboard Map**
 
 +----------------------------+----------------------+--------------------------------------------------------------------------+
 |                            |Dashboard type                                                                                   |
@@ -84,7 +84,7 @@ can/should be present on which type of dashboard
 |digital transaction volumes |optional              |                   |            |optional \ :sup:`3` |*n/a*               |
 +----------------------------+----------------------+-------------------+------------+--------------------+--------------------+
 
-:sup:`1` - organisations may not be able to break down the *cost per transaction* at the transactional service level. It **MUST** per provided on an alternative dashboard at the appropriate level of aggregation.
+:sup:`1` -- organisations may not be able to break down the *cost per transaction* at the transactional service level. It **MUST** per provided on an alternative dashboard at the appropriate level of aggregation.
 
 KPI dashboards     Aggregate dashboards Service overview dashboards High volume service dashboards Low volume service dashboards
 

@@ -5,7 +5,7 @@ Scoping the dashboard
 
 overarching principles 
 
-understand dashboard in context of managed services -how data will likely be aggregated etc
+understand dashboard in context of managed services -- how data will likely be aggregated etc
 
 Purpose:
 --------

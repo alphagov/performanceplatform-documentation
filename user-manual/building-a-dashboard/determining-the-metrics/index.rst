@@ -3,9 +3,9 @@
 Determining the metrics
 #######################
 
-KPI's - de facto
+KPIs -- de facto
 
-Advised metrics - optinos available
+Advised metrics -- options available
 
 Other service specific metrics
 
