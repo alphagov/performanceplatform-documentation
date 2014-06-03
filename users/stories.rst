@@ -49,6 +49,30 @@ Stories
 |                 | to do the integration work    | for when I need to procure   |
 |                 |                               | external expertise           |
 +-----------------+-------------------------------+------------------------------+
+| Service Manager | need to get the KPIs and      | pass the service assessment  |
+|                 | dashboard onto the            |                              |
+|                 | Performance Platform          |                              |
++-----------------+-------------------------------+------------------------------+
+| Service Manager | want the most accurate        | can accurately determine how |
+|                 | information presented in my   | good (customer satisfaction) |
+|                 | KPIs                          | and how expensive (cost per  |
+|                 |                               | transaction) my service is   |
++-----------------+-------------------------------+------------------------------+
+| Service Manager | want to be able to quickly    | don't have to go to multiple |
+|                 | communicate how different     | data sources                 |
+|                 | parts of my service is        |                              |
+|                 | performing to the business    |                              |
++-----------------+-------------------------------+------------------------------+
+| Service Manager | want to be able to use        | am confident the service is  |
+|                 | Performance Platform data to  | fit for purpose              |
+|                 | help answer user needs        |                              |
+|                 | on my service                 |                              |
++-----------------+-------------------------------+------------------------------+
+| Service Manager | want to be able to use        | can improve the whole        |
+|                 | Performance Platform data to  | service, eg identify         |
+|                 | recommend making changes in   | points of high friction in   |
+|                 | other parts of the service    | the user journey             |
++-----------------+-------------------------------+------------------------------+
 | Developer       | know what data types I can    | know what is relevant to     |
 |                 | put into the product          | my service                   |
 +-----------------+-------------------------------+------------------------------+
