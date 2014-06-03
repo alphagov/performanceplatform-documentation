@@ -1,41 +1,39 @@
-.. _metrics:
-
 Metrics
 #######
 
-The value of `using data <http://www.gov.uk/service-manual/measurement/using-data.html>`_ to direct improvements to service and the benefits of `measurement <https://www.gov.uk/service-manual/measurement>`_ of service performance is outlined in the `Government Service Design Manual <https://www.gov.uk/service-manual>`_.
+The value of `using data <http://www.gov.uk/service-manual/measurement/using-data>`_ to direct improvements to service and the benefits of `measurement <https://www.gov.uk/service-manual/measurement>`_ of service performance is outlined in the `Government Service Design Manual <https://www.gov.uk/service-manual>`_.
 
-Key performance indicators (KPI's)
-==================================
-Mandatory KPI's
----------------
+Key performance indicators (KPIs)
+=================================
+Mandatory KPIs
+--------------
 
-The `Digital by Default Service Standard <https://www.gov.uk/service-manual/digital-by-default>`_ identifies four `mandatory key performance indicators <https://www.gov.uk/service-manual/measurement/other-kpis.html>`_ (KPI's) as a minimum set of measures all new and changed services should monitor and report:
+The `Digital by Default Service Standard <https://www.gov.uk/service-manual/digital-by-default>`_ identifies four `mandatory key performance indicators <https://www.gov.uk/service-manual/measurement/other-kpis>`_ (KPIs) as a minimum set of measures all new and changed services should monitor and report:
 
-* `KPI: cost per transaction <https://www.gov.uk/service-manual/measurement/cost-per-transaction.html>`_
-* `KPI: user satisfaction <https://www.gov.uk/service-manual/measurement/user-satisfaction.html>`_
-* `KPI: completion rate <https://www.gov.uk/service-manual/measurement/completion-rate.html>`_
-* `KPI: digital take-up <https://www.gov.uk/service-manual/measurement/digital-takeup.html>`_
+* `KPI: cost per transaction <https://www.gov.uk/service-manual/measurement/cost-per-transaction>`_
+* `KPI: user satisfaction <https://www.gov.uk/service-manual/measurement/user-satisfaction>`_
+* `KPI: completion rate <https://www.gov.uk/service-manual/measurement/completion-rate>`_
+* `KPI: digital take-up <https://www.gov.uk/service-manual/measurement/digital-takeup>`_
 
 Other performance indicators
 ----------------------------
 
-In addition to the mandatory KPI's, organisations are encouraged to provide additional performance indicators (PI's) relevant to the way users interact with the transactions offered as part of a service.
+In addition to the mandatory KPIs, organisations are encouraged to provide additional performance indicators (PIs) relevant to the way users interact with the transactions offered as part of a service.
 
 The Performance Platform recommends the presentation of a number of metrics based on existing Service Manager user need that can be incorporated into both service and service transaction dashboards:
 
-* `Live service usage` - a real time indication of the number of active users on a particular service transaction
-* `Transactions by channel` - a breakdown of user transaction volumes based on how they undertook the transaction - whether online, by telephone, post or other channels
-* `Completion at each journey stage` - online service journeys are generally broken into a number of process stages.  This measure allows the inspection of how many users completed particular stage before completing the transaction
-* `Page load time` - an indication of the time online users wait for pages to load before they can continue the transaction
-* `Service uptime` - a measure of how available the service is to users
+* `Live service usage` -- a real time indication of the number of active users on a particular service transaction
+* `Transactions by channel` -- a breakdown of user transaction volumes based on how they undertook the transaction -- whether online, by telephone, post or other channels
+* `Completion at each journey stage` -- online service journeys are generally broken into a number of process stages.  This measure allows the inspection of how many users completed particular stage before completing the transaction
+* `Page load time` -- an indication of the time online users wait for pages to load before they can continue the transaction
+* `Service uptime` -- a measure of how available the service is to users
 
 In addition to the above metrics, the platform team has identified a number of metrics that may notbe useful to all services, but useful for some:
 
-* `site visits` - a measure of the total volumes of users visiting a site 
-* `device usage` - an indicator of the type of device users use to access a service
-* `browser usage` - an indicator of the browser technology users use to undertake transactions in
-* `help usage` - a measure of the reliance users place on online help while trying to complete a transaction
+* `site visits` -- a measure of the total volumes of users visiting a site 
+* `device usage` -- an indicator of the type of device users use to access a service
+* `browser usage` -- an indicator of the browser technology users use to undertake transactions in
+* `help usage` -- a measure of the reliance users place on online help while trying to complete a transaction
 
 Other metrics identified by service owners can be presented in graphical or tabular form dependent on need
 
@@ -62,7 +60,7 @@ Metric                      Performance indicator type
 digital transaction volumes *tbc*
 =========================== ==========================
 
-NOTE: Are there any missing - is there an order/precedence?
+NOTE: Are there any missing -- is there an order/precedence?
 
 Presenting metrics
 ==================

@@ -7,10 +7,10 @@ Checklists for:
 
 PP Collector config
 
-Bespokes - auto/manual
+Bespokes -- auto/manual
 
 considerations:
-push/pull - collector-direct
+push/pull -- collector-direct
 internet/intranet
 data qual
 security

@@ -5,7 +5,7 @@ Data formats
 
 Consistency, automation, dependable consistency
 
-Media type of choice - json
+Media type of choice -- json
 
 Use of schema ... goodness and validation
 

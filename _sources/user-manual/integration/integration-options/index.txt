@@ -5,7 +5,7 @@ Integration options
 
 Architecture view
 
-PICTURE - 
+PICTURE -- 
 
 classes/styles of integration
 

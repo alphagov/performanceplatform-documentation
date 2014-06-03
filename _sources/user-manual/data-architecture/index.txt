@@ -3,7 +3,7 @@
 The data
 ########
 
-Its what its all about really!!!
+It's what it's all about really!!!
 
 The data architecture
 =====================
@@ -11,16 +11,16 @@ Highlight the importance of having a clear set of data models as part of the ove
 
 Explain for given service and transactions:
 
-Diagram - snippet of the domain model
+Diagram -- snippet of the domain model
 
-* `Datagroup`_ - one liner
+* `Datagroup`_ -- one liner
 * `Datatype`_ one liner
-* `Dataset`_ - one liner
+* `Dataset`_ -- one liner
 
 Data formats
 ============
 
-To automate and drive self serve .... consistency d- supports validation - allows confidence in the metrics
+To automate and drive self serve .... consistency supports validation -- allows confidence in the metrics
 
 * `Data format`_ words go here!
 

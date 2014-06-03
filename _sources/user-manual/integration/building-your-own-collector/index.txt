@@ -9,7 +9,7 @@ Options in terms of host technologies
 
 Hosting it within organisation estate
 
-RE-usable - hosting on performance platfomr 
+RE-usable -- hosting on performance platfomr 
 
 Anna's document
 

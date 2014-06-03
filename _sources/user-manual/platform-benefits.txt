@@ -28,19 +28,19 @@ a publically accessible site.
 
 The aim is to:
 
--  Enable government to make **decisions** based on data
--  **Automate** data collection, ending repetitive manual reporting
+-  enable government to make **decisions** based on data
+-  **automate** data collection, ending repetitive manual reporting
    efforts
--  Do the hard work to make presentation and interpretation of data
+-  do the hard work to make presentation and interpretation of data
    **simple** for users
--  Be **open** to any government service supplying their data and
+-  be **open** to any government service supplying their data and
    customising their outputs, and **open** to the public
--  Be **independent** of proprietary monitoring software
--  **Provoke** rather than replace detailed analysis
+-  be **independent** of proprietary monitoring software
+-  **provoke** rather than replace detailed analysis
 
 The goal
 --------
-Statement on what the aim of the performance platomr is
+Statement on what the aim of the Performance Platform is
 
 Shared information
 ------------------

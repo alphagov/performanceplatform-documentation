@@ -3,7 +3,7 @@
 Implementing event monitoring
 #############################
 
-Overview - near-realtime versus historical 
+Overview -- near-realtime versus historical 
 
 Types of data:
 

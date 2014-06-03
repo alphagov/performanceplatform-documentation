@@ -13,30 +13,30 @@ Outline broad pahses and types of role/engagment
 Business analysis
 -----------------
 
-* `Understanding the service in context`_ - One liner!
-* `Determining the metrics`_ - one liner!
-* `Scoping the dashboard`_ - one liner
+* `Understanding the service in context`_ -- One liner!
+* `Determining the metrics`_ -- one liner!
+* `Scoping the dashboard`_ -- one liner
 
 Technical analysis
 ------------------
 
-* `Identifying data sources`_ - one liner!
+* `Identifying data sources`_ -- one liner!
 
 Configuration, build and integration
 ------------------------------------
 
-* `Configuring the platform repository`_ - one liner
-* `Integrating data sources`_ - one liner
+* `Configuring the platform repository`_ -- one liner
+* `Integrating data sources`_ -- one liner
 
 Dashboard configuration
 -----------------------
 
-* `Configuring the dashboard`_ - one liner!
+* `Configuring the dashboard`_ -- one liner!
 
 Deployment
 ----------
 
-* `Deploying the dashboard`_ - one liner!
+* `Deploying the dashboard`_ -- one liner!
 
 .. _Understanding the service in context: service-in-context
 .. _Determining the metrics: determining-the-metrics
