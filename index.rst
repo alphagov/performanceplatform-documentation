@@ -1,6 +1,8 @@
 Performance Platform Documentation
 ==================================
 
+New here? You probably :doc:`want to know what the Performance Platform is <overview>`.
+
 Central government in the UK handles over 1½ billion transactions per year. We're using data to help improve them.
 
 The `Performance Platform <https://www.gov.uk/performance>`_ is a set of tools
