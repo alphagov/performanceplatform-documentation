@@ -3,7 +3,7 @@
 Robin, Service Manager
 #####################
 
-Service Manager for standard transaction –– has been given this responsibility on top of the rest of his job.
+Service Manager for standard transaction –– has been given this responsibility on top of the rest of her job.
 
 “I am responsible for improving my service and delivering a digital channel which users prefer to use”
 
