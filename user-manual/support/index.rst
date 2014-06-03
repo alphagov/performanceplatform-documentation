@@ -41,7 +41,7 @@ Responsibilities
 * What are we responsible for 
 * What are service managers, organisation teams and developers (in-house/external) responsible for
 
-*e.g.*
+*eg*
 
 * Dashboards config probs
 * Content/narrative change

@@ -17,7 +17,7 @@ Customising
 
 What can be customeised
 
-ad hoc or ONLY aditive optional extension of standard sets? - limiting but with view of more 'freedom' later?
+ad hoc or ONLY additive optional extension of standard sets? -- limiting but with view of more 'freedom' later?
 
 Uniqueness
 ----------
@@ -25,7 +25,7 @@ Need to nail whether absolute or relative to datagroup ... my current thinking i
 
 
 
-Schema's ...
+Schemas ...
 
 How this forms basis of validation of input and defining storage constructs
 
