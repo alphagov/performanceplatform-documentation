@@ -12,7 +12,7 @@ Objectives
 - Pass `Digital by Default service assessments <https://www.gov.uk/service-manual/digital-by-default>`_
 
 Robin, Service Manager
-#####################
+######################
 
 Service Manager for standard transaction -- has been given this responsibility on top of the rest of her job and is about to be assessed for an Alpha assessment. 
 
