@@ -1,4 +1,4 @@
-.. _users:
+.. _guides-for-users:
 
 Guides for users
 ################
