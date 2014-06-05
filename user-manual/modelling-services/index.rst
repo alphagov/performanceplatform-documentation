@@ -27,7 +27,7 @@ Alow breakdown to suite org
 Introduce 'transaction' in terms of the net effect of supporting the user reaching a goal
 
 The service 'hierarchy' -- intro to 'type
-========================================
+=========================================
 
 Show our hierarchy, its flexibility and example mappings onto existing service -- choose complex/mid/simple
 
