@@ -9,7 +9,7 @@ The manual is divided into several sections, each covering different aspects of 
 
 - :doc:`platform-overview` -- if you are new to the Performance Platform, this section introduces the platform, its features and how to use it
 - :doc:`platform-benefits` -- presenting a consistent view of service performance metrics across government departments offers benefits to service users and managers and decision makers
-- :doc:`metrics/index` -- what are the measures that highlight how a service is performing
+- :doc:`performance-metrics/index` -- what are the measures that highlight how a service is performing
 - :doc:`dashboards/index` -- how does the Performance Platform display performance metrics
 - :doc:`building-a-dashboard/index` -- the process, activities and responsibilities necessary for the successful delivery of a new dashboard
 - :doc:`developers/index` -- technical detail necessary for developers to build and configure components necessary for the platform to operate, receive data from departments and present them on a dashboard
@@ -32,9 +32,11 @@ There are a number of ways you can help improve the platform for yourself and ot
   platform-overview
   platform-benefits
   building-a-dashboard/index
-  metrics/index
+  case-studies/index
+  performance-metrics/index
   dashboards/index
   users/index
+  developers/index
   support/index
   integration/index
   modelling-services/index

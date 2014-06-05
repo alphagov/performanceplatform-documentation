@@ -1,5 +1,7 @@
-Metrics
-#######
+.. _performance-metrics:
+
+Performance Metrics
+###################
 
 The value of `using data <http://www.gov.uk/service-manual/measurement/using-data>`_ to direct improvements to service and the benefits of `measurement <https://www.gov.uk/service-manual/measurement>`_ of service performance is outlined in the `Government Service Design Manual <https://www.gov.uk/service-manual>`_.
 
