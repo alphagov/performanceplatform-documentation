@@ -21,11 +21,3 @@ Take a look at a few examples to get an idea of what we do:
    architecture/index
    roadmap/index
    glossary
-
-.. toctree::
-    :hidden:
-
-    About <about>
-    metrics/index
-    overview
-    user-manual/index
