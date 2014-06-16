@@ -33,6 +33,7 @@ There are a number of ways you can help improve the platform for yourself and ot
   platform-benefits
   building-a-dashboard/index
   case-studies/index
+  data-architecture/index
   performance-metrics/index
   dashboards/index
   users/index

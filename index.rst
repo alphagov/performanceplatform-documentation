@@ -24,3 +24,8 @@ Take a look at a few examples to get an idea of what we do:
    About <about>
    glossary
 
+.. toctree::
+    :hidden:
+
+    metrics/index
+    overview
