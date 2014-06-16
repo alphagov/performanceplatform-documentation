@@ -92,7 +92,7 @@ Stories
 
 .. [1]  :doc:`/overview`, :doc:`/about`
 .. [2]  We are writing a case study
-.. [3]  :doc:`/overview`, :doc:`/about`, needs to be stronger though
+.. [3]  :doc:`/overview`, :doc:`/about`
 .. [4]  :doc:`/roadmap/index` -- too low-level / internal-focused at this point
 .. [5]  :ref:`corrections`
 .. [6]  annotate my dashboards
