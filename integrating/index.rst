@@ -11,6 +11,11 @@ in to the performance platform. There are currently 3 ways to do this:
    API
 #. Manually upload data to the performance platform via the admin UI
 
+The depth of your integration might depend on the capabilities, people
+and budget available to you. Do you have people with the skills to
+write code / instrument you service, or can you go to market to get
+them?
+
 Pulling data
 ============
 This is the fastest way to get data onto the performance platform. We
