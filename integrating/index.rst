@@ -26,7 +26,7 @@ many people:
 - start completing an online application
 - finish completing a service online
 
-When instrumenting your site we recommend you use :ref:`stageprompt`.
+When instrumenting your site we recommend you use :ref:`Stageprompt <stageprompt>`.
 This provides a wrapper around your analytics provider, so that if you
 change provider in the future, you should not have to make changes to
 continue to report data to the performance platform.
