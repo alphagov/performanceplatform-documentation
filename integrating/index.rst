@@ -49,7 +49,14 @@ Manual upload
 You can put your data in a spreadsheet and upload the spreadsheet to
 the Performance Dashboard website.
 
-  You are responsible for regularly updating the spreadsheet with your latest data. Whenever your spreadsheet is updated, the dashboard will be updated.
+.. note::
+
+  You are responsible for regularly updating the spreadsheet with your
+  latest data. Whenever your spreadsheet is updated, the dashboard will
+  be updated.
+
+  We have a roadmap item to look at sending you notifications when we
+  are expecting data to be uploaded and we haven't seen it yet.
 
 .. _corrections:
 
