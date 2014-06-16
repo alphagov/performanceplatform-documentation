@@ -1,5 +1,7 @@
 .. _user-manual:
 
+:orphan:
+
 Performance platform user manual
 ################################
 

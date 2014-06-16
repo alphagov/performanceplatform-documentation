@@ -91,7 +91,7 @@ Stories
 
 
 .. [1]  :doc:`/overview`, :doc:`/about`
-.. [2]  :doc:`/user-manual/case-studies/index`
+.. [2]  We are writing a case study
 .. [3]  :doc:`/overview`, :doc:`/about`, needs to be stronger though
 .. [4]  :doc:`/roadmap/index` -- too low-level / internal-focused at this point
 .. [5]  Updates -- how can I make them 

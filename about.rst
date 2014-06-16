@@ -1,5 +1,7 @@
 .. _about:
 
+:orphan:
+
 Government Performance
 ######################
 
