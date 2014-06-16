@@ -1,7 +1,7 @@
 .. _building-a-dashboard:
 
 Building a dashboard
-####################
+********************
 
 The process
 ===========
@@ -38,6 +38,12 @@ Deployment
 
 * `Deploying the dashboard`_ -- one liner!
 
+Case studies
+============
+
+A series of evolving `case studies`_ are available to help service managers and developemnt teams understand how the process works in practice
+
+
 .. _Understanding the service in context: service-in-context
 .. _Determining the metrics: determining-the-metrics
 .. _Scoping the dashboard: scoping-the-dashboard
@@ -46,6 +52,7 @@ Deployment
 .. _Integrating data sources: integrating-data-sources
 .. _Configuring the dashboard: configuring-the-dashboard
 .. _Deploying the dashboard: deploying-the-dashboard
+.. _case studies: ../case-studies/index.html
 
 .. toctree::
   :hidden:
