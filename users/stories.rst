@@ -94,7 +94,7 @@ Stories
 .. [2]  We are writing a case study
 .. [3]  :doc:`/overview`, :doc:`/about`, needs to be stronger though
 .. [4]  :doc:`/roadmap/index` -- too low-level / internal-focused at this point
-.. [5]  Updates -- how can I make them 
+.. [5]  :ref:`corrections`
 .. [6]  annotate my dashboards
 .. [7]  3rd part of Rosalie's document
 .. [8]  Yes

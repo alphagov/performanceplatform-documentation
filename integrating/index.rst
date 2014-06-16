@@ -51,6 +51,17 @@ the Performance Dashboard website.
 
   You are responsible for regularly updating the spreadsheet with your latest data. Whenever your spreadsheet is updated, the dashboard will be updated.
 
+.. _corrections:
+
+Making corrections
+==================
+Occasionally mistakes will happen. Data in a system may be incorrect.
+The performance platform currently treats any incoming data as the new,
+correct version for a given time period. So if data needs correcting,
+you can get the data corrected by contacting the performance platform
+if it's something that we collect, or you can push/upload the revised
+data and the update will automatically display.
+
 .. toctree::
    :maxdepth: 2
    :hidden:
