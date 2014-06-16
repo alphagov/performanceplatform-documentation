@@ -1,8 +1,60 @@
 Integrating
 ###########
 
-.. toctree::
-  :maxdepth: 2
+To use the performance platform, you have to get data about your system
+in to the performance platform. There are currently 3 ways to do this:
 
-  instrumenting-your-site
-  sending-data-to-backdrop
+#. Grant access to your data to the performance platform team
+   and allow us to pull data in about your system.
+#. Have your developers write code that will regularly send the latest
+   information about the service to the performance platform, using our
+   API
+#. Manually upload data to the performance platform via the admin UI
+
+Pulling data
+============
+This is the fastest way to get data onto the performance platform. We
+can run various collectors which will pull data about your service into our database.
+
+Analytics
+---------
+You can share analytics data, such as from Google Analytics, Omniture
+or Piwik. We can use this to track how a service is used, including how
+many people:
+
+- view a service online
+- start completing an online application
+- finish completing a service online
+
+When instrumenting your site we recommend you use :ref:`stageprompt`.
+This provides a wrapper around your analytics provider, so that if you
+change provider in the future, you should not have to make changes to
+continue to report data to the performance platform.
+
+Response times
+--------------
+We can track page response times and service availability for you.
+
+Pushing data
+============
+
+This documentation contains guides to the technology behind the
+performance platform and :doc:`how to integrate with it </send-to-backdrop/index>`.
+Your development team should contact the performance platform team
+before they start writing the code.
+
+Manual upload
+=============
+
+You can put your data in a spreadsheet and upload the spreadsheet to
+the Performance Dashboard website.
+
+  You are responsible for regularly updating the spreadsheet with your latest data. Whenever your spreadsheet is updated, the dashboard will be updated.
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   sending-data-to-backdrop
+
+
