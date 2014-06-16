@@ -93,10 +93,10 @@ Stories
 .. [1]  :doc:`/overview`, :doc:`/about`
 .. [2]  We are writing a case study
 .. [3]  :doc:`/overview`, :doc:`/about`
-.. [4]  :doc:`/roadmap/index` -- too low-level / internal-focused at this point
+.. [4]  :doc:`/roadmap/index` -- quite low-level / internal-focused at this point
 .. [5]  :ref:`corrections`
 .. [6]  annotate my dashboards
-.. [7]  3rd part of Rosalie's document
+.. [7]  :doc:`/integrating/index`
 .. [8]  Yes
 .. [9]  Yes
 .. [10] Anna's prototype
