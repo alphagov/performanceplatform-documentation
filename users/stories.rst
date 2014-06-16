@@ -22,69 +22,88 @@ Stories
 | As a...         | I want to...                  | So that I...                 |
 +=================+===============================+==============================+
 | Service Manager | know what the Performance     | understand the benefits of   |
-|                 | Platform is and why it's      | integrating with the product |
+| [1]_            | Platform is and why it's      | integrating with the product |
 |                 | important                     |                              |
 +-----------------+-------------------------------+------------------------------+
 | Service Manager | know how much work is         | can schedule any work        |
-|                 | involved in working with      | needed                       |
+| [2]_            | involved in working with      | needed                       |
 |                 | the Performance Platform      |                              |
 +-----------------+-------------------------------+------------------------------+
 | Service Manager | know what help the Performance| understand the benefits of   |
-|                 | Platform can offer my         | integrating with the product |
+| [3]_            | Platform can offer my         | integrating with the product |
 |                 | non-transactional service     |                              |
 +-----------------+-------------------------------+------------------------------+
 | Service Manager | know the roadmap of features  | can know when to wait and    |
-|                 | for the Performance Platform  | when to roll my own          |
+| [4]_            | for the Performance Platform  | when to roll my own          |
 +-----------------+-------------------------------+------------------------------+
 | Service Manager | know how I can make updates   | have confidence that         |
-|                 | to data when incorrect data   | accurate figures are         |
+| [5]_            | to data when incorrect data   | accurate figures are         |
 |                 | is published                  | reported                     |
 +-----------------+-------------------------------+------------------------------+
 | Service Manager | know I can add editorial to   | can explain interesting      |
-|                 | my dashboard                  | events or fluctuations       |
+| [6]_            | my dashboard                  | events or fluctuations       |
 +-----------------+-------------------------------+------------------------------+
 | Service Manager | know how I can get a          | can start benefiting from    |
-|                 | dashboard                     | the product                  |
+| [7]_            | dashboard                     | the product                  |
 +-----------------+-------------------------------+------------------------------+
 | Service Manager | know what capabilities I need | can know what I'm looking    |
-|                 | to do the integration work    | for when I need to procure   |
+| [8]_            | to do the integration work    | for when I need to procure   |
 |                 |                               | external expertise           |
 +-----------------+-------------------------------+------------------------------+
 | Service Manager | need to get the KPIs and      | pass the service assessment  |
-|                 | dashboard onto the            |                              |
+| [9]_            | dashboard onto the            |                              |
 |                 | Performance Platform          |                              |
 +-----------------+-------------------------------+------------------------------+
 | Service Manager | want the most accurate        | can accurately determine how |
-|                 | information presented in my   | good (customer satisfaction) |
+| [10]_           | information presented in my   | good (customer satisfaction) |
 |                 | KPIs                          | and how expensive (cost per  |
 |                 |                               | transaction) my service is   |
 +-----------------+-------------------------------+------------------------------+
 | Service Manager | want to be able to quickly    | don't have to go to multiple |
-|                 | communicate how different     | data sources                 |
+| [11]_           | communicate how different     | data sources                 |
 |                 | parts of my service is        |                              |
 |                 | performing to the business    |                              |
 +-----------------+-------------------------------+------------------------------+
 | Service Manager | want to be able to use        | am confident the service is  |
-|                 | Performance Platform data to  | fit for purpose              |
+| [12]_           | Performance Platform data to  | fit for purpose              |
 |                 | help answer user needs        |                              |
 |                 | on my service                 |                              |
 +-----------------+-------------------------------+------------------------------+
 | Service Manager | want to be able to use        | can improve the whole        |
-|                 | Performance Platform data to  | service, eg identify         |
+| [13]_           | Performance Platform data to  | service, eg identify         |
 |                 | recommend making changes in   | points of high friction in   |
 |                 | other parts of the service    | the user journey             |
 +-----------------+-------------------------------+------------------------------+
 | Developer       | know what data types I can    | know what is relevant to     |
-|                 | put into the product          | my service                   |
+| [14]_           | put into the product          | my service                   |
 +-----------------+-------------------------------+------------------------------+
 | Developer       | know how to put data into the | can write suitable stories   |
-|                 | product                       | in my backlog and have       |
+| [15]_           | product                       | in my backlog and have       |
 |                 |                               | sensible points for planning |
 +-----------------+-------------------------------+------------------------------+
 | Developer       | know how to instrument my     | am confident I am            |
-|                 | digital service               | capturing the relevant data  |
+| [16]_           | digital service               | capturing the relevant data  |
 +-----------------+-------------------------------+------------------------------+
 | Developer       | know how to pull data out of  | can create custom            |
-|                 | the product                   | visualisations or new        |
+| [17]_           | the product                   | visualisations or new        |
 |                 |                               | insights                     |
 +-----------------+-------------------------------+------------------------------+
+
+
+.. [1]  :doc:`/overview`, :doc:`/about`
+.. [2]  :doc:`/user-manual/case-studies/index`
+.. [3]  :doc:`/overview`, :doc:`/about`, needs to be stronger though
+.. [4]  :doc:`/roadmap/index` -- too low-level / internal-focused at this point
+.. [5]  Updates -- how can I make them 
+.. [6]  annotate my dashboards
+.. [7]  3rd part of Rosalie's document
+.. [8]  Yes
+.. [9]  Yes
+.. [10] Anna's prototype
+.. [11] Anna's prototype
+.. [12] Anna's prototype
+.. [13] Anna's prototype
+.. [14] Yes
+.. [15] Yes
+.. [16] Yes
+.. [17] Not beta / supported yet
