@@ -42,7 +42,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Performance Platform Documentation'
-copyright = u'2013, Performance Platform'
+copyright = u'All content is available under the Open Government Licence v2.0, except where otherwise stated'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
