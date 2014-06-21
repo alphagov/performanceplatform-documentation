@@ -34,7 +34,7 @@ Glossary
     An application that is part of the performance platform. It is responsible for :doc:`rendering data</architecture/parts/spotlight>` from the :term:`Backdrop` API to display visualisations of service performance
 
   Transaction
-    Central govenment in the UK handle 1.5 billion transactions a year, eg applications, renewals, bookings, existing claims etc
+    Central government in the UK handles about 1.5 billion transactions a year, including applications, renewals, bookings, claims etc
 
   Visualisation
     A way of displaying a data set, eg line chart, bar chart, single stat etc

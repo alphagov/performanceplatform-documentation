@@ -1,23 +1,44 @@
-Performance Platform Documentation
-==================================
 
-New here? You probably :doc:`want to know what the Performance Platform is <overview>`.
+Performance platform documentation
+##################################
 
-Central government in the UK handles over 1½ billion transactions per year. We're using data to help improve them.
+The `performance platform <https://www.gov.uk/performance>`_ has dashboards for `about 100 government services <https://www.gov.uk/performance/services>`_. Dashboards help people who work on government services make decisions about how to improve them.
 
-The `Performance Platform <https://www.gov.uk/performance>`_ is a set of tools
-for finding out how your :term:`service` is performing and how it can be improved.
+A dashboard can tell you:
+=========================
+
+- how many users use each 'channel' (online, phone, paper form etc), including how many are using your service *right now*
+- how many users use the service successfully and how many give up
+- where users need help, where they get stuck and what errors they encounter
+- how satisfied users were with the service
+- how long your web pages take to load and how reliable the servers are
+
+Get started – get a dashboard CTA
+=============================
+
+We've got loads of new features planned, including:
+===================================================
+
+- how long users take to complete your service and how long it takes for them to get what they applied for
+- compare this week or month with the previous one – find out the effect of your recent service improvements
+- get an email if something needs attention (rest easy the rest of the time!)
+- find out what content is most effective for getting users to your service
+- dashboards for departments, agencies and groups of services
+
 Take a look at a few examples to get an idea of what we do:
+===========================================================
 
 - `Carer's Allowance applications <https://www.gov.uk/performance/carers-allowance>`_
 - `Lasting Power of Attorney registrations <https://www.gov.uk/performance/lasting-power-of-attorney>`_
 - `Tax disc renewals <https://www.gov.uk/performance/tax-disc>`_
 
-.. toctree::
-   :maxdepth: 2
+Get started – get a dashboard CTA
+=============================
 
-   users/index
-   integrating/index
-   architecture/index
-   roadmap/index
-   glossary
+In this documentation
+=====================
+
+- How to get a dashboard, including a case study
+- Software architecture and API documentation
+- User needs, research
+- Roadmap of new features

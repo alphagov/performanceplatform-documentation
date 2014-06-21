@@ -1,3 +1,6 @@
+// Typography
+p, ul { margin-bottom: 0.5em!important; }
+
 /* override table width restrictions */
 .wy-table-responsive table td, .wy-table-responsive table th {
     white-space: normal;
