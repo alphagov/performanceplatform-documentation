@@ -42,7 +42,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Performance Platform Documentation'
-copyright = u'2013, Performance Platform'
+copyright = u'All content is available under the Open Government Licence v2.0, except where otherwise stated'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -65,7 +65,12 @@ release = '1.0'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['_build']
+exclude_patterns = ['_build',
+                'about'
+                'user-manual',
+                'metrics',
+                'overview',
+                ]
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
