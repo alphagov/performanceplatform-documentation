@@ -14,7 +14,7 @@ Backdrop exposes a very small HTTP API for pushing data in. There is one endpoin
 
 The client request:
 
-- should use a URL like `https://<backdrop-write-host>/<data-set-name>`, where `backdrop-write-host` is eg `www.preview.performance.service.gov.uk`
+- should use a URL like `https://<backdrop-write-host>/<data-set-name>`, where `backdrop-write-host` could be something like `www.preview.performance.service.gov.uk`
 - must have a content type of application/json
 - must have a valid Authorization header
 

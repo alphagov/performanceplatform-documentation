@@ -35,7 +35,7 @@
         <link rel="author" title="About these documents"
               href="../about.html"/>
     <link rel="top" title="Performance Platform Manual" href="../index.html"/>
-        <link rel="next" title="Instrumenting your site" href="instrumenting-your-site.html"/>
+        <link rel="next" title="Sending data to backdrop" href="sending-data-to-backdrop.html"/>
         <link rel="prev" title="User needs" href="../users/index.html"/> 
 
   
@@ -73,8 +73,10 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="">Integrating</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="instrumenting-your-site.html">Instrumenting your site</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sending-data-to-backdrop.html">Sending data to backdrop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pulling-data">Pulling data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pushing-data">Pushing data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#manual-upload">Manual upload</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#making-corrections">Making corrections</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">Architecture</a><ul>
@@ -90,37 +92,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../roadmap/index.html#predictions">Predictions</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../user-manual/index.html">Performance platform user manual</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../user-manual/platform-overview.html">Platform overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../user-manual/platform-benefits.html">Platform benefits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../user-manual/building-a-dashboard/index.html">Building a dashboard</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../user-manual/case-studies/index.html">Case studies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../user-manual/data-architecture/index.html">The data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../user-manual/performance-metrics/index.html">Performance Metrics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../user-manual/dashboards/index.html">Dashboards</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../user-manual/users/index.html">Guides for users</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../user-manual/developers/index.html">Developers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../user-manual/support/index.html">Support for users</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../user-manual/integration/index.html">Integrating with the platform</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../user-manual/modelling-services/index.html">Modelling services</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../user-manual/contributing/index.html">How to get involved</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../user-manual/news.html">User manual changes</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../about.html">About</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../about.html#detailed-data">Detailed data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../about.html#all-in-one-place">All in one place</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../about.html#the-bigger-picture">The bigger picture</a></li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../metrics/index.html">Metrics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../overview.html#how-to-get-on-the-performance-platform">How to get on the Performance Platform</a></li>
-</ul>
-</li>
 </ul>
 
         
@@ -157,17 +129,74 @@
             
   <div class="section" id="integrating">
 <h1>Integrating<a class="headerlink" href="#integrating" title="Permalink to this headline">¶</a></h1>
+<p>To use the performance platform, you have to get data about your system
+in to the performance platform. There are currently 3 ways to do this:</p>
+<ol class="arabic simple">
+<li>Grant access to your data to the performance platform team
+and allow us to pull data in about your system.</li>
+<li>Have your developers write code that will regularly send the latest
+information about the service to the performance platform, using our
+API</li>
+<li>Manually upload data to the performance platform via the admin UI</li>
+</ol>
+<p>The depth of your integration might depend on the capabilities, people
+and budget available to you. Do you have people with the skills to
+write code / instrument you service, or can you go to market to get
+them?</p>
+<div class="section" id="pulling-data">
+<h2>Pulling data<a class="headerlink" href="#pulling-data" title="Permalink to this headline">¶</a></h2>
+<p>This is the fastest way to get data onto the performance platform. We
+can run various collectors which will pull data about your service into our database.</p>
+<div class="section" id="analytics">
+<h3>Analytics<a class="headerlink" href="#analytics" title="Permalink to this headline">¶</a></h3>
+<p>You can share analytics data, such as from Google Analytics, Omniture
+or Piwik. We can use this to track how a service is used, including how
+many people:</p>
+<ul class="simple">
+<li>view a service online</li>
+<li>start completing an online application</li>
+<li>finish completing a service online</li>
+</ul>
+<p>When instrumenting your site we recommend you use <a class="reference internal" href="../architecture/parts/stageprompt.html#stageprompt"><em>Stageprompt</em></a>.
+This provides a wrapper around your analytics provider, so that if you
+change provider in the future, you should not have to make changes to
+continue to report data to the performance platform.</p>
+</div>
+<div class="section" id="response-times">
+<h3>Response times<a class="headerlink" href="#response-times" title="Permalink to this headline">¶</a></h3>
+<p>We can track page response times and service availability for you.</p>
+</div>
+</div>
+<div class="section" id="pushing-data">
+<h2>Pushing data<a class="headerlink" href="#pushing-data" title="Permalink to this headline">¶</a></h2>
+<p>This documentation contains guides to the technology behind the
+performance platform and <a class="reference internal" href="../send-to-backdrop/index.html"><em>how to integrate with it</em></a>.
+Your development team should contact the performance platform team
+before they start writing the code.</p>
+</div>
+<div class="section" id="manual-upload">
+<h2>Manual upload<a class="headerlink" href="#manual-upload" title="Permalink to this headline">¶</a></h2>
+<p>You can put your data in a spreadsheet and upload the spreadsheet to
+the Performance Dashboard website.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>You are responsible for regularly updating the spreadsheet with your
+latest data. Whenever your spreadsheet is updated, the dashboard will
+be updated.</p>
+<p class="last">We have a roadmap item to look at sending you notifications when we
+are expecting data to be uploaded and we haven&#8217;t seen it yet.</p>
+</div>
+</div>
+<div class="section" id="making-corrections">
+<span id="corrections"></span><h2>Making corrections<a class="headerlink" href="#making-corrections" title="Permalink to this headline">¶</a></h2>
+<p>Occasionally mistakes will happen. Data in a system may be incorrect.
+The performance platform currently treats any incoming data as the new,
+correct version for a given time period. So if data needs correcting,
+you can get the data corrected by contacting the performance platform
+if it&#8217;s something that we collect, or you can push/upload the revised
+data and the update will automatically display.</p>
 <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="instrumenting-your-site.html">Instrumenting your site</a></li>
-<li class="toctree-l1"><a class="reference internal" href="sending-data-to-backdrop.html">Sending data to backdrop</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../send-to-backdrop/index.html">Send to Backdrop</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sending-data-to-backdrop.html#by-http-api">By HTTP API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sending-data-to-backdrop.html#by-uploading-a-file">By uploading a file</a></li>
-<li class="toctree-l2"><a class="reference internal" href="sending-data-to-backdrop.html#what-is-a-record">What is a record?</a></li>
-</ul>
-</li>
-</ul>
+</div>
 </div>
 </div>
 
@@ -177,7 +206,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="instrumenting-your-site.html" class="btn btn-neutral float-right" title="Instrumenting your site"/>Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="sending-data-to-backdrop.html" class="btn btn-neutral float-right" title="Sending data to backdrop"/>Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../users/index.html" class="btn btn-neutral" title="User needs"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -189,7 +218,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2013, Performance Platform.
+        &copy; Copyright All content is available under the Open Government Licence v2.0, except where otherwise stated.
     </p>
   </div>
 

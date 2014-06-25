@@ -34,10 +34,7 @@
   
         <link rel="author" title="About these documents"
               href="../about.html"/>
-    <link rel="top" title="Performance Platform Manual" href="../index.html"/>
-        <link rel="up" title="Performance platform user manual" href="index.html"/>
-        <link rel="next" title="Building a dashboard" href="building-a-dashboard/index.html"/>
-        <link rel="prev" title="Platform overview" href="platform-overview.html"/> 
+    <link rel="top" title="Performance Platform Manual" href="../index.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -64,7 +61,7 @@
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
         
         
-            <ul class="current">
+            <ul>
 <li class="toctree-l1"><a class="reference internal" href="../users/index.html">User needs</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../users/index.html#our-users">Our users</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../users/index.html#as-a-service-manager">As a service manager…</a></li>
@@ -74,8 +71,10 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../integrating/index.html">Integrating</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../integrating/instrumenting-your-site.html">Instrumenting your site</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../integrating/sending-data-to-backdrop.html">Sending data to backdrop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrating/index.html#pulling-data">Pulling data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrating/index.html#pushing-data">Pushing data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrating/index.html#manual-upload">Manual upload</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../integrating/index.html#making-corrections">Making corrections</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">Architecture</a><ul>
@@ -91,37 +90,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../roadmap/index.html#predictions">Predictions</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Performance platform user manual</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="platform-overview.html">Platform overview</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Platform benefits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="building-a-dashboard/index.html">Building a dashboard</a></li>
-<li class="toctree-l2"><a class="reference internal" href="case-studies/index.html">Case studies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data-architecture/index.html">The data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="performance-metrics/index.html">Performance Metrics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dashboards/index.html">Dashboards</a></li>
-<li class="toctree-l2"><a class="reference internal" href="users/index.html">Guides for users</a></li>
-<li class="toctree-l2"><a class="reference internal" href="developers/index.html">Developers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="support/index.html">Support for users</a></li>
-<li class="toctree-l2"><a class="reference internal" href="integration/index.html">Integrating with the platform</a></li>
-<li class="toctree-l2"><a class="reference internal" href="modelling-services/index.html">Modelling services</a></li>
-<li class="toctree-l2"><a class="reference internal" href="contributing/index.html">How to get involved</a></li>
-<li class="toctree-l2"><a class="reference internal" href="news.html">User manual changes</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../about.html">About</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../about.html#detailed-data">Detailed data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../about.html#all-in-one-place">All in one place</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../about.html#the-bigger-picture">The bigger picture</a></li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../metrics/index.html">Metrics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../overview.html#how-to-get-on-the-performance-platform">How to get on the Performance Platform</a></li>
-</ul>
-</li>
 </ul>
 
         
@@ -144,8 +113,6 @@
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
-      
-          <li><a href="index.html">Performance platform user manual</a> &raquo;</li>
       
     <li>Platform benefits</li>
       <li class="wy-breadcrumbs-aside">
@@ -218,21 +185,12 @@ metrics across services fro government offers</p>
           </div>
           <footer>
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="building-a-dashboard/index.html" class="btn btn-neutral float-right" title="Building a dashboard"/>Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="platform-overview.html" class="btn btn-neutral" title="Platform overview"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2013, Performance Platform.
+        &copy; Copyright All content is available under the Open Government Licence v2.0, except where otherwise stated.
     </p>
   </div>
 
