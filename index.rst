@@ -13,8 +13,7 @@ A dashboard can tell you:
 - how satisfied users were with the service
 - how long your web pages take to load and how reliable the servers are
 
-Get started – get a dashboard CTA
-=============================
+`Find out how to get a dashboard </get-a-dashboard>`_
 
 We've got loads of new features planned, including:
 ===================================================
@@ -32,8 +31,7 @@ Take a look at a few examples to get an idea of what we do:
 - `Lasting Power of Attorney registrations <https://www.gov.uk/performance/lasting-power-of-attorney>`_
 - `Tax disc renewals <https://www.gov.uk/performance/tax-disc>`_
 
-Get started – get a dashboard CTA
-=============================
+`Find out how to get a dashboard </get-a-dashboard>`_
 
 In this documentation
 =====================
