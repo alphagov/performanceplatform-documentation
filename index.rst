@@ -36,7 +36,17 @@ Take a look at a few examples to get an idea of what we do:
 In this documentation
 =====================
 
-- How to get a dashboard, including a case study
-- Software architecture and API documentation
-- User needs, research
-- Roadmap of new features
+.. toctree::
+   :maxdepth: 1
+
+   get-a-dashboard/index
+   integrating/index
+   architecture/index
+   users/index
+   roadmap/index
+   glossary
+
+.. toctree::
+   :hidden:
+
+   user-manual/index
