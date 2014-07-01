@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Our roadmap &mdash; Performance Platform Manual</title>
+  <title>Read API &mdash; Performance Platform Manual</title>
   
 
   
@@ -32,9 +32,7 @@
   
     <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
   
-    <link rel="top" title="Performance Platform Manual" href="../index.html"/>
-        <link rel="next" title="Glossary" href="../glossary.html"/>
-        <link rel="prev" title="User needs" href="../users/index.html"/> 
+    <link rel="top" title="Performance Platform Manual" href="../index.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -61,7 +59,7 @@
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
         
         
-            <ul class="current">
+            <ul>
 <li class="toctree-l1"><a class="reference internal" href="../get-a-dashboard/index.html">Get a dashboard</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../get-a-dashboard/index.html#get-in-touch">Get in touch</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../get-a-dashboard/index.html#what-happens-next">What happens next?</a></li>
@@ -72,12 +70,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../get-a-dashboard/index.html#making-corrections">Making corrections</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">Our architecture</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../architecture/index.html#data-flows">Data Flows</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../architecture/index.html#backdrop-http-api-for-persistence-and-querying">Backdrop &#8211; HTTP API for persistence and querying</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../architecture/index.html#spotlight-rendering-layer">Spotlight &#8211; rendering layer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../architecture/index.html#stagecraft-configuration-api">Stagecraft &#8211; configuration API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../architecture/index.html#stageprompt-analytics-adapter">Stageprompt &#8211; Analytics adapter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Our architecture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html#data-flows">Data Flows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#backdrop-http-api-for-persistence-and-querying">Backdrop &#8211; HTTP API for persistence and querying</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#spotlight-rendering-layer">Spotlight &#8211; rendering layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#stagecraft-configuration-api">Stagecraft &#8211; configuration API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#stageprompt-analytics-adapter">Stageprompt &#8211; Analytics adapter</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../users/index.html">User needs</a><ul>
@@ -88,8 +86,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../users/index.html#as-a-member-of-the-public">As a member of the public…</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Our roadmap</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#the-next-3-months">The next 3 months</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../roadmap/index.html">Our roadmap</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../roadmap/index.html#the-next-3-months">The next 3 months</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
@@ -116,10 +114,10 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html">Docs</a> &raquo;</li>
       
-    <li>Our roadmap</li>
+    <li>Read API</li>
       <li class="wy-breadcrumbs-aside">
         
-          <a href="../_sources/roadmap/index.txt" rel="nofollow"> View page source</a>
+          <a href="../_sources/architecture/read-api.txt" rel="nofollow"> View page source</a>
         
       </li>
   </ul>
@@ -127,27 +125,36 @@
 </div>
           <div role="main">
             
-  <div class="section" id="our-roadmap">
-<h1>Our roadmap<a class="headerlink" href="#our-roadmap" title="Permalink to this headline">¶</a></h1>
-<p>The performance platform is a new service – we&#8217;re currently in <a class="reference external" href="https://www.gov.uk/service-manual/phases/alpha.html">alpha</a>.</p>
-<div class="section" id="the-next-3-months">
-<h2>The next 3 months<a class="headerlink" href="#the-next-3-months" title="Permalink to this headline">¶</a></h2>
-<p>To come...</p>
-</div>
+  <div class="section" id="id1">
+<h1>Read API<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>The following parameters can be specified when using the Read API:</p>
+<dl class="docutils">
+<dt>&#8216;start_at&#8217;</dt>
+<dd>The date from which a date range starts. Used in conjunction with &#8216;end_at&#8217;.</dd>
+<dt>&#8216;end_at&#8217;</dt>
+<dd>The date from which a date range ends. Used in conjunction with &#8216;start_at&#8217;.</dd>
+<dt>&#8216;filter_by&#8217;</dt>
+<dd>A field to filter by. Must be a field name and value separated by a colon (:) eg. &#8216;authority:Westminster&#8217;.</dd>
+<dt>&#8216;period&#8217;</dt>
+<dd>The unit we want the results to be in. Must be one of &#8216;hour&#8217;, &#8216;day&#8217;, &#8216;week&#8217;, &#8216;month&#8217; or &#8216;quarter&#8217;.</dd>
+<dt>&#8216;group_by&#8217;</dt>
+<dd>A field to group by. Must be an existing field name.</dd>
+<dt>&#8216;sort_by&#8217;</dt>
+<dd>A field to sort by. Must be a field name and sort direction (&#8216;ascending&#8217; or &#8216;descending&#8217;) separated by a colon (:) eg. &#8216;authority:ascending&#8217;.</dd>
+<dt>&#8216;limit&#8217;</dt>
+<dd>A maximum amount of values to return. Must be a positive integer.</dd>
+<dt>&#8216;collect&#8217;</dt>
+<dd>A field to perform an agregation operation on. Must be a field name and sort direction (&#8216;sum&#8217;, &#8216;count&#8217;, &#8216;set&#8217; or &#8216;mean&#8217;) separated by a colon (:) eg. &#8216;size:mean&#8217;.</dd>
+<dt>&#8216;date&#8217;</dt>
+<dd>When specified with &#8216;delta&#8217; (and instead of &#8216;start_at&#8217; and &#8216;end_at&#8217;) determines one end of a relative date range. If only &#8216;delta&#8217; is specified the current datetime will be used.</dd>
+<dt>&#8216;delta&#8217;</dt>
+<dd>When specified instead of &#8216;start_at&#8217; and &#8216;end_at&#8217;, is added to &#8216;date&#8217; (which will be now if unspecified) to determine the other end of a relative date range. This is measured in units of &#8216;period&#8217; and may be negative.</dd>
+</dl>
 </div>
 
 
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../glossary.html" class="btn btn-neutral float-right" title="Glossary"/>Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="../users/index.html" class="btn btn-neutral" title="User needs"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>

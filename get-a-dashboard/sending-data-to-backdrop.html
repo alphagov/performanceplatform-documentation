@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Sending data to backdrop &mdash; Performance Platform Manual</title>
+  
+
+  
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+    <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
+  
+    <link rel="top" title="Performance Platform Manual" href="../index.html"/>
+        <link rel="up" title="Get a dashboard" href="index.html"/>
+        <link rel="next" title="Our architecture" href="../architecture/index.html"/>
+        <link rel="prev" title="Get a dashboard" href="index.html"/> 
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="fa fa-home"> Performance Platform Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+        
+            <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Get a dashboard</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#get-in-touch">Get in touch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#what-happens-next">What happens next?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#integrating">Integrating</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#pulling-data">Pulling data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#pushing-data">Pushing data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#manual-upload">Manual upload</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#making-corrections">Making corrections</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/index.html">Our architecture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../architecture/index.html#data-flows">Data Flows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../architecture/index.html#backdrop-http-api-for-persistence-and-querying">Backdrop &#8211; HTTP API for persistence and querying</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../architecture/index.html#spotlight-rendering-layer">Spotlight &#8211; rendering layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../architecture/index.html#stagecraft-configuration-api">Stagecraft &#8211; configuration API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../architecture/index.html#stageprompt-analytics-adapter">Stageprompt &#8211; Analytics adapter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../users/index.html">User needs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../users/index.html#our-users">Our users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../users/index.html#as-a-service-manager">As a service manager…</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../users/index.html#as-a-developer">As a developer…</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../users/index.html#as-a-minister-or-senior-civil-servant">As a minister or senior civil servant…</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../users/index.html#as-a-member-of-the-public">As a member of the public…</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../roadmap/index.html">Our roadmap</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../roadmap/index.html#the-next-3-months">The next 3 months</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">Performance Platform Documentation</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="index.html">Get a dashboard</a> &raquo;</li>
+      
+    <li>Sending data to backdrop</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          <a href="../_sources/get-a-dashboard/sending-data-to-backdrop.txt" rel="nofollow"> View page source</a>
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            
+  <div class="section" id="sending-data-to-backdrop">
+<h1>Sending data to backdrop<a class="headerlink" href="#sending-data-to-backdrop" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+<p>So you have a data-set and an access token, how do you actually get your data into backdrop?</p>
+<div class="section" id="by-http-api">
+<h2>By HTTP API<a class="headerlink" href="#by-http-api" title="Permalink to this headline">¶</a></h2>
+<p>Backdrop exposes a very small HTTP API for pushing data in. There is one endpoint per data-set that can accept one or more JSON records being sent to it vi a POST. You authorize each request by adding an Authorization header with the secret access token you should have been provided for each data-set.</p>
+<p>The client request:</p>
+<ul class="simple">
+<li>should use a URL like <cite>https://&lt;backdrop-write-host&gt;/&lt;data-set-name&gt;</cite>, where <cite>backdrop-write-host</cite> could be something like <cite>www.preview.performance.service.gov.uk</cite></li>
+<li>must have a content type of application/json</li>
+<li>must have a valid Authorization header</li>
+</ul>
+<p>The <tt class="xref doc docutils literal"><span class="pre">/send-to-backdrop/index</span></tt> tool provides a command line interface to the API.</p>
+<p>See the example below using curl (all examples using curl 7.24):</p>
+<div class="highlight-python"><div class="highlight"><pre>curl -X POST -d &#39;{&quot;name&quot;:&quot;Jane&quot;}&#39; -H &#39;Authorization: Bearer &lt;your-token&gt;&#39; -H &#39;Content-type: application/json&#39; &#39;http://&lt;backdrop-write-host&gt;/&lt;data-set-name&gt;&#39;
+</pre></div>
+</div>
+<p>Often you&#8217;ll need to send multiple records to backdrop at once. You can do this by sending an array of records:</p>
+<div class="highlight-python"><div class="highlight"><pre>curl -X POST -d &#39;[{&quot;name&quot;:&quot;Jane&quot;},{&quot;name&quot;:&quot;John&quot;}]&#39; -H &#39;Authorization: Bearer &lt;your-token&gt;&#39; -H &#39;Content-type: application/json&#39; &#39;http://&lt;backdrop-write-host&gt;/&lt;data-set-name&gt;&#39;
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">When reading back data you&#8217;ve pushed to the platform, beware of server-side caching. It&#8217;s advisable to develop against a local instance of the platform with no caching to ensure the data you&#8217;re seeing is up-to-date.</p>
+</div>
+</div>
+<div class="section" id="by-uploading-a-file">
+<h2>By uploading a file<a class="headerlink" href="#by-uploading-a-file" title="Permalink to this headline">¶</a></h2>
+<p>Backdrop also accepts file uploads through its admin interface. Log on with your signon account and you will be presented with a list of data-sets you can upload to. Upload files should be in CSV or Excel (depending what has been configured for your data-set). The first row must contain the field names and each subsequent line is values for a single record. The same rules around field names and special fields apply as for the JSON API (see below).</p>
+</div>
+<div class="section" id="what-is-a-record">
+<h2>What is a record?<a class="headerlink" href="#what-is-a-record" title="Permalink to this headline">¶</a></h2>
+<p>A record is a flat (not nested) JSON object with zero or more attributes that can be saved into backdrop and aggregated on at a later stage. In order to be a valid record it must comply to some rules.</p>
+<div class="section" id="valid-field-names">
+<h3>Valid field names<a class="headerlink" href="#valid-field-names" title="Permalink to this headline">¶</a></h3>
+<p>All record field names:</p>
+<ul class="simple">
+<li>must start with a letter</li>
+<li>must be alphanumeric</li>
+<li>may contain underscores</li>
+<li>some special field names start with an underscore</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">{&#8220;name&#8221;: &#8220;Jane&#8221;, &#8220;home_town&#8221;: &#8220;Godalming&#8221;}</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>{&#8220;name&#8221;: &#8220;Jane&#8221;, &#8220;home town&#8221;: &#8220;Godalming&#8221;} # Spaces are not allowed</p>
+<p>{&#8220;_name&#8221;: &#8220;Jane&#8221;, &#8220;home_town&#8221;: &#8220;Godalming&#8221;} # Underscore prefix is reserved</p>
+<p class="last">{&#8220;1_name&#8221;: &#8220;Jane&#8221;, &#8220;2_home_town&#8221;: &#8220;Godalming&#8221;} # First character must be a letter</p>
+</div>
+</div>
+<div class="section" id="special-fields">
+<h3>Special fields<a class="headerlink" href="#special-fields" title="Permalink to this headline">¶</a></h3>
+<p>Backdrop understands some special field names that it will treat in specific ways.</p>
+<div class="section" id="the-id-field">
+<h4>The <cite>_id</cite> field<a class="headerlink" href="#the-id-field" title="Permalink to this headline">¶</a></h4>
+<p>The <cite>_id</cite> field is a unique identifier (or primary key) for the record. You can use this if you are going to want to update records or prevent defaults. When sending a record to backdrop if a record with the provided <cite>_id</cite> already exists in the data-set it will be overwriten.</p>
+<p>The <cite>_id</cite> field:</p>
+<ul class="simple">
+<li>must be a string</li>
+<li>must not contain spaces</li>
+<li>must not be empty</li>
+</ul>
+</div>
+<div class="section" id="the-timestamp-field">
+<h4>The <cite>_timestamp</cite> field<a class="headerlink" href="#the-timestamp-field" title="Permalink to this headline">¶</a></h4>
+<p>The <cite>_timestamp</cite> field is the central field when working with time series data. It represents the time stamp of a record. It allows you to query by time ranges and aggregate by predefined time periods (ie. week, month).</p>
+<p>The <cite>_timestamp</cite> field:</p>
+<ul class="simple">
+<li>must be a string</li>
+<li>must be of the form (<cite>2013-12-31T00:00:00+00:00</cite>)</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Atom says some nice stuff about date formats &#8211; we should take a look at that.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../architecture/index.html" class="btn btn-neutral float-right" title="Our architecture"/>Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Get a dashboard"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright All content is available under the Open Government Licence v2.0, except where otherwise stated.
+    </p>
+  </div>
+
+  <a href="https://github.com/snide/sphinx_rtd_theme">Sphinx theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
