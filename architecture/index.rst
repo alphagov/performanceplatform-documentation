@@ -1,7 +1,7 @@
 .. _architecture:
 
-Architecture
-############
+Our architecture
+################
 
 The performance platform is made of several separate apps.
 

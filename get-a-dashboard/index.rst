@@ -1,12 +1,15 @@
 
-How to get a dashboard
-######################
+Get a dashboard
+###############
 
-To get a dashboard, just answer these 3 questions:
+Get in touch
+============
 
-1. Foo?
-2. Bar?
-3. Foo, bar?
+.. To get a dashboard, just answer these 3 questions:
+
+.. 1. Foo?
+.. 2. Bar?
+.. 3. Foo, bar?
 
 Email us at `performance@digital.cabinet-office.gov.uk <mailto:performance@digital.cabinet-office.gov.uk>`_
 
@@ -23,6 +26,9 @@ We need to get data from the service into the performance platform. Typically we
 Once we've got some data to work with, our developers will put together a dashboard for your service. Our design and user research team will work with you to figure out how best to present your data.
 
 We'll give you a preview of your dashboard before it goes live using our staging environment, and you'll have a chance to write a blog post if you want to.
+
+Integrating
+===========
 
 To use the performance platform, you have to get data about your system
 in to the performance platform. There are currently 3 ways to do this:
