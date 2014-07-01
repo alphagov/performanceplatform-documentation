@@ -45,8 +45,3 @@ In this documentation
    users/index
    roadmap/index
    glossary
-
-.. toctree::
-   :hidden:
-
-   user-manual/index
