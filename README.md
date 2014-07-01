@@ -1,5 +1,5 @@
 
-# Performance Platform Documentaion
+# Performance Platform Documentation
 
 To build it locally make sure you have Sphinx_ installed. You can install it with pip::
 
