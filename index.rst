@@ -1,3 +1,6 @@
+:toctree:
+  :maxdepth: 1
+
 
 Get a Performance Dashboard
 ###########################
@@ -51,7 +54,7 @@ There are 3 standard ways data can be put into a dashboard. You can choose to us
 
    You can use :ref:`Stageprompt <stageprompt>` when you share your analytics data. This provides a javascript wrapper around your data, so that if you change analytics provider in the future, you will not have to make changes to the connection you have with the Performance Platform.
 
-2. Your developers can write code that automatically sends the latest data about your service to a dashboard (using the platform’s write API). This will mean you don’t have to spend time manually updating spreadsheets.
+2. Your developers can write code that automatically sends the latest data about your service to a dashboard (using the platform’s :doc:`write API <api/write-api>`). This will mean you don’t have to spend time manually updating spreadsheets.
 
    Contact `performance@digital.cabinet-office.gov.uk <mailto:performance@digital.cabinet-office.gov.uk>`_  to discuss getting access to the platform’s API.
 
