@@ -41,7 +41,7 @@ You can choose from a number of other ways a dashboard can measure your service.
 
 
 Get your data into a dashboard
-==========================
+==============================
 
 There are 3 standard ways data can be put into a dashboard. You can choose to use just one or a mix of them all.
 
