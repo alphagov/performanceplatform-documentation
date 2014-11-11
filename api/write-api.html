@@ -109,8 +109,8 @@ header with the secret access token you should have been provided for
 each data-set.</p>
 <p>The client request:</p>
 <ul class="simple">
-<li>should use a URL like <cite>https:/{write-host}/&lt;data-set-name&gt;</cite>, where
-<cite>write-host</cite> could be something like <cite>www.performance.service.gov.uk</cite></li>
+<li>should use a URL like <cite>https://&lt;write-host&gt;/data/&lt;data-group&gt;/&lt;data-type&gt;</cite>, where
+<cite>&lt;write-host&gt;</cite> could be something like <cite>www.performance.service.gov.uk</cite></li>
 <li>must have an HTTP Content-Type header of application/json</li>
 <li>must have a valid <a class="reference external" href="https://tools.ietf.org/html/rfc6750#section-2.1">Authorization header</a></li>
 </ul>
@@ -119,7 +119,7 @@ each data-set.</p>
 <div class="highlight-python"><div class="highlight"><pre>&gt; curl -X POST -d &#39;[{&quot;name&quot;:&quot;Jane&quot;}, {&quot;name&quot;:&quot;John&quot;}]&#39; \
        -H &#39;Authorization: Bearer &lt;your-token&gt;&#39; \
        -H &#39;Content-Type: application/json&#39; \
-       &#39;http://{write-host}/&lt;data-set-name&gt;&#39;
+       &#39;https://&lt;write-host&gt;/data/&lt;data-group&gt;/&lt;data-type&gt;&#39;
 </pre></div>
 </div>
 </div>

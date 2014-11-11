@@ -15,8 +15,8 @@ each data-set.
 
 The client request:
 
-- should use a URL like `https:/{write-host}/<data-set-name>`, where
-  `write-host` could be something like `www.performance.service.gov.uk`
+- should use a URL like `https://<write-host>/data/<data-group>/<data-type>`, where
+  `<write-host>` could be something like `www.performance.service.gov.uk`
 - must have an HTTP Content-Type header of application/json
 - must have a valid `Authorization header <https://tools.ietf.org/html/rfc6750#section-2.1>`_
 
@@ -28,4 +28,4 @@ See the example below using curl (all examples using curl 7.24)::
   > curl -X POST -d '[{"name":"Jane"}, {"name":"John"}]' \
          -H 'Authorization: Bearer <your-token>' \
          -H 'Content-Type: application/json' \
-         'http://{write-host}/<data-set-name>'
+         'https://<write-host>/data/<data-group>/<data-type>'
