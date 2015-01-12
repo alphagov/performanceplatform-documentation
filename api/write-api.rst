@@ -23,9 +23,82 @@ The client request:
 
 The `backdropsend <https://github.com/alphagov/backdropsend backdrop-send>`_ tool provides a command line interface to the API. This adds support for retrying.
 
-See the example below using curl (all examples using curl 7.24)::
 
-  > curl -X POST -d '[{"name":"Jane"}, {"name":"John"}]' \
-         -H 'Authorization: Bearer <your-token>' \
-         -H 'Content-Type: application/json' \
-         'https://<write-host>/data/<data-group>/<data-type>'
+.. http:post:: /data/(string:data_group)/(string:data_type)
+
+  :synopsis: Insert data into a data set by sending a POST request with JSON in the body.
+
+  **Example request**:
+
+  .. sourcecode:: http
+
+    POST /data/carers-allowance/transaction-count HTTP/1.1
+    Host: www.performance.service.gov.uk
+    Authorization: Bearer abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz01
+    Content-Type: application/json
+
+    [
+      {
+        "_id": "unique-identifier-1",
+        "_timestamp": "2015-01-01T00:00:00Z",
+        "count": 123
+      },
+      {
+        "_id": "unique-identifier-2",
+        "_timestamp": "2015-01-02T00:00:00Z",
+        "count": 456
+      }
+    ]
+
+  **Example response**:
+
+  .. sourcecode:: http
+
+    HTTP/1.1 200 OK
+    Content-Type: application/json
+
+    {
+        "status": "ok"
+    }
+
+  :reqheader Authorization: required OAuth token to authenticate the request
+  :reqheader Content-Type: type of the request body (only JSON is currently supported)
+
+  :<json string _timestamp: A datetime representing the start of the
+    period that the data refers to. Required.
+  :<json string _id: A string that uniquely identifies
+    that record. If a record with that identifier already exists, it will be overwritten. Optional.
+
+  :statuscode 200: data from the request body was stored in the data set
+
+
+.. http:put:: /data/(string:data_group)/(string:data_type)
+
+  :synopsis: Empty a data set by sending an empty array as a PUT request.
+
+  **Example request**:
+
+  .. sourcecode:: http
+
+    PUT /data/carers-allowance/transaction-count HTTP/1.1
+    Host: www.performance.service.gov.uk
+    Authorization: Bearer abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz01
+    Content-Type: application/json
+
+    []
+
+  **Example response**:
+
+  .. sourcecode:: http
+
+    HTTP/1.1 200 OK
+    Content-Type: application/json
+
+    {
+        "message": "carers_allowance_transaction_count now contains 0 records",
+        "status": "ok"
+    }
+
+  :reqheader Authorization: required OAuth token to authenticate the request
+
+  :statuscode 200: data set now contains no records
