@@ -115,13 +115,124 @@ each data-set.</p>
 <li>must have a valid <a class="reference external" href="https://tools.ietf.org/html/rfc6750#section-2.1">Authorization header</a></li>
 </ul>
 <p>The <a class="reference external" href="https://github.com/alphagov/backdropsendbackdrop-send">backdropsend</a> tool provides a command line interface to the API. This adds support for retrying.</p>
-<p>See the example below using curl (all examples using curl 7.24):</p>
-<div class="highlight-python"><div class="highlight"><pre>&gt; curl -X POST -d &#39;[{&quot;name&quot;:&quot;Jane&quot;}, {&quot;name&quot;:&quot;John&quot;}]&#39; \
-       -H &#39;Authorization: Bearer &lt;your-token&gt;&#39; \
-       -H &#39;Content-Type: application/json&#39; \
-       &#39;https://&lt;write-host&gt;/data/&lt;data-group&gt;/&lt;data-type&gt;&#39;
+<dl class="post">
+<dt id="post--data-(string-data_group)-(string-data_type)">
+<tt class="descname">POST </tt><tt class="descname">/data/</tt><big>(</big><em class="property">string: </em><em>data_group</em><big>)</big><tt class="descname">/</tt><big>(</big><em class="property">string: </em><em>data_type</em><big>)</big><a class="headerlink" href="#post--data-(string-data_group)-(string-data_type)" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Synopsis:</th><td class="field-body">Insert data into a data set by sending a POST request with JSON in the body.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example request</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span class="nf">POST</span> <span class="nn">/data/carers-allowance/transaction-count</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Host</span><span class="o">:</span> <span class="l">www.performance.service.gov.uk</span>
+<span class="na">Authorization</span><span class="o">:</span> <span class="l">Bearer abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz01</span>
+<span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/json</span>
+
+<span class="p">[</span>
+  <span class="p">{</span>
+    <span class="nt">&quot;_id&quot;</span><span class="p">:</span> <span class="s2">&quot;unique-identifier-1&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;_timestamp&quot;</span><span class="p">:</span> <span class="s2">&quot;2015-01-01T00:00:00Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">123</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="nt">&quot;_id&quot;</span><span class="p">:</span> <span class="s2">&quot;unique-identifier-2&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;_timestamp&quot;</span><span class="p">:</span> <span class="s2">&quot;2015-01-02T00:00:00Z&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;count&quot;</span><span class="p">:</span> <span class="mi">456</span>
+  <span class="p">}</span>
+<span class="p">]</span>
 </pre></div>
 </div>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+<span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/json</span>
+
+<span class="p">{</span>
+    <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Request Headers:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><ul class="first simple">
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.8">Authorization</a> &#8211; required OAuth token to authenticate the request</li>
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.17">Content-Type</a> &#8211; type of the request body (only JSON is currently supported)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Request JSON Object:</th></tr>
+<tr class="field-even field"><td>&nbsp;</td><td class="field-body"><ul class="first simple">
+<li><strong>_timestamp</strong> (<em>string</em>) &#8211; A datetime representing the start of the
+period that the data refers to. Required.</li>
+<li><strong>_id</strong> (<em>string</em>) &#8211; A string that uniquely identifies
+that record. If a record with that identifier already exists, it will be overwritten. Optional.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Status Codes:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a> &#8211; data from the request body was stored in the data set</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="put">
+<dt id="put--data-(string-data_group)-(string-data_type)">
+<tt class="descname">PUT </tt><tt class="descname">/data/</tt><big>(</big><em class="property">string: </em><em>data_group</em><big>)</big><tt class="descname">/</tt><big>(</big><em class="property">string: </em><em>data_type</em><big>)</big><a class="headerlink" href="#put--data-(string-data_group)-(string-data_type)" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Synopsis:</th><td class="field-body">Empty a data set by sending an empty array as a PUT request.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example request</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span class="nf">PUT</span> <span class="nn">/data/carers-allowance/transaction-count</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Host</span><span class="o">:</span> <span class="l">www.performance.service.gov.uk</span>
+<span class="na">Authorization</span><span class="o">:</span> <span class="l">Bearer abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz01</span>
+<span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/json</span>
+
+<span class="p">[]</span>
+</pre></div>
+</div>
+<p><strong>Example response</strong>:</p>
+<div class="highlight-http"><div class="highlight"><pre><span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+<span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/json</span>
+
+<span class="p">{</span>
+    <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;carers_allowance_transaction_count now contains 0 records&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Request Headers:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body"><ul class="first simple">
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.8">Authorization</a> &#8211; required OAuth token to authenticate the request</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Status Codes:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference external" href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1">200 OK</a> &#8211; data set now contains no records</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 </div>
 
 
