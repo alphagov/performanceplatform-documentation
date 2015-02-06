@@ -1,5 +1,5 @@
 Write API
-=========
+#########
 
 We expose a simple HTTP API for storing data in the Performance
 Platform.
@@ -23,6 +23,8 @@ The client request:
 
 The `backdropsend <https://github.com/alphagov/backdropsend>`_ tool provides a command line interface to the API. This adds support for retrying.
 
+Adding data
+===========
 
 .. http:post:: /data/(string:data_group)/(string:data_type)
 
@@ -71,6 +73,8 @@ The `backdropsend <https://github.com/alphagov/backdropsend>`_ tool provides a c
 
   :statuscode 200: data from the request body was stored in the data set
 
+Emptying a data set
+===================
 
 .. http:put:: /data/(string:data_group)/(string:data_type)
 
