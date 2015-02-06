@@ -21,7 +21,7 @@ The client request:
 - must have a valid `Authorization header <https://tools.ietf.org/html/rfc6750#section-2.1>`_
 
 
-The `backdropsend <https://github.com/alphagov/backdropsend backdrop-send>`_ tool provides a command line interface to the API. This adds support for retrying.
+The `backdropsend <https://github.com/alphagov/backdropsend>`_ tool provides a command line interface to the API. This adds support for retrying.
 
 
 .. http:post:: /data/(string:data_group)/(string:data_type)
