@@ -106,3 +106,13 @@ Emptying a data set
   :reqheader Authorization: required OAuth token to authenticate the request
 
   :statuscode 200: data set now contains no records
+
+Client implementations
+======================
+
+We provide several implementations of client code to talk to the Performance Platform:
+
+- `Go <https://github.com/alphagov/performanceplatform-client.go>`_
+- `Java implementation <https://github.com/alphagov/pp-db-collector-template>`_ intended to periodically poll a JDBC data store and push data Performance Platform
+- `JavaScript <https://github.com/alphagov/performanceplatform-client.js>`_
+- `Python <https://github.com/alphagov/performanceplatform-client.py>`_
