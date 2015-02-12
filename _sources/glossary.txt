@@ -20,7 +20,7 @@ Glossary
 
   Dataset
     A collection of data of a particular type. In relational terms, this is a table.
-    In non-relational terms, this is a document.
+    In non-relational terms, this is a collection of documents.
 
   Data type
     Each :term:`Dataset` stores a particular type of data, eg current traffic volume
