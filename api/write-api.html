@@ -32,7 +32,9 @@
   
     <link rel="stylesheet" href="../_static/theme_overrides.css" type="text/css" />
   
-    <link rel="top" title="Performance Platform Manual" href="../index.html"/> 
+    <link rel="top" title="Performance Platform Manual" href="../index.html"/>
+        <link rel="next" title="Glossary" href="../glossary.html"/>
+        <link rel="prev" title="Get a Performance Dashboard" href="../index.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -59,11 +61,17 @@
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
         
         
-            <!-- Local TOC -->
-            <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Write API</a></li>
+            <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Get a Performance Dashboard</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Write API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#adding-data">Adding data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#emptying-a-data-set">Emptying a data set</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#client-implementations">Client implementations</a></li>
 </ul>
-</div>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
+</ul>
+
         
       </div>
       &nbsp;
@@ -114,7 +122,9 @@ each data-set.</p>
 <li>must have an HTTP Content-Type header of application/json</li>
 <li>must have a valid <a class="reference external" href="https://tools.ietf.org/html/rfc6750#section-2.1">Authorization header</a></li>
 </ul>
-<p>The <a class="reference external" href="https://github.com/alphagov/backdropsendbackdrop-send">backdropsend</a> tool provides a command line interface to the API. This adds support for retrying.</p>
+<p>The <a class="reference external" href="https://github.com/alphagov/backdropsend">backdropsend</a> tool provides a command line interface to the API. This adds support for retrying.</p>
+<div class="section" id="adding-data">
+<h2>Adding data<a class="headerlink" href="#adding-data" title="Permalink to this headline">¶</a></h2>
 <dl class="post">
 <dt id="post--data-(string-data_group)-(string-data_type)">
 <tt class="descname">POST </tt><tt class="descname">/data/</tt><big>(</big><em class="property">string: </em><em>data_group</em><big>)</big><tt class="descname">/</tt><big>(</big><em class="property">string: </em><em>data_type</em><big>)</big><a class="headerlink" href="#post--data-(string-data_group)-(string-data_type)" title="Permalink to this definition">¶</a></dt>
@@ -184,6 +194,9 @@ that record. If a record with that identifier already exists, it will be overwri
 </table>
 </dd></dl>
 
+</div>
+<div class="section" id="emptying-a-data-set">
+<h2>Emptying a data set<a class="headerlink" href="#emptying-a-data-set" title="Permalink to this headline">¶</a></h2>
 <dl class="put">
 <dt id="put--data-(string-data_group)-(string-data_type)">
 <tt class="descname">PUT </tt><tt class="descname">/data/</tt><big>(</big><em class="property">string: </em><em>data_group</em><big>)</big><tt class="descname">/</tt><big>(</big><em class="property">string: </em><em>data_type</em><big>)</big><a class="headerlink" href="#put--data-(string-data_group)-(string-data_type)" title="Permalink to this definition">¶</a></dt>
@@ -234,10 +247,30 @@ that record. If a record with that identifier already exists, it will be overwri
 </dd></dl>
 
 </div>
+<div class="section" id="client-implementations">
+<h2>Client implementations<a class="headerlink" href="#client-implementations" title="Permalink to this headline">¶</a></h2>
+<p>We provide several implementations of client code to talk to the Performance Platform:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/alphagov/performanceplatform-client.go">Go</a></li>
+<li><a class="reference external" href="https://github.com/alphagov/pp-db-collector-template">Java implementation</a> intended to periodically poll a JDBC data store and push data Performance Platform</li>
+<li><a class="reference external" href="https://github.com/alphagov/performanceplatform-client.js">JavaScript</a></li>
+<li><a class="reference external" href="https://github.com/alphagov/performanceplatform-client.py">Python</a></li>
+</ul>
+</div>
+</div>
 
 
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../glossary.html" class="btn btn-neutral float-right" title="Glossary"/>Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="Get a Performance Dashboard"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

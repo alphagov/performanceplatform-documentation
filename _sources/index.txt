@@ -1,5 +1,10 @@
-:toctree:
-  :maxdepth: 1
+.. toctree::
+    :maxdepth: 1
+    :hidden:
+
+    self
+    api/write-api
+    glossary
 
 
 Get a Performance Dashboard
@@ -52,7 +57,7 @@ There are 3 standard ways data can be put into a dashboard. You can choose to us
 
    The analytics data will be able to track how a service is used, eg how many people view a service online, complete an online application or access the service with their mobile phone.
 
-   You can use :ref:`Stageprompt <stageprompt>` when you share your analytics data. This provides a javascript wrapper around your data, so that if you change analytics provider in the future, you will not have to make changes to the connection you have with the Performance Platform.
+   You can use :term:`Stageprompt <stageprompt>` when you share your analytics data. This provides a javascript wrapper around your data, so that if you change analytics provider in the future, you will not have to make changes to the connection you have with the Performance Platform.
 
 2. Your developers can write code that automatically sends the latest data about your service to a dashboard (using the platform’s :doc:`write API <api/write-api>`). This will mean you don’t have to spend time manually updating spreadsheets.
 
@@ -92,5 +97,5 @@ Make corrections to dashboard data
 
 Occasionally data in the dashboards may be incorrect. You can correct the data in your dashboard by:
 
-- 	contacting the performance team if it’s data collected for you
--	uploading the revised data to your spreadsheet - this will automatically display in the dashboard
+- contacting the performance team if it’s data collected for you
+- uploading the revised data to your spreadsheet - this will automatically display in the dashboard

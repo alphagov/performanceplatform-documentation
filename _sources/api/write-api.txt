@@ -1,5 +1,5 @@
 Write API
-=========
+#########
 
 We expose a simple HTTP API for storing data in the Performance
 Platform.
@@ -21,8 +21,10 @@ The client request:
 - must have a valid `Authorization header <https://tools.ietf.org/html/rfc6750#section-2.1>`_
 
 
-The `backdropsend <https://github.com/alphagov/backdropsend backdrop-send>`_ tool provides a command line interface to the API. This adds support for retrying.
+The `backdropsend <https://github.com/alphagov/backdropsend>`_ tool provides a command line interface to the API. This adds support for retrying.
 
+Adding data
+===========
 
 .. http:post:: /data/(string:data_group)/(string:data_type)
 
@@ -71,6 +73,8 @@ The `backdropsend <https://github.com/alphagov/backdropsend backdrop-send>`_ too
 
   :statuscode 200: data from the request body was stored in the data set
 
+Emptying a data set
+===================
 
 .. http:put:: /data/(string:data_group)/(string:data_type)
 
@@ -102,3 +106,13 @@ The `backdropsend <https://github.com/alphagov/backdropsend backdrop-send>`_ too
   :reqheader Authorization: required OAuth token to authenticate the request
 
   :statuscode 200: data set now contains no records
+
+Client implementations
+======================
+
+We provide several implementations of client code to talk to the Performance Platform:
+
+- `Go <https://github.com/alphagov/performanceplatform-client.go>`_
+- `Java implementation <https://github.com/alphagov/pp-db-collector-template>`_ intended to periodically poll a JDBC data store and push data Performance Platform
+- `JavaScript <https://github.com/alphagov/performanceplatform-client.js>`_
+- `Python <https://github.com/alphagov/performanceplatform-client.py>`_

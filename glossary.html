@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>HTTP Routing Table &mdash; Performance Platform Manual</title>
+  <title>Glossary &mdash; Performance Platform Manual</title>
   
 
   
@@ -33,13 +33,7 @@
     <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
   
     <link rel="top" title="Performance Platform Manual" href="index.html"/>
- 
-
-    <script type="text/javascript">
-      DOCUMENTATION_OPTIONS.COLLAPSE_INDEX = true;
-    </script>
-
-
+        <link rel="prev" title="Write API" href="api/write-api.html"/> 
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
@@ -66,7 +60,7 @@
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
         
         
-            <ul>
+            <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="index.html">Get a Performance Dashboard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api/write-api.html">Write API</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="api/write-api.html#adding-data">Adding data</a></li>
@@ -74,7 +68,7 @@
 <li class="toctree-l2"><a class="reference internal" href="api/write-api.html#client-implementations">Client implementations</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Glossary</a></li>
 </ul>
 
         
@@ -98,8 +92,10 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li></li>
+    <li>Glossary</li>
       <li class="wy-breadcrumbs-aside">
+        
+          <a href="_sources/glossary.txt" rel="nofollow"> View page source</a>
         
       </li>
   </ul>
@@ -107,32 +103,63 @@
 </div>
           <div role="main">
             
-
-   <h1>HTTP Routing Table</h1>
-
-   <div class="modindex-jumpbox">
-   <a href="#cap-/data"><strong>/data</strong></a>
-   </div>
-
-   <table class="indextable modindextable" cellspacing="0" cellpadding="2">
-     <tr class="pcap"><td></td><td>&nbsp;</td><td></td></tr>
-     <tr class="cap" id="cap-/data"><td></td><td>
-       <strong>/data</strong></td><td></td></tr>
-     <tr>
-       <td></td>
-       <td>
-       <a href="api/write-api.html#post--data-(string-data_group)-(string-data_type)"><tt class="xref">POST /data/(string:data_group)/(string:data_type)</tt></a></td><td>
-       <em></em></td></tr>
-     <tr>
-       <td></td>
-       <td>
-       <a href="api/write-api.html#put--data-(string-data_group)-(string-data_type)"><tt class="xref">PUT /data/(string:data_group)/(string:data_type)</tt></a></td><td>
-       <em></em></td></tr>
-   </table>
+  <div class="section" id="glossary">
+<h1>Glossary<a class="headerlink" href="#glossary" title="Permalink to this headline">¶</a></h1>
+<dl class="glossary docutils">
+<dt id="term-aggregate">Aggregate</dt>
+<dd>Applying a function to a Measure, such as summing, calculating the mean etc</dd>
+<dt id="term-backdrop">Backdrop</dt>
+<dd>An application that is part of the performance platform. It provides the <a class="reference external" href="https://github.com/alphagov/backdrop">read and write API</a> for data.</dd>
+<dt id="term-chart">Chart</dt>
+<dd>A graphical representation of a Measure and a Dimension (eg number of applications by channel)</dd>
+<dt id="term-dashboard">Dashboard</dt>
+<dd>A page showing multiple metrics, typically for a single <a class="reference internal" href="#term-service"><em class="xref std std-term">service</em></a></dd>
+<dt id="term-data-group">Data group</dt>
+<dd>Something</dd>
+<dt id="term-dataset">Dataset</dt>
+<dd>A collection of data of a particular type. In relational terms, this is a table.
+In non-relational terms, this is a document.</dd>
+<dt id="term-data-type">Data type</dt>
+<dd>Each <a class="reference internal" href="#term-dataset"><em class="xref std std-term">Dataset</em></a> stores a particular type of data, eg current traffic volume</dd>
+<dt id="term-dimension">Dimension</dt>
+<dd>A non-numeric type of :term: <cite>Field</cite> eg an operating system or browser</dd>
+<dt id="term-element">Element</dt>
+<dd>A component of a Visualisation such as a chart or aggregate summary</dd>
+<dt id="term-field">Field</dt>
+<dd>A &#8216;column&#8217; in a dataset</dd>
+<dt id="term-measure">Measure</dt>
+<dd>A numeric type of :term: <cite>Field</cite>, eg number of applications. A Measure may be aggregated</dd>
+<dt id="term-metric">Metric</dt>
+<dd>A specific data series, eg completion rate, user satisfaction, page load time, uptime etc</dd>
+<dt id="term-module">Module</dt>
+<dd>A module is a <a class="reference internal" href="#term-metric"><em class="xref std std-term">metric</em></a> and a <a class="reference internal" href="#term-visualisation"><em class="xref std std-term">visualisation</em></a> together, eg digital take-up shown as a line chart</dd>
+<dt id="term-observation">Observation</dt>
+<dd>A &#8216;row&#8217; in a dataset</dd>
+<dt id="term-service">Service</dt>
+<dd>Central govenment in the UK operates 766 services, eg Renew you car tax, Apply for Carer&#8217;s Allowance, Book a practical driving test etc</dd>
+<dt id="term-service-group">Service Group</dt>
+<dd>A group of closely related services, eg Carer&#8217;s Allowance service group includes applications, existing claims, appeals etc</dd>
+<dt id="term-spotlight">Spotlight</dt>
+<dd>An application that is part of the performance platform. It is responsible for <a class="reference external" href="https://github.com/alphagov/backdrop">rendering data</a> from the <a class="reference internal" href="#term-backdrop"><em class="xref std std-term">Backdrop</em></a> API to display visualisations of service performance</dd>
+<dt id="term-stageprompt">Stageprompt</dt>
+<dd>A JavaScript library that provides an adapter over analytics software</dd>
+<dt id="term-transaction">Transaction</dt>
+<dd>Central government in the UK handles about 1.5 billion transactions a year, including applications, renewals, bookings, claims etc</dd>
+<dt id="term-visualisation">Visualisation</dt>
+<dd>A set of Elements using the Measures and Dimensions from the Dataset</dd>
+</dl>
+</div>
 
 
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="api/write-api.html" class="btn btn-neutral" title="Write API"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
