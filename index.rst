@@ -7,95 +7,147 @@
     glossary
 
 
-Get a Performance Dashboard
+Signing up to the Performance Platform
 ###########################
 
-Get in touch
+The following pages explain what the Performance Platform is and how to connect to it.
+
+We believe every government service should have a dashboard. With meaningful live data you’ll be ideally placed to create great services for your users. Many service managers have found that a dashboard significantly reduces reporting overheads too.
+
+So that government services can meet the criteria in the `Digital by Default Service Standard <https://www.gov.uk/service-manual/digital-by-default>`_ they are required to report performance data on the `performance platform <https://www.gov.uk/service-manual/measurement/performance-platform.html>`_. This guide shows you how to sign up. 
+
+Before you start
 ============
 
-Email the performance team at `performance@digital.cabinet-office.gov.uk <mailto:performance@digital.cabinet-office.gov.uk>`_ to start.
+Please discuss your dashboard requirements with whoever will be signing off the publication of the dashboard as soon as possible. 
 
-The email must tell the team:
-
--	the name of your service
--	a short description of your service
--	the name and contact details of your service manager
--	whether you have access to developers who can help configure the dashboard
--	the name and contact details of these developers
-
-You can still get a dashboard without help from developers. The performance team can help you through the process.
-
-Without help from developers, your dashboard data won’t be automatically updated. You own the data in the dashboard and will be responsible for regularly maintaining its quality.
+We’ve found this often takes longer than the building of the dashboard itself. 
 
 
-What happens next
-=================
+Our blog
+============
 
-You’ll be invited to a meeting with the performance team to find out what data you already collect from your service. The team can also discuss how other data can be collected and how this data can be put into the dashboard.
+We typically post a couple of times a week about new dashboards, improvements to the platform and where we’re headed. We also welcome guest blog posts!
 
-Every performance dashboard must measure a service according to how:
+`Visit our blog <https://gdsdata.blog.gov.uk/category/performance-platform/>`_
 
-- much it costs each person to use the service - known as 'cost per transaction'
-- satisfied people feel when using the service - known as 'user satisfaction'
-- likely people are to complete the service - known as the 'completion rate'
-- many people use the service - known as ‘digital take-up’
+`Sign up for news by email <https://public.govdelivery.com/accounts/UKGOVUK/subscriber/new?topic_id=UKGOVUK_6816>`_
 
-You can choose from a number of other ways a dashboard can measure your service. You have the option to measure how:
+How to get a dashboard
+======================
 
-- much help people need when using the service
-- long it takes the service pages to load
-- reliable the service’s servers are
-- many people use the service online compared to by phone or in paper form
+Different services get different types of dashboard.
+
+Transactional services
+----------------------
+We have a `standard dashboard <https://www.gov.uk/performance/standard-dashboard>`_ for transactional services which includes our `four mandatory KPIs <https://www.gov.uk/service-manual/measurement/index.html>`_.
+
+- Cost per transaction (how much it costs each person to use the service)
+
+- User satisfaction (how satisfied people feel when using the service)
+
+- Completion rate (how many people complete the service)
+
+- Digital take-up (percentage of people using digital options versus others)
+
+For services using Google Analytics we’re also able to quickly add:
+
+- number of people using the service right now
+
+- % of device and browser types being used
+
+- % new versus returning users
+
+- the usage of help text
+
+If you’re using Webtrends, Piwik or another method of collecting analytics, we can probably still help you. Please get in touch.
 
 
-Get your data into a dashboard
+Non-transactional services
+--------------------------
+If your service is not transactional then please `get in touch <mailto:performance@digital.cabinet-office.gov.uk>`_ and we’ll show the other kinds of dashboards we’ve built.
+
+
+How to get a standards transactional dashboard
 ==============================
 
-There are 3 standard ways data can be put into a dashboard. You can choose to use just one or a mix of them all.
-
-1. You can share your analytics data with the Performance Dashboard team - eg analytics data from Google Analytics, Omniture, or Piwik.
-
-   The analytics data will be able to track how a service is used, eg how many people view a service online, complete an online application or access the service with their mobile phone.
-
-   You can use :term:`Stageprompt <stageprompt>` when you share your analytics data. This provides a javascript wrapper around your data, so that if you change analytics provider in the future, you will not have to make changes to the connection you have with the Performance Platform.
-
-2. Your developers can write code that automatically sends the latest data about your service to a dashboard (using the platform’s :doc:`write API <api/write-api>`). This will mean you don’t have to spend time manually updating spreadsheets.
-
-   Contact `performance@digital.cabinet-office.gov.uk <mailto:performance@digital.cabinet-office.gov.uk>`_  to discuss getting access to the platform’s API.
-
-3. Put your data in a spreadsheet and upload the spreadsheet to the performance dashboard website.  Ask the performance team for access to the admin user interface to do this.
-
-   You’re responsible for regularly updating the spreadsheet with your latest data. Whenever your spreadsheet is updated, the dashboard will be updated. You’ll also be notified if the performance team expect new data to be uploaded by a certain date.
+We need eight pieces of information from you (see below).
 
 
-User satisfaction
-=================
++--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ 
+| Required information     | Please email performance@digital.cabinet-office.gov.uk                                                                                                                                                                   |  
++==========================+==========================================================================================================================================================================================================================+
+| Your contact details     |- Your name                                                                                                                                                                                                               |
+|                          |                                                                                                                                                                                                                          |
+|                          |- Your email address                                                                                                                                                                                                      |
+|                          |                                                                                                                                                                                                                          |
+|                          |- Best phone number to reach you on                                                                                                                                                                                       |
++--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Sign off contact details |- Their name                                                                                                                                                                                                              | 
+|                          |                                                                                                                                                                                                                          |
+|                          |- Their email address                                                                                                                                                                                                     |
+|                          |                                                                                                                                                                                                                          |
+|                          |- Best phone number to reach them on                                                                                                                                                                                      |
+|                          |                                                                                                                                                                                                                          |
+|                          |Please discuss your dashboard requirements with whoever will be signing off the publication of the dashboard as soon as possible.                                                                                         |
+|                          |We’ve found this often takes longer than the building of the dashboard itself.                                                                                                                                            |
++--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Service description      |- The name of your service as shown to users                                                                                                                                                                              |
+|                          |                                                                                                                                                                                                                          |
+|                          |- Short description of what the service does and for who                                                                                                                                                                  |
+|                          |                                                                                                                                                                                                                          |
+|                          |- URL of the service start page (and the start page on GOV.UK if this is different)                                                                                                                                       |
++--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Cost per transaction     |- URL of the `Transactions Explorer <https://www.gov.uk/performance/transactions-explorer/all-services/by-transactions-per-year/descending>`_ data we need to use                                                         |                                                                                                          
+|                          |                                                                                                                                                                                                                          |
+|                          |If your service is not included on the Transactions Explorer, please email clifford.sheppard@digital.cabinet-office.gov.uk                                                                                                |
+|                          |If your service doesn’t have cost information, please let us know.                                                                                                                                                        |
++--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| User satisfaction        |- URL for your GOV.UK ‘done’ page.                                                                                                                                                                                        |
+|                          |                                                                                                                                                                                                                          |
+|                          |You can get a ‘done’ page by clicking ‘content change’ on the `GOV.UK support site <https://support.production.alphagov.co.uk/>`_. If you can’t access this, please speak to your GDS point of contact in your department.| 
+|                          |                                                                                                                                                                                                                          |
+|                          |If you capture user satisfaction in a different way please tell us and we’ll try to include it.                                                                                                                           |
+|                          |If you don’t capture this data, please let us know.                                                                                                                                                                       |
++--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Completion rate          |If you use Google Analytics we need:                                                                                                                                                                                      |
+|                          |                                                                                                                                                                                                                          |
+|                          |- `View and read permissions <https://support.google.com/analytics/answer/1009702?hl=en>`_ for googleapi@digital.cabinet-office.gov.uk and team members                                                                   |
+|                          |                                                                                                                                                                                                                          |
+|                          |- Details of at least one `goal <https://support.google.com/analytics/answer/1116091?hl=en-GB) with a start and complete page/stage>`_ that allows us to calculate the completion rate                                    |
+|                          |                                                                                                                                                                                                                          |
+|                          |If you use a different analytics provider (e.g. Webtrends, Piwik), please let us know.                                                                                                                                    |
++--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Digital take-up          |- A completed version of this `spreadsheet <https://docs.google.com/a/digital.cabinet-office.gov.uk/spreadsheets/d/1FGtsvPpot2vs5aPYgZwJv1f3bNZn-ThfmIytjgRjEIw/edit#gid=1417764370>`_                                    |         
+|                          |                                                                                                                                                                                                                          |
+|                          |- Name and email address of people who will upload the data on an ongoing basis                                                                                                                                           |
+|                          |                                                                                                                                                                                                                          |
+|                          |If you would prefer to use our platform API to automate the upload of data please let us know.                                                                                                                            |
++--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Service availability     |URL for a page or file within your service that:                                                                                                                                                                          |
+|                          |                                                                                                                                                                                                                          |
+|                          |- indicates that the service is up or down                                                                                                                                                                                |
+|                          |                                                                                                                                                                                                                          |
+|                          |- isn’t accessible by your users (us pinging it will bias your statistics)                                                                                                                                                |
+|                          |                                                                                                                                                                                                                          |
+|                          |We show service availability and response time using information from `Pingdom <https://www.pingdom.com/>`_.                                                                                                              |                 
++--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-The last page of your service must link to the GOV.UK ‘done’ page where people are asked to complete a user satisfaction survey. The performance team can automatically add this feedback from the survey to your service dashboard.
+Once we have this information we’ll publish your dashboard within 5 days to a non-linked non-searchable url.  If we’ve got any questions we’ll call you.
 
-Speak to your GOV.UK point of contact or service manager to get your service linked to the ‘done’ page if it’s not already. They should know the process and have the permissions to set up the link using the GOV.UK support form.
+Keeping your dashboard up to date 
+================================
 
+You own the data in the dashboard and are responsible for maintaining its quality. 
 
-Service availability
-====================
+If your dashboard is supported by an API then this data will update automatically. 
 
-Your developers will need to supply the performance team with a ‘health-check’ URL from the service so the uptime and response time can be measured.
+If your dashboard is supported by spreadsheet data you’ll need to regularly upload current data which will then automatically display in the dashboard. You do this using a GOV.UK Sign on account.
 
-The performance team uses a website monitoring tool called Pingdom to constantly test the URL. All the data about your service’s availability will be automatically uploaded to the dashboard.
-
-
-Presenting the dashboard data
-=============================
-
-The technical team will put together your service dashboard once you’ve decided on the data it will measure. The performance team has designers and user researchers who will work with you to figure out how best to present your data.
-
-The performance team will give you a preview of your dashboard before it appears publically on the website.
+You’ll also be notified if the performance team expect new data to be uploaded by a certain date.
 
 
-Make corrections to dashboard data
-==================================
+Iterating your dashboard
+=======================
 
-Occasionally data in the dashboards may be incorrect. You can correct the data in your dashboard by:
-
-- contacting the performance team if it’s data collected for you
-- uploading the revised data to your spreadsheet - this will automatically display in the dashboard
+After your dashboard goes live there’s plenty of scope to iterate it. We’ll be in touch to arrange a ‘product audit’ to help understand what’s working for you.
