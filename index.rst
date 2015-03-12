@@ -7,10 +7,10 @@
     glossary
 
 
-Signing up to the Performance Platform
+Get a Performance Platform dashboard
 ###########################
 
-The following pages explain what the Performance Platform is and how to connect to it.
+The following pages explain what the Performance Platform is and how to get a dashboard.
 
 We believe every government service should have a dashboard. With meaningful live data you’ll be ideally placed to create great services for your users. Many service managers have found that a dashboard significantly reduces reporting overheads too.
 
