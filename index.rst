@@ -8,7 +8,7 @@
 
 
 Get a Performance Platform dashboard
-###########################
+####################################
 
 The following pages explain what the Performance Platform is and how to get a dashboard.
 
@@ -17,7 +17,7 @@ We believe every government service should have a dashboard. With meaningful liv
 So that government services can meet the criteria in the `Digital by Default Service Standard <https://www.gov.uk/service-manual/digital-by-default>`_ they are required to report performance data on the `performance platform <https://www.gov.uk/service-manual/measurement/performance-platform.html>`_. This guide shows you how to sign up. 
 
 Before you start
-============
+================
 
 Please discuss your dashboard requirements with whoever will be signing off the publication of the dashboard as soon as possible. 
 
@@ -25,7 +25,7 @@ We’ve found this often takes longer than the building of the dashboard itself.
 
 
 Our blog
-============
+========
 
 We typically post a couple of times a week about new dashboards, improvements to the platform and where we’re headed. We also welcome guest blog posts!
 
@@ -69,7 +69,7 @@ If your service is not transactional then please `get in touch <mailto:performan
 
 
 How to get a standards transactional dashboard
-==============================
+==============================================
 
 We need eight pieces of information from you (see below).
 
@@ -137,7 +137,7 @@ We need eight pieces of information from you (see below).
 Once we have this information we’ll publish your dashboard within 5 days to a non-linked non-searchable url.  If we’ve got any questions we’ll call you.
 
 Keeping your dashboard up to date 
-================================
+=================================
 
 You own the data in the dashboard and are responsible for maintaining its quality. 
 
@@ -149,6 +149,6 @@ You’ll also be notified if the performance team expect new data to be uploaded
 
 
 Iterating your dashboard
-=======================
+========================
 
 After your dashboard goes live there’s plenty of scope to iterate it. We’ll be in touch to arrange a ‘product audit’ to help understand what’s working for you.
