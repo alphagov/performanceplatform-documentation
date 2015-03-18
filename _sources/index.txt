@@ -68,7 +68,7 @@ Non-transactional services
 If your service is not transactional then please `get in touch <mailto:performance@digital.cabinet-office.gov.uk>`_ and we’ll show the other kinds of dashboards we’ve built.
 
 
-How to get a standards transactional dashboard
+How to get a standard transactional dashboard
 ==============================================
 
 We need eight pieces of information from you (see below).
