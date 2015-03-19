@@ -52,6 +52,8 @@ Adding data
       }
     ]
 
+  All of the above headers are important.
+
   **Example response**:
 
   .. sourcecode:: http
