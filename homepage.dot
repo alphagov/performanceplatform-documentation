@@ -1,0 +1,102 @@
+digraph {
+  size="8,6"; ratio=fill; node[fontsize=24];
+
+  GOV_UK [style=filled]
+
+  # GOV.UK router requests HTML
+  GOV_UK->ssl_nginx_spotlight;
+  ssl_nginx_spotlight->nginx_frontend_spotlight;
+  nginx_frontend_spotlight->spotlight;
+  
+  # get dashboard meta-data
+  spotlight->ssl_nginx_stagecraft;
+    ssl_nginx_stagecraft->nginx_frontend_stagecraft;
+    nginx_frontend_stagecraft->varnish;
+    varnish->nginx_backend_stagecraft;
+    nginx_backend_stagecraft->stagecraft;
+    stagecraft->postgresql;
+    postgresql->stagecraft;
+
+    # return JSON from stagecraft
+    stagecraft->nginx_backend_stagecraft;
+    nginx_backend_stagecraft->varnish;
+    varnish->nginx_frontend_stagecraft;
+    nginx_frontend_stagecraft->ssl_nginx_stagecraft;
+    ssl_nginx_stagecraft->spotlight;
+  
+  # get transactions data
+  spotlight->ssl_nginx_www;
+    ssl_nginx_www->nginx_frontend_backdrop;
+    nginx_frontend_backdrop->varnish;
+    varnish->nginx_backend_backdrop;
+    nginx_backend_backdrop->backdrop;
+
+    # get dataset meta-data
+    backdrop->ssl_nginx_stagecraft;
+      ssl_nginx_stagecraft->nginx_frontend_stagecraft;
+      nginx_frontend_stagecraft->varnish;
+      varnish->nginx_backend_stagecraft;
+      nginx_backend_stagecraft->stagecraft;
+        stagecraft->ssl_nginx_signon;
+          ssl_nginx_signon->signon;
+          signon->mysql;
+          mysql->signon;
+          signon->ssl_nginx_signon;
+          ssl_nginx_signon->stagecraft;
+        stagecraft->postgresql;
+        stagecraft->nginx_backend_stagecraft;
+      nginx_backend_stagecraft->varnish;
+      varnish->nginx_frontend_stagecraft;
+      nginx_frontend_stagecraft->ssl_nginx_stagecraft;
+      ssl_nginx_stagecraft->backdrop;
+    # get dataset data
+    backdrop->mongo;
+    mongo->backdrop;
+
+    # return JSON from backdrop
+    backdrop->nginx_backend_backdrop;
+    nginx_backend_backdrop->varnish;
+    varnish->nginx_frontend_backdrop;
+    nginx_frontend_backdrop->ssl_nginx_www;
+    ssl_nginx_www->spotlight;
+
+  # Render HTML
+  spotlight->nginx_frontend_spotlight;
+  nginx_frontend_spotlight->ssl_nginx_spotlight;
+  ssl_nginx_spotlight->GOV_UK;
+
+
+  subgraph "cluster_signon" {
+    label="Signon";
+    ssl_nginx_signon;
+    signon;
+    mysql;
+  }
+
+  subgraph "cluster_nginx_frontend" {
+    label="Frontend nginx";
+    ssl_nginx_spotlight;
+    ssl_nginx_stagecraft;
+    ssl_nginx_www;
+    nginx_frontend_spotlight;
+    nginx_frontend_backdrop;
+    nginx_frontend_stagecraft;
+  }
+
+  subgraph "cluster_nginx_backend" {
+    label="Backend nginx";
+    nginx_backend_backdrop;
+    nginx_backend_stagecraft;
+  }
+
+  subgraph "cluster_node" {
+    label="Node";
+    spotlight;
+  }
+
+  subgraph "cluster_gunicorn" {
+    label="gunicorn";
+    backdrop;
+    stagecraft;
+  }
+}
