@@ -1,0 +1,75 @@
+digraph {
+  size="8,6"; ratio=fill; node[fontsize=24];
+
+  GOV_UK [style=filled]
+
+  # GOV.UK router requests HTML
+  GOV_UK->ssl_nginx_www;
+  ssl_nginx_www->nginx_frontend_www;
+  nginx_frontend_www->monolith;
+  
+  # get dashboard meta-data
+  monolith->postgresql;
+  postgresql->monolith;
+
+  # get auth to data
+  monolith->ssl_nginx_signon;
+    ssl_nginx_signon->signon;
+    signon->mysql;
+    mysql->signon;
+    signon->ssl_nginx_signon;
+    ssl_nginx_signon->monolith;
+  # get #1 module data
+  monolith->mongo;
+  mongo->monolith;
+  # get #2 module data
+  monolith->mongo;
+  mongo->monolith;
+  # get #3 module data
+  monolith->mongo;
+  mongo->monolith;
+  # get #4 module data
+  monolith->mongo;
+  mongo->monolith;
+  # get #5 module data
+  monolith->mongo;
+  mongo->monolith;
+  # get #6 module data
+  monolith->mongo;
+  mongo->monolith;
+  # get #7 module data
+  monolith->mongo;
+  mongo->monolith;
+  # get #8 module data
+  monolith->mongo;
+  mongo->monolith;
+  # get #9 module data
+  monolith->mongo;
+  mongo->monolith;
+  # get #10 module data
+  monolith->mongo;
+  mongo->monolith;
+
+  # Render HTML
+  monolith->nginx_frontend_www;
+  nginx_frontend_www->ssl_nginx_www;
+  ssl_nginx_www->GOV_UK;
+
+  subgraph "cluster_signon" {
+    label="Signon";
+    ssl_nginx_signon;
+    signon;
+    mysql;
+  }
+
+  subgraph "cluster_nginx_frontend" {
+    label="Frontend nginx";
+    ssl_nginx_www;
+    nginx_frontend_www;
+  }
+
+  subgraph "cluster_gunicorn" {
+    label="gunicorn";
+    monolith;
+  }
+}
