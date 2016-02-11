@@ -39,9 +39,6 @@ We have a `standard dashboard <https://www.gov.uk/performance/standard-dashboard
 How to get a standard transactional dashboard
 ==============================================
 
-We need eight pieces of information from you (see below).
-
-
 +--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ 
 | Required information     | Please email performance@digital.cabinet-office.gov.uk                                                                                                                                                                   |  
 +==========================+==========================================================================================================================================================================================================================+
@@ -50,10 +47,8 @@ We need eight pieces of information from you (see below).
 |                          |- Your email address                                                                                                                                                                                                      |
 |                          |                                                                                                                                                                                                                          |
 |                          |- Best phone number to reach you on                                                                                                                                                                                       |
-+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|                          |Please discuss your dashboard requirements with whoever will be signing off the publication of the dashboard as soon as possible.                                                                                    |
-
-|                          |We’ve found this often takes longer than the building of the dashboard itself.                                                                                                                                            |
+|                          |                                                                                                                                                                                                                          |
+|                          |Please discuss your dashboard requirements with whoever will be signing off the publication of the dashboard as soon as possible.                                                                                         |
 +--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Service description      |- The name of your service as shown to users                                                                                                                                                                              |
 |                          |                                                                                                                                                                                                                          |
@@ -87,7 +82,7 @@ We need eight pieces of information from you (see below).
 |                          |- Name and email address of people who will upload the data on an ongoing basis                                                                                                                                           |
 |                          |                                                                                                                                                                                                                          |
 |                          |If you would prefer to use our platform API to automate the upload of data please let us know.                                                                                                                            |
-+--------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Once we have this information we’ll publish your dashboard to a non-linked non-searchable url.  If we’ve got any questions we’ll call you.
 
