@@ -23,23 +23,9 @@ Please discuss your dashboard requirements with whoever will be signing off the 
 
 We’ve found this often takes longer than the building of the dashboard itself. 
 
-
-Our blog
-========
-
-We typically post a couple of times a week about new dashboards, improvements to the platform and where we’re headed. We also welcome guest blog posts!
-
-`Visit our blog <https://gdsdata.blog.gov.uk/category/performance-platform/>`_
-
-`Sign up for news by email <https://public.govdelivery.com/accounts/UKGOVUK/subscriber/new?topic_id=UKGOVUK_6816>`_
-
 How to get a dashboard
 ======================
 
-Different services get different types of dashboard.
-
-Transactional services
-----------------------
 We have a `standard dashboard <https://www.gov.uk/performance/standard-dashboard>`_ for transactional services which includes our `four mandatory KPIs <https://www.gov.uk/service-manual/measurement/index.html>`_.
 
 - Cost per transaction (how much it costs each person to use the service)
@@ -49,24 +35,6 @@ We have a `standard dashboard <https://www.gov.uk/performance/standard-dashboard
 - Completion rate (how many people complete the service)
 
 - Digital take-up (percentage of people using digital options versus others)
-
-For services using Google Analytics we’re also able to quickly add:
-
-- number of people using the service right now
-
-- % of device and browser types being used
-
-- % new versus returning users
-
-- the usage of help text
-
-If you’re using Webtrends, Piwik or another method of collecting analytics, we can probably still help you. Please get in touch.
-
-
-Non-transactional services
---------------------------
-If your service is not transactional then please `get in touch <mailto:performance@digital.cabinet-office.gov.uk>`_ and we’ll show the other kinds of dashboards we’ve built.
-
 
 How to get a standard transactional dashboard
 ==============================================
@@ -83,13 +51,8 @@ We need eight pieces of information from you (see below).
 |                          |                                                                                                                                                                                                                          |
 |                          |- Best phone number to reach you on                                                                                                                                                                                       |
 +--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Sign off contact details |- Their name                                                                                                                                                                                                              | 
-|                          |                                                                                                                                                                                                                          |
-|                          |- Their email address                                                                                                                                                                                                     |
-|                          |                                                                                                                                                                                                                          |
-|                          |- Best phone number to reach them on                                                                                                                                                                                      |
-|                          |                                                                                                                                                                                                                          |
-|                          |Please discuss your dashboard requirements with whoever will be signing off the publication of the dashboard as soon as possible.                                                                                         |
+|                          |Please discuss your dashboard requirements with whoever will be signing off the publication of the dashboard as soon as possible.                                                                                    |
+
 |                          |We’ve found this often takes longer than the building of the dashboard itself.                                                                                                                                            |
 +--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Service description      |- The name of your service as shown to users                                                                                                                                                                              |
@@ -124,17 +87,9 @@ We need eight pieces of information from you (see below).
 |                          |- Name and email address of people who will upload the data on an ongoing basis                                                                                                                                           |
 |                          |                                                                                                                                                                                                                          |
 |                          |If you would prefer to use our platform API to automate the upload of data please let us know.                                                                                                                            |
-+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Service availability     |URL for a page or file within your service that:                                                                                                                                                                          |
-|                          |                                                                                                                                                                                                                          |
-|                          |- indicates that the service is up or down                                                                                                                                                                                |
-|                          |                                                                                                                                                                                                                          |
-|                          |- isn’t accessible by your users (us pinging it will bias your statistics)                                                                                                                                                |
-|                          |                                                                                                                                                                                                                          |
-|                          |We show service availability and response time using information from `Pingdom <https://www.pingdom.com/>`_.                                                                                                              |                 
-+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-Once we have this information we’ll publish your dashboard within 5 days to a non-linked non-searchable url.  If we’ve got any questions we’ll call you.
+Once we have this information we’ll publish your dashboard to a non-linked non-searchable url.  If we’ve got any questions we’ll call you.
 
 Keeping your dashboard up to date 
 =================================
@@ -148,7 +103,3 @@ If your dashboard is supported by spreadsheet data you’ll need to regularly up
 You’ll also be notified if the performance team expect new data to be uploaded by a certain date.
 
 
-Iterating your dashboard
-========================
-
-After your dashboard goes live there’s plenty of scope to iterate it. We’ll be in touch to arrange a ‘product audit’ to help understand what’s working for you.
