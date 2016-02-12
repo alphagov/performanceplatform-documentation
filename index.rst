@@ -35,7 +35,7 @@ A standard dashboard for transactional services includes `four mandatory KPIs <h
 How to get a transactional services dashboard
 =============================================
 
-We'll need the following details to build a dashboard for your transactional service. Please email performance@digital.cabinet-office.gov.uk for further information.
+To get a dashboard, email the following information to performance@digital.cabinet-office.gov.uk. You can use the same address for further enquiries about dashboards and the Performance Platform.
 
 +--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ 
 | **Your contact details** |- Your name                                                                                                                                                                                                               |
@@ -80,6 +80,7 @@ We'll need the following details to build a dashboard for your transactional ser
 |                          |                                                                                                                                                                                                                          |
 |                          |- Name and email address of people who will upload the data on an ongoing basis                                                                                                                                           |
 |                          |                                                                                                                                                                                                                          |
+|                          |We can also use the digital take-up data to show transactions by channel.                                                                                                                                                 |
 |                          |If you would prefer to use our platform API to automate the upload of data please let us know.                                                                                                                            |
 +--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
