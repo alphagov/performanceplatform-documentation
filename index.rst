@@ -99,5 +99,3 @@ If your dashboard is supported by an API then this data will update automaticall
 
 If your dashboard is supported by spreadsheet data you’ll need to regularly upload current data which will then automatically display in the dashboard. You do this using a GOV.UK Sign on account.
 
-
-
