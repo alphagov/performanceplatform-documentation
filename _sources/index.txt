@@ -97,5 +97,5 @@ You own the data in the dashboard and are responsible for maintaining its qualit
 
 If your dashboard is supported by an API then this data will update automatically. 
 
-If your dashboard is supported by spreadsheet data you’ll need to regularly upload current data which will then automatically display in the dashboard. You do this using a GOV.UK Sign on account.
+If your dashboard is supported by spreadsheet data you’ll need to regularly upload current data which will then automatically display in the dashboard. You do this using a GOV.UK Sign on account, which we can create/update for you.
 
