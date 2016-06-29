@@ -82,9 +82,9 @@ To get a dashboard, email the following information to performance@digital.cabin
 |                          |                                                                                                                                                                                                                          |
 |                          |We can also use the digital take-up data to show transactions by channel.                                                                                                                                                 |
 |                          |                                                                                                                                                                                                                          |
-|                          |                                                                                                                                                                                                                          |
-|                          |If you would prefer to use our platform API to automate the upload of data please let us know.                                                                                                                            |
 +--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+If you would prefer to use our platform API to automate the upload of any data please let us know.
 
 Once we have this information we can publish your dashboard to a non-linked, non-searchable URL.
 
