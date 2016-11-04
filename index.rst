@@ -50,6 +50,10 @@ To get a dashboard, email the following information to performance@digital.cabin
 |                          |                                                                                                                                                                                                                          |
 |                          |- URL of the service start page (and the start page on GOV.UK if this is different)                                                                                                                                       |
 +--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+We'll need access to the following data in a format that can be read by our database. Please send details of the data, but do not email the data itself.
+
++--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Cost per transaction** |We will take your costs data from the transactions data collection run every quarter by GDS.                                                                                                                              |                                                                                                          
 |                          |                                                                                                                                                                                                                          |
 |                          |                                                                                                                                                                                                                          |
