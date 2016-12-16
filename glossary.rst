@@ -15,9 +15,6 @@ Glossary
   Dashboard
     A page showing multiple metrics, typically for a single :term:`service`
 
-  Data group
-    Something
-
   Dataset
     A collection of data of a particular type. In relational terms, this is a table.
     In non-relational terms, this is a collection of documents.
@@ -46,8 +43,8 @@ Glossary
   Observation
     A 'row' in a dataset
 
-  Service
-    Central govenment in the UK operates 766 services, eg Renew you car tax, Apply for Carer's Allowance, Book a practical driving test etc
+  (Transactional) Service
+    A facility that enables user to transact with government, eg Renew you car tax, Apply for Carer's Allowance, Apply for a fishing rod licence etc.
 
   Service Group
     A group of closely related services, eg Carer's Allowance service group includes applications, existing claims, appeals etc
@@ -59,7 +56,7 @@ Glossary
     A JavaScript library that provides an adapter over analytics software
 
   Transaction
-    Central government in the UK handles about 1.5 billion transactions a year, including applications, renewals, bookings, claims etc
+    An exchange of information, money, permissions, goods etc that takes place between government and users (individuals, businesses and other organisations). Examples include an application for a passport, a renewal of a patent, an update to the Organ Donation Register.
 
   Visualisation
     A set of Elements using the Measures and Dimensions from the Dataset
