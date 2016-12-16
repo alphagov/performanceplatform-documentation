@@ -44,7 +44,7 @@ Glossary
     A 'row' in a dataset
 
   Service
-    A transactional service is a facility that enables users to transact with government, eg Renew you car tax, Apply for Carer's Allowance, Apply for a fishing rod licence etc.
+    A transactional service is a facility that enables users to exchange informsation, money, permissions, goods etc with government. For example: Renew you car tax, Apply for Carer's Allowance, Apply for a fishing rod licence etc.
 
   Service Group
     A group of closely related services, eg Carer's Allowance service group includes applications, existing claims, appeals etc
@@ -56,7 +56,7 @@ Glossary
     A JavaScript library that provides an adapter over analytics software
 
   Transaction
-    An exchange of information, money, permissions, goods etc that takes place between government and users (individuals, businesses and other organisations). Examples include an application for a passport, a renewal of a patent, an update to the Organ Donation Register.
+    An exchange of information, money, permissions, goods etc that takes place between government and users (individuals, businesses and other organisations). Examples include an application for a passport, a renewal of a patent, an update to the Organ Donation Register. A transaction will usually result in a new (or amended) government record.
 
   Visualisation
     A set of Elements using the Measures and Dimensions from the Dataset
