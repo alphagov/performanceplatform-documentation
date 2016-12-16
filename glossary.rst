@@ -43,8 +43,8 @@ Glossary
   Observation
     A 'row' in a dataset
 
-  (Transactional) Service
-    A facility that enables user to transact with government, eg Renew you car tax, Apply for Carer's Allowance, Apply for a fishing rod licence etc.
+  Service
+    A transactional service is a facility that enables users to transact with government, eg Renew you car tax, Apply for Carer's Allowance, Apply for a fishing rod licence etc.
 
   Service Group
     A group of closely related services, eg Carer's Allowance service group includes applications, existing claims, appeals etc
