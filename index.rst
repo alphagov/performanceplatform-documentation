@@ -22,7 +22,7 @@ Please discuss your dashboard requirements with whoever will be signing off the 
 How to get a dashboard
 ======================
 
-A standard dashboard for transactional services includes `four mandatory KPIs <https://www.gov.uk/service-manual/measuring-success/sharing-your-data-with-the-performance-platform#meeting-the-digital-service-standard>`_.
+Dashboards for transactional services include `four standard KPIs <https://www.gov.uk/service-manual/measuring-success/sharing-your-data-with-the-performance-platform#meeting-the-digital-service-standard>`_.
 
 - Cost per transaction (the average cost to the government of each completed transaction)
 
