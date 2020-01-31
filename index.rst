@@ -12,12 +12,12 @@ Get a Performance Platform dashboard
 
 This page explains how to get a dashboard on the `Performance Platform <https://www.gov.uk/performance/services>`_.
 
-A published dashboard is a requirement of the `Digital by Default Service Standard <https://www.gov.uk/service-manual/digital-by-default>`_, which all transforming services must meet. All services, whether transforming or not, need to provide data on transaction volumes every quarter.
+A published dashboard is a requirement of the `Digital by Default Service Standard <https://www.gov.uk/service-manual/digital-by-default>`_, which all transforming services must meet. 
 
 Before you start
 ================
 
-Please discuss your dashboard requirements with whoever will be signing off the publication of the dashboard as soon as possible. 
+You should discuss your dashboard requirements with whoever will be signing off the publication of the dashboard as soon as possible. 
 
 How to get a dashboard
 ======================
@@ -57,18 +57,12 @@ We'll need access to the following data in a format that can be read by our data
 | **Digital take-up**      |Send a completed copy of the `transactions by channel spreadsheet <https://docs.google.com/spreadsheets/d/1FGtsvPpot2vs5aPYgZwJv1f3bNZn-ThfmIytjgRjEIw/edit#gid=1417764370?usp-sharing>`_                                 |                                                                                                          
 |                          |                                                                                                                                                                                                                          |
 +--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Cost per transaction** |We will take your costs data from the transactions data collection run every quarter by GDS.                                                                                                                              |                                                                                                          
+| **Cost per transaction** |If your service doesn’t have cost information, `here's how to calculate it <https://www.gov.uk/service-manual/measurement/cost-per-transaction.html>`_ .                                                                  |                                                                                                          
 |                          |                                                                                                                                                                                                                          |
+|                          |Send a completed copy of the `cost per transaction spreadsheet <https://docs.google.com/spreadsheets/d/1IHRR1YcMbkRoyNxX7LMXGvg78WK_BLpPeGSBQCXJ-Nw/edit#gid=1614266623usp-sharing>`_                                     |  
 |                          |                                                                                                                                                                                                                          |
-|                          |All services included in this exercise are listed on the `Performance Platform's services page <https://www.gov.uk/performance/services>`_.                                                                               |  
-|                          |                                                                                                                                                                                                                          |
-|                          |                                                                                                                                                                                                                          |
-|                          |If your service isn't listed, email `Clifford Sheppard <clifford.sheppard@digital.cabinet-office.gov.uk>`_.                                                                                                               |
-|                          |                                                                                                                                                                                                                          |
-|                          |                                                                                                                                                                                                                          |
-|                          |If your service doesn’t have cost information, `here's how to calculate it <https://www.gov.uk/service-manual/measurement/cost-per-transaction.html>`_ .                                                                  |
 +--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **User satisfaction**    |- URL for your GOV.UK ‘done’ page.                                                                                                                                                                                        |
+| **User satisfaction**    |Send us the URL for your GOV.UK ‘done’ page.                                                                                                                                                                              |
 |                          |                                                                                                                                                                                                                          |
 |                          |You can get a ‘done’ page by clicking ‘content change’ on the `GOV.UK support site <https://support.production.alphagov.co.uk/>`_. If you can’t access this, please speak to the GDS point of contact in your department. | 
 |                          |                                                                                                                                                                                                                          |
