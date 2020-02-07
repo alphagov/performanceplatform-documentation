@@ -12,7 +12,7 @@ Get a Performance Platform dashboard
 
 This page explains how to get a dashboard on the `Performance Platform <https://www.gov.uk/performance/services>`_.
 
-A published dashboard is a requirement of the `Digital by Default Service Standard <https://www.gov.uk/service-manual/digital-by-default>`_, which all transforming services must meet. 
+A published dashboard is a requirement of the `Digital by Default Service Standard <https://www.gov.uk/service-manual/digital-by-default>`_, which all transforming services must meet.
 
 Before you start
 ================
