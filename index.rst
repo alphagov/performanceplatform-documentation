@@ -7,51 +7,15 @@
     glossary
 
 
-Get a Performance Platform dashboard
-####################################
+Performance Platform dashboards
+###############################
 
-This page explains how to get a dashboard on the `Performance Platform <https://www.gov.uk/performance/services>`_.
+If you need help with an existing `Performance Platform <https://www.gov.uk/performance/services>`_ dashboard email performance@digital.cabinet-office.gov.uk. 
 
-A published dashboard is a requirement of the `Digital by Default Service Standard <https://www.gov.uk/service-manual/digital-by-default>`_, which all transforming services must meet.
+Existing dashboards
+###################
 
-Before you start
-================
-
-You should discuss your dashboard requirements with whoever will be signing off the publication of the dashboard as soon as possible. 
-
-How to get a dashboard
-======================
-
-Dashboards for transactional services include `four standard KPIs <https://www.gov.uk/service-manual/measuring-success/sharing-your-data-with-the-performance-platform#meeting-the-digital-service-standard>`_.
-
-- Cost per transaction (the average cost to the government of each completed transaction)
-
-- User satisfaction (how satisfied users feel after completing a transaction online)
-
-- Completion rate (the percentage of users who complete a digital transaction once they have started it)
-
-- Digital take-up (percentage of all transactions which are completed using digital channels)
-
-How to get a transactional services dashboard
-=============================================
-
-To get a dashboard, email the following information to performance@digital.cabinet-office.gov.uk. You can use the same address for further enquiries about dashboards and the Performance Platform.
-
-+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+ 
-| **Your contact details** |- Your name                                                                                                                                                                                                               |
-|                          |                                                                                                                                                                                                                          |
-|                          |- Your email address                                                                                                                                                                                                      |
-|                          |                                                                                                                                                                                                                          |
-|                          |- Your phone number                                                                                                                                                                                                       |
-+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Service description**  |- The name of your service                                                                                                                                                                                                |
-|                          |                                                                                                                                                                                                                          |
-|                          |- Short description of what the service does and who its intended users are                                                                                                                                               |
-|                          |                                                                                                                                                                                                                          |
-|                          |- URL of the service start page (and the start page on GOV.UK if this is different)                                                                                                                                       |
-+--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-We'll need access to the following data in a format that can be read by our database. Please send details of the data, but do not put the data itself in an email.
+The information below is for owners of existing dashboards and is for reference only. Please email us before you start collecting data intended for a dashboard.
 
 +--------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Digital take-up**      |Send a completed copy of the `transactions by channel spreadsheet <https://docs.google.com/spreadsheets/d/1FGtsvPpot2vs5aPYgZwJv1f3bNZn-ThfmIytjgRjEIw/edit#gid=1417764370?usp-sharing>`_                                 |                                                                                                          
@@ -87,9 +51,6 @@ We'll need access to the following data in a format that can be read by our data
 
 If you would prefer to use our platform API to automate the upload of any data please let us know.
 
-Once we have this information we can publish your dashboard to a non-linked, non-searchable URL.
-
-When the dashboard is complete and signed-off, it will be made publicly available.
 
 Keeping your dashboard up to date 
 =================================
